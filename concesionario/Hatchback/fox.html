@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Fox</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Fox" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_00.jpg">
+        <img id="Fox1" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_01.jpg">
+        <img id="Fox2" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_02.jpg">
+        <img id="Fox3" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_03.jpg">
+        <img id="Fox4" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_04.jpg">
+        <img id="Fox5" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_05.jpg">
+        <img id="Fox6" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_06.jpg">
+        <img id="Fox7" src="../../img/concesionario/CATEGORIAS/HATCHBACK/FOX_EXTREME/HB_ZOOM_07.jpg">
+          
+          
+        <img id="ver" src="../../img/icons/ver.png">
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+        
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+		                  <!-- Siguiente-->
+                <a-image onclick="javaScript:changeCarById(1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 -.5" rotation="0 90 180">
+                </a-image>
+                <!--Anterior-->
+                <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 0.5" rotation="0 90 0">
+                </a-image>
+                
+		  
+          			<a-entity id="0" ><a-sky radius="30" src="#Fox"></a-sky></a-entity> 
+                    <a-entity id="1" visible="false" ><a-sky radius="30" src="#Fox1"></a-sky></a-entity>
+                    <a-entity id="2" visible="false" ><a-sky radius="30" src="#Fox2"></a-sky></a-entity>
+                    <a-entity id="3" visible="false" ><a-sky radius="30" src="#Fox3"></a-sky></a-entity>
+                    <a-entity id="4" visible="false" ><a-sky radius="30" src="#Fox4"></a-sky></a-entity>
+                    <a-entity id="5" visible="false" ><a-sky radius="30" src="#Fox5"></a-sky></a-entity>
+                    <a-entity id="6" visible="false" ><a-sky radius="30" src="#Fox6"></a-sky></a-entity>  
+                    <a-entity id="7" visible="false" ><a-sky radius="30" src="#Fox7"></a-sky></a-entity>
+		  
+		  
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>

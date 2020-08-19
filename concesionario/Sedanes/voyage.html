@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Voyage</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Voyageconfln" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_40.jpg">
+        <img id="Voyageconfln1" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_41.jpg">
+        <img id="Voyageconfln2" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_42.jpg">
+        <img id="Voyageconfln3" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_43.jpg">
+        <img id="Voyageconfln4" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_44.jpg">
+        <img id="Voyageconfln5" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_45.jpg">
+        <img id="Voyageconfln6" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_46.jpg">
+        <img id="Voyageconfln7" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_47.jpg">
+		  
+		  
+		  
+        <img id="Voyagetrnln" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_00.jpg">
+        <img id="Voyagetrnln1" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_01.jpg">
+        <img id="Voyagetrnln2" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_02.jpg">
+        <img id="Voyagetrnln3" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_03.jpg">
+        <img id="Voyagetrnln4" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_04.jpg">
+        <img id="Voyagetrnln5" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_05.jpg">
+        <img id="Voyagetrnln6" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_06.jpg">
+        <img id="Voyagetrnln7" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_TRENDLINE/SEDANES_ZOOM_07.jpg">
+          
+          
+        <img id="ver" src="../../img/icons/ver.png">
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+			<!-- Siguiente-->
+			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 -0.5" rotation="0 90 180">
+			</a-image>
+			<!--Anterior-->
+			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 0.5" rotation="0 90 0">
+			</a-image>
+		  
+		  
+		   <a-box  onclick="javaScript:visible('TRENDLINE','CONFORTLINE')" scale=" 0.5 0.5 0" position="-4 0.6 0.5" rotation="0 90 0" color="#808080"></a-box>	
+
+          <a-box  onclick="javaScript:visible('CONFORTLINE','TRENDLINE')" scale=" 0.5 0.5 0" position="-4 0.6 -0.5" rotation="0 90 0" color="#fff"></a-box>
+		  		
+		 
+                
+		  <a-entity id="TRENDLINE" visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Voyagetrnln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Voyagetrnln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Voyagetrnln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Voyagetrnln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Voyagetrnln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Voyagetrnln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Voyagetrnln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Voyagetrnl7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORTLINE">
+          			<a-entity class="0" ><a-sky radius="30" src="#Voyageconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Voyageconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Voyageconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Voyageconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Voyageconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Voyageconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Voyageconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Voyageconfln7"></a-sky></a-entity>
+		  </a-entity>
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../sedanes.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>

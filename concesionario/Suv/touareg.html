@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Touareg</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Touareg" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_08.jpg">
+        <img id="Touareg1" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_09.jpg">
+        <img id="Touareg2" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_10.jpg">
+        <img id="Touareg3" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_11.jpg">
+        <img id="Touareg4" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_12.jpg">
+        <img id="Touareg5" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_13.jpg">
+        <img id="Touareg6" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_14.jpg">
+        <img id="Touareg7" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_15.jpg">
+          
+          
+        <img id="ver" src="../../img/icons/ver.png">
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+        
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+		                  <!-- Siguiente-->
+                <a-image onclick="javaScript:changeCarById(1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 -.5" rotation="0 90 180">
+                </a-image>
+                <!--Anterior-->
+                <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 0.5" rotation="0 90 0">
+                </a-image>
+                
+		  
+          			<a-entity id="0" ><a-sky radius="30" src="#Touareg"></a-sky></a-entity> 
+                    <a-entity id="1" visible="false" ><a-sky radius="30" src="#Touareg1"></a-sky></a-entity>
+                    <a-entity id="2" visible="false" ><a-sky radius="30" src="#Touareg2"></a-sky></a-entity>
+                    <a-entity id="3" visible="false" ><a-sky radius="30" src="#Touareg3"></a-sky></a-entity>
+                    <a-entity id="4" visible="false" ><a-sky radius="30" src="#Touareg4"></a-sky></a-entity>
+                    <a-entity id="5" visible="false" ><a-sky radius="30" src="#Touareg5"></a-sky></a-entity>
+                    <a-entity id="6" visible="false" ><a-sky radius="30" src="#Touareg6"></a-sky></a-entity>  
+                    <a-entity id="7" visible="false" ><a-sky radius="30" src="#Touareg7"></a-sky></a-entity>
+		  
+		  
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../suv.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>

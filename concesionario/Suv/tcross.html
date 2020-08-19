@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Tcross</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Tcrossconfln" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_48.jpg">
+        <img id="Tcrossconfln1" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_49.jpg">
+        <img id="Tcrossconfln2" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_50.jpg">
+        <img id="Tcrossconfln3" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_51.jpg">
+        <img id="Tcrossconfln4" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_52.jpg">
+        <img id="Tcrossconfln5" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_53.jpg">
+        <img id="Tcrossconfln6" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_54.jpg">
+        <img id="Tcrossconfln7" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_55.jpg">
+		  
+		 
+        <img id="Tcross2confln" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_32.jpg">
+        <img id="Tcross2confln1" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_33.jpg">
+        <img id="Tcross2confln2" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_34.jpg">
+        <img id="Tcross2confln3" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_35.jpg">
+        <img id="Tcross2confln4" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_36.jpg">
+        <img id="Tcross2confln5" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_37.jpg">
+        <img id="Tcross2confln6" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_38.jpg">
+        <img id="Tcross2confln7" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORTLINE/SUV_ZOOM_39.jpg">
+		  
+		  
+		  
+        <img id="Tcrosstln" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_24.jpg">
+        <img id="Tcrosstln1" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_25.jpg">
+        <img id="Tcrosstln2" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_26.jpg">
+        <img id="Tcrosstln3" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_27.jpg">
+        <img id="Tcrosstln4" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_28.jpg">
+        <img id="Tcrosstln5" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_29.jpg">
+        <img id="Tcrosstln6" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_30.jpg">
+        <img id="Tcrosstln7" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_31.jpg">
+          
+          
+        <img id="ver" src="../../img/icons/ver.png">
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+			<!-- Siguiente-->
+			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 -0.5" rotation="0 90 180">
+			</a-image>
+			<!--Anterior-->
+			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 0.5" rotation="0 90 0">
+			</a-image>
+		  
+		  
+		   <a-box  onclick="javaScript:visibleDos('CONFORLINE','CONFORLINE2','TRENDLINE')" scale=" 0.5 0.5 0" position="-4 0.6 1.1" rotation="0 90 0" color="#fff"></a-box>
+		  
+		   <a-box  onclick="javaScript:visibleDos('CONFORLINE2','CONFORLINE','TRENDLINE')" scale=" 0.5 0.5 0" position="-4 0.6 0.1" rotation="0 90 0" color="#fff"></a-box>	
+
+          <a-box  onclick="javaScript:visibleDos('TRENDLINE','CONFORLINE','CONFORLINE2')" scale=" 0.5 0.5 0" position="-4 0.6 -0.9" rotation="0 90 0" color="#808080"></a-box>
+		  		
+		 
+                
+		  <a-entity id="CONFORLINE">
+          			<a-entity class="0" ><a-sky radius="30" src="#Tcrossconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcrossconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcrossconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tcrossconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tcrossconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tcrossconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tcrossconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tcrossconfln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORLINE2" visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Tcross2confln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcross2confln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcross2confln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tcross2confln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tcross2confln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tcross2confln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tcross2confln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tcross2confln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="TRENDLINE" visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Tcrosstln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcrosstln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcrosstln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tcrosstln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tcrosstln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tcrosstln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tcrosstln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tcrosstln7"></a-sky></a-entity>
+		  </a-entity>
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../suv.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>

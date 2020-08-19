@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Tiguan DSG</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Tiguantln" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_40.jpg">
+        <img id="Tiguantln1" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_41.jpg">
+        <img id="Tiguantln2" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_42.jpg">
+        <img id="Tiguantln3" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_43.jpg">
+        <img id="Tiguantln4" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_44.jpg">
+        <img id="Tiguantln5" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_45.jpg">
+        <img id="Tiguantln6" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_46.jpg">
+        <img id="Tiguantln7" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_47.jpg">
+		  
+		 
+        <img id="Tiguantconfln" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_00.jpg">
+        <img id="Tiguantconfln1" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_01.jpg">
+        <img id="Tiguantconfln2" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_02.jpg">
+        <img id="Tiguantconfln3" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_03.jpg">
+        <img id="Tiguantconfln4" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_04.jpg">
+        <img id="Tiguantconfln5" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_05.jpg">
+        <img id="Tiguantconfln6" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_06.jpg">
+        <img id="Tiguantconfln7" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_CONFORTLINE_2.0/SUV_ZOOM_07.jpg">
+		  
+		  
+		  
+        <img id="Tiguahln" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_16.jpg">
+        <img id="Tiguahln1" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_17.jpg">
+        <img id="Tiguahln2" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_18.jpg">
+        <img id="Tiguahln3" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_19.jpg">
+        <img id="Tiguahln4" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_20.jpg">
+        <img id="Tiguahln5" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_21.jpg">
+        <img id="Tiguahln6" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_22.jpg">
+        <img id="Tiguahln7" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_23.jpg">
+          
+          
+        <img id="ver" src="../../img/icons/ver.png">
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+			<!-- Siguiente-->
+			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 -0.5" rotation="0 90 180">
+			</a-image>
+			<!--Anterior-->
+			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 0.5" rotation="0 90 0">
+			</a-image>
+		  
+		  
+		   <a-box  onclick="javaScript:visibleDos('TRENDLINE','CONFORLINE','HIGHLINE')" scale=" 0.5 0.5 0" position="-4 0.6 1.1" rotation="0 90 0" color="#fff"></a-box>
+		  
+		   <a-box  onclick="javaScript:visibleDos('CONFORLINE','TRENDLINE','HIGHLINE')" scale=" 0.5 0.5 0" position="-4 0.6 0.1" rotation="0 90 0" color="#fff"></a-box>	
+
+          <a-box  onclick="javaScript:visibleDos('HIGHLINE','TRENDLINE','CONFORLINE')" scale=" 0.5 0.5 0" position="-4 0.6 -0.9" rotation="0 90 0" color="#808080"></a-box>
+		  		
+		 
+                
+		  <a-entity id="TRENDLINE">
+          			<a-entity class="0" ><a-sky radius="30" src="#Tiguantln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguantln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguantln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tiguantln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tiguantln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tiguantln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tiguantln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tiguantln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORLINE" visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Tiguantconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguantconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguantconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tiguantconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tiguantconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tiguantconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tiguantconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tiguantconfln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="HIGHLINE" visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Tiguahln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguahln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguahln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tiguahln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tiguahln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tiguahln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tiguahln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tiguahln7"></a-sky></a-entity>
+		  </a-entity>
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../suv.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>

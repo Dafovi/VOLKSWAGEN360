@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Gol</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Golconfln" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_24.jpg">
+        <img id="Golconfln1" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_25.jpg">
+        <img id="Golconfln2" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_26.jpg">
+        <img id="Golconfln3" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_27.jpg">
+        <img id="Golconfln4" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_28.jpg">
+        <img id="Golconfln5" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_29.jpg">
+        <img id="Golconfln6" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_30.jpg">
+        <img id="Golconfln7" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_31.jpg">
+		  
+		  
+		  
+        <img id="Goltrnln" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_32.jpg">
+        <img id="Goltrnln1" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_33.jpg">
+        <img id="Goltrnln2" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_34.jpg">
+        <img id="Goltrnln3" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_35.jpg">
+        <img id="Goltrnln4" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_36.jpg">
+        <img id="Goltrnln5" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_37.jpg">
+        <img id="Goltrnln6" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_38.jpg">
+        <img id="Goltrnln7" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_39.jpg">
+          
+          
+        <img id="ver" src="../../img/icons/ver.png">
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+        
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+			<!-- Siguiente-->
+			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 -0.5" rotation="0 90 180">
+			</a-image>
+			<!--Anterior-->
+			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 0.5" rotation="0 90 0">
+			</a-image>
+		  		
+		  <a-box  onclick="javaScript:visible('TRENDLINE','CONFORTLINE')" scale=" 0.5 0.5 0" position="-4 0.6 0.5" rotation="0 90 0" color="#f00"></a-box>	
+
+          <a-box  onclick="javaScript:visible('CONFORTLINE','TRENDLINE')" scale=" 0.5 0.5 0" position="-4 0.6 -0.5" rotation="0 90 0" color="#808080"></a-box>
+                
+		  <a-entity id="CONFORTLINE"  visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Goltrnln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Goltrnln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Goltrnln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Goltrnln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Goltrnln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Goltrnln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Goltrnln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Goltrnln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="TRENDLINE">
+          			<a-entity class="0" ><a-sky radius="30" src="#Golconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Golconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Golconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Golconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Golconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Golconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Golconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Golconfln7"></a-sky></a-entity>
+		  </a-entity>
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>

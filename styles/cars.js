@@ -7,98 +7,82 @@ function visible(visible,noVisible){
     document.getElementById(visible).setAttribute('visible','true');
     document.getElementById(noVisible).setAttribute('visible','false');
 }
-var s = new Number(1);
-function changeButton(n,color){
-    s+=n;
-    if(color==="blanco"){
-        switch (s){
-            case 0:
-                s=8;
-                visible('b8','b1');
-                visible('b8','b7');
-            break;
-            case 1:
-                visible('b1','b2');
-                visible('b1','b8');
-            break;
-            case 2:
-                visible('b2','b3');
-                visible('b2','b1');
-            break;
-            case 3:
-                visible('b3','b4');
-                visible('b3','b2');
-            break;
-            case 4:
-                visible('b4','b5');
-                visible('b4','b3');
-            break;
-            case 5:
-                visible('b5','b6');
-                visible('b5','b4');
-            break;
-            case 6:
-                visible('b6','b7');
-                visible('b6','b5');
-            break;
-            case 7:
-                visible('b7','b8');
-                visible('b7','b6');
-            break;
-            case 8:
-                visible('b8','b1');
-                visible('b8','b7');
-            break;
-            case 9:
-                s=1;
-                visible('b1','b2');
-                visible('b1','b8');
-            break;
-        }
-    }else if(color==="gris"){
-        switch (s){
-            case 0:
-                s=8;
-                visible('g8','g1');
-                visible('g8','g7');
-            break;
-            case 1:
-                visible('g1','g2');
-                visible('g1','g8');
-            break;
-            case 2:
-                visible('g2','g3');
-                visible('g2','g1');
-            break;
-            case 3:
-                visible('g3','g4');
-                visible('g3','g2');
-            break;
-            case 4:
-                visible('g4','g5');
-                visible('g4','g3');
-            break;
-            case 5:
-                visible('g5','g6');
-                visible('g5','g4');
-            break;
-            case 6:
-                visible('g6','g7');
-                visible('g6','g5');
-            break;
-            case 7:
-                visible('g7','g8');
-                visible('g7','g6');
-            break;
-            case 8:
-                visible('g8','g1');
-                visible('g8','g7');
-            break;
-            case 9:
-                s=1;
-                visible('g1','g2');
-                visible('g1','g8');
-            break;
-        }
-    }
+var s = new Number(0);
+function changeCarById(i,n){
+    s+=i;
+	if(s>n){
+		s=0;
+		visible(0,n)
+	}
+	
+	if(s<0){
+		s=n;
+		visible(n,0)
+	}
+	if(i===1)
+    visible(s,s-1)
+	if(i===-1)
+	visible(s,s+1)
 }
+
+function visibleByClassName(visible,noVisible){
+    var x= document.getElementsByClassName(visible);
+    var y= document.getElementsByClassName(noVisible);
+	x[0].setAttribute('visible','true');
+	x[1].setAttribute('visible','true');
+	y[0].setAttribute('visible','false');
+	y[1].setAttribute('visible','false');
+}
+function changeCarByClassName(i,n){
+    s+=i;
+	if(s>n){
+		s=0;
+		visibleByClassName(0,n)
+	}
+	
+	if(s<0){
+		s=n;
+		visibleByClassName(n,0)
+	}
+	if(i===1)
+    visibleByClassName(s,s-1)
+	if(i===-1)
+	visibleByClassName(s,s+1)
+}
+function visibleDos(visible,noVisible,noVisibleDos){
+    document.getElementById(visible).setAttribute('visible','true');
+    document.getElementById(noVisible).setAttribute('visible','false');
+    document.getElementById(noVisibleDos).setAttribute('visible','false');
+}
+
+function visibleByClassNameDos(visible,noVisible,noVisibleDos){
+    var x= document.getElementsByClassName(visible);
+    var y= document.getElementsByClassName(noVisible);
+    var z= document.getElementsByClassName(noVisibleDos);
+	x[0].setAttribute('visible','true');
+	x[1].setAttribute('visible','true');
+	x[2].setAttribute('visible','true');
+	y[0].setAttribute('visible','false');
+	y[1].setAttribute('visible','false');
+	y[2].setAttribute('visible','false');
+	z[0].setAttribute('visible','false');
+	z[1].setAttribute('visible','false');
+	z[2].setAttribute('visible','false');
+}
+function changeCarByClassNameDos(i,n){
+    s+=i;
+	if(s>n){
+		s=0;
+		visibleByClassNameDos(0,n,n)
+	}
+	
+	if(s<0){
+		s=n;
+		visibleByClassNameDos(n,0,0)
+	}
+	if(i===1)
+    visibleByClassNameDos(s,s-1,s-1)
+	if(i===-1)
+	visibleByClassNameDos(s,s+1,s-1)
+}
+
