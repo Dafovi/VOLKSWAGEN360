@@ -5,6 +5,7 @@ function To(scene) {
 var back = new Number(0);
 var s = new Number(0);
 var int = new String("");
+var press = false;
 
 function interior(){
 	To('Interiores/'+int);
@@ -30,7 +31,15 @@ function visible(visible,noVisible){
     	document.getElementById(visible).setAttribute('visible','true');
     	document.getElementById(noVisible).setAttribute('visible','false');
 }
-
+function boton(conten){
+	if(press===false){
+		document.getElementById(conten).setAttribute('visible','true');
+		press=true;
+	}else{
+		document.getElementById(conten).setAttribute('visible','false');
+		press=false;
+	}
+}
 /*----- PARA 2 CARROS ----*/
 
 function volver(visible,noVisible,noVisibleDos,flechas,atras){
@@ -80,6 +89,21 @@ function changeCarByClassName(i,n){
 }
 
 /*----- PARA 3 CARROS ----*/
+
+function volverDos(visible,noVisible,noVisibleDos,noVisibleTres,flechas,atras){
+		if(back<=0){
+			To(atras);
+		}
+		if(back===1){
+			document.getElementById(visible).setAttribute('visible','true');
+			document.getElementById(noVisible).setAttribute('visible','false');
+			document.getElementById(noVisibleDos).setAttribute('visible','false');
+			document.getElementById(noVisibleTres).setAttribute('visible','false');
+			document.getElementById(flechas).setAttribute('visible','false');
+			back=0;
+			int="";
+		}
+}
 
 function visibleTres(visible,noVisible,noVisibleDos){
     document.getElementById(visible).setAttribute('visible','true');
