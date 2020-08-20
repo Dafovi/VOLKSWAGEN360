@@ -2,12 +2,14 @@ function To(scene) {
     var x = location.href = scene;
     document.body.innerHTML = x;
 }
-
-function visible(visible,noVisible){
-    document.getElementById(visible).setAttribute('visible','true');
-    document.getElementById(noVisible).setAttribute('visible','false');
-}
+var back = new Number(0);
 var s = new Number(0);
+var int = new String("");
+
+function interior(){
+	To('Interiores/'+int);
+}
+/*----- PARA 1 CARRO ----*/
 function changeCarById(i,n){
     s+=i;
 	if(s>n){
@@ -23,6 +25,33 @@ function changeCarById(i,n){
     visible(s,s-1)
 	if(i===-1)
 	visible(s,s+1)
+}
+function visible(visible,noVisible){
+    	document.getElementById(visible).setAttribute('visible','true');
+    	document.getElementById(noVisible).setAttribute('visible','false');
+}
+
+/*----- PARA 2 CARROS ----*/
+
+function volver(visible,noVisible,noVisibleDos,flechas,atras){
+		if(back<=0){
+			To(atras);
+		}
+		if(back===1){
+			document.getElementById(visible).setAttribute('visible','true');
+			document.getElementById(noVisible).setAttribute('visible','false');
+			document.getElementById(noVisibleDos).setAttribute('visible','false');
+			document.getElementById(flechas).setAttribute('visible','false');
+			back=0;
+			int="";
+		}
+}
+function visibleDos(visible,noVisible,flechas,atras,interior){
+    	document.getElementById(visible).setAttribute('visible','true');
+    	document.getElementById(noVisible).setAttribute('visible','false');
+		document.getElementById(flechas).setAttribute('visible','true');
+		back=atras;
+		int=interior;
 }
 
 function visibleByClassName(visible,noVisible){
@@ -49,7 +78,10 @@ function changeCarByClassName(i,n){
 	if(i===-1)
 	visibleByClassName(s,s+1)
 }
-function visibleDos(visible,noVisible,noVisibleDos){
+
+/*----- PARA 3 CARROS ----*/
+
+function visibleTres(visible,noVisible,noVisibleDos){
     document.getElementById(visible).setAttribute('visible','true');
     document.getElementById(noVisible).setAttribute('visible','false');
     document.getElementById(noVisibleDos).setAttribute('visible','false');
@@ -85,4 +117,6 @@ function changeCarByClassNameDos(i,n){
 	if(i===-1)
 	visibleByClassNameDos(s,s+1,s-1)
 }
+
+
 

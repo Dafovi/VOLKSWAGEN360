@@ -12,9 +12,7 @@
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <img id="Hatchback" src="../img/concesionario/CATEGORIAS/HATCHBACK/Hatchback.jpg">
-          
-          
-        <img id="ver" src="../img/icons/ver.png">
+
         <img id="atras" src="../img/icons/atras.png">
       </a-assets>
       
@@ -23,11 +21,14 @@
       <a-entity id="concesionario" rotation="0 -90 0">
         <a-sky radius="30" src="#Hatchback"></a-sky>
           
-		  <a-image onclick="javaScript:To('Hatchback/fox.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 3" rotation="0 110 0"></a-image>
+		  <a-image onclick="javaScript:To('Hatchback/fox.html')" src="../img/nombres/Fox_Xtreme_MT.png" scale=" 1.5 0.8 0" position="-3 -1 3.5" rotation="0 125 0"></a-image>
+		  <a-box onclick="javaScript:To('Hatchback/fox.html')" scale="1 1 1" position="-3 -0.2 2.1" visible="false"></a-box>
 		  
-		  <a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>
+		  <a-image onclick="javaScript:To('Hatchback/polo.html')" src="../img/nombres/Polo_Highline_AT.png" scale=" 1.5 0.8 0" position="-3 -1 -0.7" rotation="0 90 0"></a-image>
+		  <a-box onclick="javaScript:To('Hatchback/polo.html')" scale="1 1 1" position="-3 -0.3 0" visible="false"></a-box>
 		  
-		  <a-image onclick="javaScript:To('Hatchback/gol.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 -3" rotation="0 65 0"></a-image>
+		  <a-image onclick="javaScript:To('Hatchback/gol.html')" src="../img/nombres/Gol_Trendline_AT.png" scale=" 1.5 0.8 0" position="-3 0.4 -1" rotation="0 65 0"></a-image>
+		  <a-box onclick="javaScript:To('Hatchback/gol.html')" scale="1 1 1" position="-3 -0.2 -2" visible="false"></a-box>
           
       </a-entity>
       

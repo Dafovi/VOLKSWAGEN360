@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Saveiro</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Saveiro" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_48.jpg">
+        <img id="Saveiro1" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_49.jpg">
+        <img id="Saveiro2" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_50.jpg">
+        <img id="Saveiro3" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_51.jpg">
+        <img id="Saveiro4" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_52.jpg">
+        <img id="Saveiro5" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_53.jpg">
+        <img id="Saveiro6" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_54.jpg">
+        <img id="Saveiro7" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_55.jpg">
+		  
+		  
+		  
+        <img id="Saveiroplus" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_40.jpg">
+        <img id="Saveiroplus1" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_41.jpg">
+        <img id="Saveiroplus2" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_42.jpg">
+        <img id="Saveiroplus3" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_43.jpg">
+        <img id="Saveiroplus4" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_44.jpg">
+        <img id="Saveiroplus5" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_45.jpg">
+        <img id="Saveiroplus6" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_46.jpg">
+        <img id="Saveiroplus7" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_47.jpg">
+          
+          
+        <img id="ver" src="../../img/icons/ver.png">
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+			<!-- Siguiente-->
+			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+		  	<a-image src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+			<!--Anterior-->
+			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
+			</a-image>
+		  
+		  		
+		 <a-box scale="1 1.2 3" onclick="javaScript:visible('SENCILLO','PLUS',1)" position="-3 -0.5 0"  visible="false"></a-box>
+                
+		  <a-entity id="SENCILLO">
+			  
+			  		<a-image src="../../img/nombres/Saveiro_Cabina_Sencilla_MT.png" position="-2 -1 1" scale="1 0.5 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Saveiro"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Saveiro1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Saveiro2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Saveiro3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Saveiro4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Saveiro5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Saveiro6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Saveiro7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="PLUS"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Saveiro_Plus_MT.png" position="-2 0.4 1" scale="1 0.5 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Saveiroplus"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Saveiroplus1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Saveiroplus2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Saveiroplus3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Saveiroplus4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Saveiroplus5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Saveiroplus6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Saveiroplus7"></a-sky></a-entity>
+		  </a-entity>
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../pickups.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>

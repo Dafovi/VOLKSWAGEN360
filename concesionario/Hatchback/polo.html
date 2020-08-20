@@ -42,19 +42,29 @@
         
 		  
 		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
-		  
+		  <a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
-			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 -0.5" rotation="0 90 180">
-			</a-image>
+			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+			 <!-- interior -->
+		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
-			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.2 0.2 0" position="-1 -0.1 0.5" rotation="0 90 0">
+			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
-		  		
-		  <a-box  onclick="javaScript:visible('HIGHLINE','CONFORTLINE')" scale=" 0.5 0.5 0" position="-4 0.6 0.5" rotation="0 90 0" color="#808080"></a-box>	
-
-          <a-box  onclick="javaScript:visible('CONFORTLINE','HIGHLINE')" scale=" 0.5 0.5 0" position="-4 0.6 -0.5" rotation="0 90 0" color="#fff"></a-box>
+		  </a-entity>
+		  
+		  
+		  <!--<a-box scale="1 1.2 3" onclick="javaScript:visible('HIGHLINE','CONFORTLINE',1)" position="-3 -0.5 0"  visible="false"></a-box>-->
+		  <a-entity id="Select">
+			  <a-sky radius="30" src="#Polohln"></a-sky>
+			  
+			  <a-image onclick="javaScript:visibleDos('CONFORTLINE','Select','Flechas',1,'Polo_Comfortline_AT.html')" src="../../img/nombres/Polo_Comfortline_AT.png" position="-2 0.2 -0.8" scale="1 0.5 0" rotation="0 90 0"></a-image>
+			  <a-image  onclick="javaScript:visibleDos('CONFORTLINE','Select','Flechas',1,'Polo_Comfortline_MT.html')" src="../../img/nombres/Polo_Comfortline_MT.png" position="-2 0.2 1" scale="1 0.5 0" rotation="0 90 0"></a-image>
+			  <a-image onclick="javaScript:visibleDos('HIGHLINE','Select','Flechas',1,'Polo_Highline_AT.html')" src="../../img/nombres/Polo_Highline_AT.png" position="-2 -0.8 -1.2" scale="1 0.5 0" rotation="0 90 0"></a-image>			  
+			  
+		  </a-entity>
                 
 		  <a-entity id="CONFORTLINE"  visible="false">
+			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Poloconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Poloconfln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Poloconfln2"></a-sky></a-entity>
@@ -66,6 +76,7 @@
 		  </a-entity>
 		  
 		  <a-entity id="HIGHLINE">
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Polohln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Polohln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Polohln2"></a-sky></a-entity>
@@ -81,7 +92,7 @@
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  <a-image onclick="javaScript:volver('Select','CONFORTLINE','HIGHLINE','Flechas','../hatchback.html')" src="#atras" scale=" 0.2 0.08 0.2" position="0 0.7 -1" rotation="0 0 0"></a-image>
 		  
       </a-entity>
                   

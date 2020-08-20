@@ -13,8 +13,6 @@
       <a-assets>
         <img id="fondo" src="../img/concesionario/CATEGORIAS/Concesionario.jpg">
           
-          
-        <img id="ver" src="../img/icons/ver.png">
         <img id="atras" src="../img/icons/atras.png">
       </a-assets>
       
@@ -22,15 +20,22 @@
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 3 0">
         <a-sky radius="30" src="#fondo" rotation="0 7 0"></a-sky>
-          <a-image onclick="javaScript:To('hatchback.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 -5.2" rotation="0 45 0"></a-image>
+          <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Hatchback.png" scale=" 1.5 0.8 1.5" position="-3.5 -0.6 -3" rotation="0 55 0"></a-image>
+		  <a-box onclick="javaScript:To('hatchback.html')" scale="1 1 1" position="-4 -0.2 -4" visible="false"></a-box>
 		  
-		  <a-image onclick="javaScript:To('sedanes.html')" src="#ver" scale=" 1 0.5 1" position="-2.3 0.8 -5" rotation="0 20 0"></a-image>
+		  <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Sedane.png" scale=" 1 0.5 1" position="-1.2 0.25 -2.5" rotation="0 20 0"></a-image>
+		  <a-box onclick="javaScript:To('sedanes.html')"  scale="1 1 1" position="-2 -0.2 -4" visible="false"></a-box>
 		  
-		  <a-image onclick="javaScript:To('suv.html')" src="#ver" scale=" 1 0.5 1" position="-0.1 0.8 -5" rotation="0 0 0"></a-image>
+		  <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Suv.png" scale=" 1.8 0.7 1.5" position="0.2 -0.8 -3" rotation="0 0 0"></a-image>
+		  <a-box onclick="javaScript:To('suv.html')"  scale="1 1 1" position="0 -0.2 -4" visible="false"></a-box>
 		  
-		  <a-image onclick="javaScript:To('pickups.html')" src="#ver" scale=" 1 0.5 1" position="2.3 0.8 -5" rotation="0 -20 0"></a-image>
+		  <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Pickup.png" scale=" 1.6 0.7 1.5" position="1.6 0.27 -3" rotation="0 -20 0"></a-image>
+		  <a-box onclick="javaScript:To('pickups.html')" scale="1 1 1" position="1.9 -0.2 -4" visible="false"></a-box>
 		  
-		  <a-image onclick="javaScript:To('vans.html')" src="#ver" scale=" 1 0.5 1" position="5 0.8 -5" rotation="0 -45 0"></a-image>
+		  <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Van.png" scale=" 2 0.8 2" position="4.5 -0.8 -3" rotation="0 -45 0"></a-image>
+		  <a-box onclick="javaScript:To('vans.html')" scale="1 1 2" position="4.7 -0.1 -4.5" visible="false"></a-box>
+		  
+		  
           
       </a-entity>
       
