@@ -42,7 +42,6 @@
         <img id="Tcrosstln7" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_31.jpg">
           
           
-        <img id="ver" src="../../img/icons/ver.png">
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
       
@@ -52,23 +51,28 @@
 		  
 		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
 		  
+		  <a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-		  	<a-image src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+			   <!-- interior -->
+		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
 			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
+		  </a-entity>
 		  
-		  
-		   <a-box  onclick="javaScript:visibleDos('CONFORLINE','CONFORLINE2','TRENDLINE')" scale=" 0.5 0.5 0" position="-4 0.6 1.1" rotation="0 90 0" color="#fff"></a-box>
-		  
-		   <a-box  onclick="javaScript:visibleDos('CONFORLINE2','CONFORLINE','TRENDLINE')" scale=" 0.5 0.5 0" position="-4 0.6 0.1" rotation="0 90 0" color="#fff"></a-box>	
-
-          <a-box  onclick="javaScript:visibleDos('TRENDLINE','CONFORLINE','CONFORLINE2')" scale=" 0.5 0.5 0" position="-4 0.6 -0.9" rotation="0 90 0" color="#808080"></a-box>
+		  <a-entity id="Select">
+				<a-sky radius="30" src="#Tcrossconfln"></a-sky>
+			  	
+			  	<a-image onclick="javaScript:visibleDos('CONFORLINE','T-Cross_Comfortline_AT.html')" src="../../img/nombres/T-Cross_Comfortline_AT.png" position="-2 -0.26 0.76" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
+			  	<a-image onclick="javaScript:visibleDos('CONFORLINE2','T-Cross_Comfortline_Plus_AT.html')" src="../../img/nombres/T-Cross_Comfortline_Plus_AT.png" position="-2 0.4 -0.8" scale="1.5 0.8 0" rotation="0 90 0"></a-image>	
+			  	<a-image onclick="javaScript:visibleDos('TRENDLINE','T-Cross_Trendline_AT.html')" src="../../img/nombres/T-Cross_Trendline_AT.png" position="-2 -0.3 -0.8" scale="1.5 0.9 0" rotation="0 90 0"></a-image>	
+			  	<a-image onclick="javaScript:visibleDos('TRENDLINE','T-Cross_Trendline_MT.html')" src="../../img/nombres/T-Cross_Trendline_MT.png" position="-2 0.26 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>	
+		</a-entity>
 		  		
 		 
                 
-		  <a-entity id="CONFORLINE">
+		  <a-entity id="CONFORLINE" visible="false">
           			<a-entity class="0" ><a-sky radius="30" src="#Tcrossconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcrossconfln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcrossconfln2"></a-sky></a-entity>
@@ -106,7 +110,7 @@
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:To('../suv.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		  <a-image onclick="javaScript:volver('../suv.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="-1.5 0 -1" rotation="0 0 0"></a-image>
 		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="1.5 0 -1" rotation="0 0 180"></a-image>
 		  

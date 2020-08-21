@@ -6,8 +6,10 @@ var back = new Number(0);
 var s = new Number(0);
 var int = new String("");
 var press = false;
+var aftS= new String("");
 
 function interior(){
+	if(int!="")
 	To('Interiores/'+int);
 }
 
@@ -33,6 +35,19 @@ function botonDos(conten,btnUno,btnDos){
         press=false;
     }
 }
+function volver(atras){
+		if(back<=0){
+			To(atras);
+		}
+		if(back===1){
+			document.getElementById('Select').setAttribute('visible','true');
+			document.getElementById('Flechas').setAttribute('visible','false');
+			document.getElementById(aftS).setAttribute('visible','false');
+			back=0;
+			int="";
+			aftS="";
+		}
+}
 /*----- PARA 1 CARRO ----*/
 function changeCarById(i,n){
     s+=i;
@@ -56,27 +71,16 @@ function visible(visible,noVisible){
 }
 
 /*----- PARA 2 CARROS ----*/
-
-function volver(visible,noVisible,noVisibleDos,flechas,atras){
-		if(back<=0){
-			To(atras);
-		}
-		if(back===1){
+function visibleDos(visible,interior){
+		if(aftS==""){
 			document.getElementById(visible).setAttribute('visible','true');
-			document.getElementById(noVisible).setAttribute('visible','false');
-			document.getElementById(noVisibleDos).setAttribute('visible','false');
-			document.getElementById(flechas).setAttribute('visible','false');
-			back=0;
-			int="";
+			document.getElementById('Select').setAttribute('visible','false');
+			document.getElementById('Flechas').setAttribute('visible','true');
+			back=1;
+			int=interior;
+			aftS=visible;
+			console.log(interior);
 		}
-}
-function visibleDos(visible,noVisible,flechas,atras,interior){
-    	document.getElementById(visible).setAttribute('visible','true');
-    	document.getElementById(noVisible).setAttribute('visible','false');
-		document.getElementById(flechas).setAttribute('visible','true');
-		back=atras;
-		int=interior;
-		console.log(interior);
 }
 
 function visibleByClassName(visible,noVisible){
@@ -105,21 +109,6 @@ function changeCarByClassName(i,n){
 }
 
 /*----- PARA 3 CARROS ----*/
-
-function volverDos(visible,noVisible,noVisibleDos,noVisibleTres,flechas,atras){
-		if(back<=0){
-			To(atras);
-		}
-		if(back===1){
-			document.getElementById(visible).setAttribute('visible','true');
-			document.getElementById(noVisible).setAttribute('visible','false');
-			document.getElementById(noVisibleDos).setAttribute('visible','false');
-			document.getElementById(noVisibleTres).setAttribute('visible','false');
-			document.getElementById(flechas).setAttribute('visible','false');
-			back=0;
-			int="";
-		}
-}
 
 function visibleTres(visible,noVisible,noVisibleDos){
     document.getElementById(visible).setAttribute('visible','true');
@@ -155,6 +144,7 @@ function changeCarByClassNameDos(i,n){
 }
 
 /*----- PARA 7 CARROS ----*/
+
 function visibleByClassNameTres(visible,noVisible){
     var x= document.getElementsByClassName(visible);
     var y= document.getElementsByClassName(noVisible);
@@ -188,24 +178,6 @@ function changeCarByClassNameTres(i,n){
     visibleByClassNameTres(s,s-1)
 	if(i===-1)
 	visibleByClassNameTres(s,s+1)
-}
-function volverTres(visible,noVisible,noVisibleDos,noVisibleTres,noVisibleCuatro,noVisibleCinco,noVisibleSeis,noVisibleSiete,flechas,atras){
-		if(back<=0){
-			To(atras);
-		}
-		if(back===1){
-			document.getElementById(visible).setAttribute('visible','true');
-			document.getElementById(noVisible).setAttribute('visible','false');
-			document.getElementById(noVisibleDos).setAttribute('visible','false');
-			document.getElementById(noVisibleTres).setAttribute('visible','false');
-			document.getElementById(noVisibleCuatro).setAttribute('visible','false');
-			document.getElementById(noVisibleCinco).setAttribute('visible','false');
-			document.getElementById(noVisibleSeis).setAttribute('visible','false');
-			document.getElementById(noVisibleSiete).setAttribute('visible','false');
-			document.getElementById(flechas).setAttribute('visible','false');
-			back=0;
-			int="";
-		}
 }
 
 
