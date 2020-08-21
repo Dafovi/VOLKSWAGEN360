@@ -18,8 +18,9 @@
       
      
       <!-- 360-degree image scenes.-->
-      <a-entity id="concesionario" rotation="0 3 0">
+      <a-entity id="concesionario" rotation="0 -120 0">
         <a-sky radius="30" src="#fondo" rotation="0 7 0"></a-sky>
+		  
           <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Hatchback.png" scale=" 1.5 0.8 1.5" position="-3.5 -0.6 -3" rotation="0 55 0"></a-image>
 		  <a-box onclick="javaScript:To('hatchback.html')" scale="1 1 1" position="-4 -0.2 -4" visible="false"></a-box>
 		  
@@ -33,7 +34,7 @@
 		  <a-box onclick="javaScript:To('pickups.html')" scale="1 1 1" position="1.9 -0.2 -4" visible="false"></a-box>
 		  
 		  <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Van.png" scale=" 2 0.8 2" position="4.5 -0.8 -3" rotation="0 -45 0"></a-image>
-		  <a-box onclick="javaScript:To('vans.html')" scale="1 1 2" position="4.7 -0.1 -4.5" visible="false"></a-box>
+		  <a-box onclick="javaScript:To('Vans/vans.html')" scale="1 1 2" position="4.7 -0.1 -4.5" visible="false"></a-box>
 		  
 		  
           
@@ -42,7 +43,9 @@
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:To('../index.html')" src="#atras" scale=" 0.2 0.08 0.2" position="0 0.7 -1" rotation="0 0 0"></a-image>
+		  <a-image onclick="javaScript:To('../index.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="-1.5 0 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="1.5 0 -1" rotation="0 0 180"></a-image>
 		  
       </a-entity>
             

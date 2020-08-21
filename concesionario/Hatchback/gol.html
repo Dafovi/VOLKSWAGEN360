@@ -31,8 +31,7 @@
         <img id="Goltrnln6" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_38.jpg">
         <img id="Goltrnln7" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_39.jpg">
           
-          
-        <img id="ver" src="../../img/icons/ver.png">
+         
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
       
@@ -56,16 +55,16 @@
 			  
 			  		<a-sky radius="30" src="#Golconfln"></a-sky>
 			  
-			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Select','Flechas',1,'Gol_Comfortline_AT.html')" src="../../img/nombres/Gol_Comfortline_AT.png" position="-2 0.4 1" scale="1 0.5 0" rotation="0 90 0"></a-image>
-			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Select','Flechas',1,'Gol_Comfortline_MT.html')"  src="../../img/nombres/Gol_Comfortline_MT.png" position="-2.07 -1 1" scale="1.1 0.5 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Select','Flechas',1,'Gol_Comfortline_AT.html')" src="../../img/nombres/Gol_Comfortline_AT.png" position="-2 -0.2 -1" scale="2 1 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Select','Flechas',1,'Gol_Comfortline_MT.html')"  src="../../img/nombres/Gol_Comfortline_MT.png" position="-2. -0.3 0.9" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
 			  		
-			  		<a-image onclick="javaScript:visibleDos('TRENDLINE','Select','Flechas',1,'Gol_Trendline_AT.html')"  src="../../img/nombres/Gol_Trendline_AT.png" position="-2 0.1 1" scale="1.15 0.6 0" rotation="0 90 0"></a-image>
-			  		<a-image onclick="javaScript:visibleDos('TRENDLINE','Select','Flechas',1,'Gol_Trendline_MT.html')"  src="../../img/nombres/Gol_Trendline_MT.png" position="-2 -0.5 1" scale="1.15 0.5 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('TRENDLINE','Select','Flechas',1,'Gol_Trendline_AT.html')"  src="../../img/nombres/Gol_Trendline_AT.png" position="-2 0.24 0.2" scale="1.6 0.7 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('TRENDLINE','Select','Flechas',1,'Gol_Trendline_MT.html')"  src="../../img/nombres/Gol_Trendline_MT.png" position="-2 0.2 -0.44" scale="1.6 0.9 0" rotation="0 90 0"></a-image>
 			  
 			  
 		  </a-entity>
                 
-		  <a-entity id="CONFORTLINE"  visible="false">
+		  <a-entity id="TRENDLINE"  visible="false">
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Goltrnln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Goltrnln1"></a-sky></a-entity>
@@ -77,7 +76,7 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Goltrnln7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="TRENDLINE" visible="false">
+		  <a-entity id="CONFORTLINE" visible="false">
 			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Golconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Golconfln1"></a-sky></a-entity>
@@ -94,7 +93,9 @@
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:volver('Select','CONFORTLINE','TRENDLINE','Flechas','../hatchback.html')" src="#atras" scale=" 0.2 0.08 0.2" position="0 0.7 -1" rotation="0 0 0"></a-image>
+		  <a-image onclick="javaScript:volver('Select','CONFORTLINE','TRENDLINE','Flechas','../hatchback.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="-1.5 0 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="1.5 0 -1" rotation="0 0 180"></a-image>
 		  
       </a-entity>
                   

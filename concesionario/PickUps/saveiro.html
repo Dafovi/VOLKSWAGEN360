@@ -41,20 +41,30 @@
       <a-entity id="concesionario" rotation="0 -90 0">
 		  
 		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
-		  
+		  <a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-		  	<a-image src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+			 <!-- interior -->
+			<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
 			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
+		  </a-entity>
 		  
-		  		
-		 <a-box scale="1 1.2 3" onclick="javaScript:visible('SENCILLO','PLUS',1)" position="-3 -0.5 0"  visible="false"></a-box>
-                
-		  <a-entity id="SENCILLO">
+		 <a-entity id="Select">
 			  
-			  		<a-image src="../../img/nombres/Saveiro_Cabina_Sencilla_MT.png" position="-2 -1 1" scale="1 0.5 0" rotation="0 90 0"></a-image>
+			  		<a-sky radius="30" src="#Saveiro"></a-sky>
+			  
+			  		
+			  		<a-image onclick="javaScript:visibleDos('SENCILLO','Select','Flechas',1,'Saveiro_Cabina_Sencilla_MT')"  src="../../img/nombres/Saveiro_Cabina_Sencilla_MT.png" position="-2 0.3 1" scale="1.5 0.6 0" rotation="0 90 0"></a-image>
+			  
+			  		<a-image onclick="javaScript:visibleDos('PLUS','Select','Flechas',1,'Saveiro_Plus_MT')" src="../../img/nombres/Saveiro_Plus_MT.png" position="-2 0.3 -0.9" scale="1.8 0.7 0" rotation="0 90 0"></a-image>
+			  
+			  
+		  </a-entity>
+                
+		  <a-entity id="SENCILLO" visible="false">
+			  
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Saveiro"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Saveiro1"></a-sky></a-entity>
@@ -67,8 +77,6 @@
 		  </a-entity>
 		  
 		  <a-entity id="PLUS"  visible="false">
-			  
-			  		<a-image src="../../img/nombres/Saveiro_Plus_MT.png" position="-2 0.4 1" scale="1 0.5 0" rotation="0 90 0"></a-image>
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Saveiroplus"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Saveiroplus1"></a-sky></a-entity>
@@ -85,7 +93,9 @@
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:To('../pickups.html')" src="#atras" scale=" 0.2 0.08 0.2" position="1.5 -0.7 -1" rotation="0 0 0"></a-image>
+		  <a-image onclick="javaScript:volver('Select','SENCILLO','PLUS','Flechas','../pickups.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="-1.5 0 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="1.5 0 -1" rotation="0 0 180"></a-image>
 		  
       </a-entity>
                   

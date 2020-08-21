@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	  <meta charset="utf-8">
+    <title>Vans</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../styles/cars.js"></script>
+  </head>
+
+	<body>
+    <a-scene vr-mode-ui="enabled: false">
+      <a-assets>
+        <img id="Vanalta" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_00.jpg">
+        <img id="Vanalta1" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_01.jpg">
+        <img id="Vanalta2" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_02.jpg">
+        <img id="Vanalta3" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_03.jpg">
+        <img id="Vanalta4" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_04.jpg">
+        <img id="Vanalta5" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_05.jpg">
+        <img id="Vanalta6" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_06.jpg">
+        <img id="Vanalta7" src="../../img/concesionario/CATEGORIAS/VANS/TECHOALTO_/VANS_ZOOM_07.jpg">
+		  
+		 
+        <img id="Vanbaja" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_16.jpg">
+        <img id="Vanbaja1" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_17.jpg">
+        <img id="Vanbaja2" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_18.jpg">
+        <img id="Vanbaja3" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_19.jpg">
+        <img id="Vanbaja4" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_20.jpg">
+        <img id="Vanbaja5" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_21.jpg">
+        <img id="Vanbaja6" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_22.jpg">
+        <img id="Vanbaja7" src="../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_23.jpg">
+		  
+		  
+		<img id="Vandoble" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_08.jpg">
+		<img id="Vandoble1" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_09.jpg">
+		<img id="Vandoble2" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_10.jpg">
+		<img id="Vandoble3" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_11.jpg">
+		<img id="Vandoble4" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_12.jpg">
+		<img id="Vandoble5" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_13.jpg">
+		<img id="Vandoble6" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_14.jpg">
+		<img id="Vandoble7" src="../../img/concesionario/CATEGORIAS/VANS/DOBLECABINA_CHASIS/VANS_ZOOM_15.jpg">
+          
+        <img id="atras" src="../../img/icons/atras.png">
+      </a-assets>
+      
+     
+      <!-- 360-degree image scenes.-->
+      <a-entity id="concesionario" rotation="0 -90 0">
+		  
+		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
+		  
+			<!-- Siguiente-->
+			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+		  	<a-image src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+			<!--Anterior-->
+			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
+			</a-image>
+		  
+		  
+		   <a-box  onclick="javaScript:visibleDos('TECHOALTO','TECHOBAJO','DOBLECABINA')" scale=" 0.5 0.5 0" position="-4 0.6 1.1" rotation="0 90 0" color="#fff"></a-box>
+		  
+		   <a-box  onclick="javaScript:visibleDos('TECHOBAJO','TECHOALTO','DOBLECABINA')" scale=" 0.5 0.5 0" position="-4 0.6 0.1" rotation="0 90 0" color="#fff"></a-box>	
+
+          <a-box  onclick="javaScript:visibleDos('DOBLECABINA','TECHOALTO','TECHOBAJO')" scale=" 0.5 0.5 0" position="-4 0.6 -0.9" rotation="0 90 0" color="#808080"></a-box>
+		  		
+		 
+                
+		  <a-entity id="TECHOALTO">
+          			<a-entity class="0" ><a-sky radius="30" src="#Vanalta"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Vanalta1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Vanalta2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Vanalta3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Vanalta4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Vanalta5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Vanalta6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Vanalta7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="TECHOBAJO" visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Vanbaja"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Vanbaja1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Vanbaja2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Vanbaja3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Vanbaja4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Vanbaja5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Vanbaja6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Vanbaja7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="DOBLECABINA" visible="false">
+          			<a-entity class="0" ><a-sky radius="30" src="#Vandoble"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Vandoble1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Vandoble2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Vandoble3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Vandoble4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Vandoble5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Vandoble6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Vandoble7"></a-sky></a-entity>
+		  </a-entity>
+          
+      </a-entity>
+      
+      <!-- Camera + cursor. -->
+      <a-entity camera look-controls cursor="rayOrigin: mouse">
+  		
+		  <a-image onclick="javaScript:To('../categorias.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="-1.5 0 -1" rotation="0 0 0"></a-image>
+		  <a-image src="../../img/icons/FlechaGris.png" scale=" 0.15 0.15 0" position="1.5 0 -1" rotation="0 0 180"></a-image>
+		  
+      </a-entity>
+                  
+    </a-scene>
+  </body>
+</html>
