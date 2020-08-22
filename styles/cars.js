@@ -8,6 +8,16 @@ var int = new String("");
 var press = false;
 var aftS= new String("");
 
+var i;
+
+var Garantia= document.getElementsByClassName('Garantia');
+var Altura= document.getElementsByClassName('Altura');
+var Faros= document.getElementsByClassName('Faros');
+var Motor= document.getElementsByClassName('Motor');
+var Rines= document.getElementsByClassName('Rines');
+var Frenos= document.getElementsByClassName('Frenos');
+var Vidrios= document.getElementsByClassName('Vidrios');
+
 function interior(){
 	if(int!="")
 	To('Interiores/'+int);
@@ -19,6 +29,20 @@ function boton(conten){
 		press=true;
 	}else{
 		document.getElementById(conten).setAttribute('visible','false');
+		press=false;
+	}
+}
+function botonClass(conten){
+	var x= document.getElementsByClassName(conten);
+	if(press===false){
+		for (i = 0; i < x.length; i++) {
+	  		x[i].setAttribute('visible','true');
+		}
+		press=true;
+	}else{
+		for (i = 0; i < x.length; i++) {
+	  		x[i].setAttribute('visible','false');
+		}
 		press=false;
 	}
 }
@@ -52,7 +76,6 @@ function visibleByClassName(visible,noVisible){
     var x= document.getElementsByClassName(visible);
     var y= document.getElementsByClassName(noVisible);
 	
-	var i;
 	for (i = 0; i < x.length; i++) {
 	  	x[i].setAttribute('visible','true');
 		y[i].setAttribute('visible','false');
@@ -64,6 +87,7 @@ function changeCarById(i,n){
 	if(s>n){
 		s=0;
 		visible(0,n)
+		
 	}
 	
 	if(s<0){

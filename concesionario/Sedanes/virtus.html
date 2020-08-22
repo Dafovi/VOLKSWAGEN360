@@ -45,8 +45,10 @@
 		  	<a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-		  	 <!-- interior -->
-		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+		  		<!-- interior -->
+		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.15 0.15 0" position="-1 0.16 0.02" rotation="0 90 0"></a-image>
+		  		<!--- 360 --->
+		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
 			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
@@ -56,14 +58,17 @@
 		   <a-entity id="Select">
 			   <a-sky radius="30" src="#Virtushln"></a-sky>
 			   
-			   	<a-image onclick="javaScript:visibleDos('CONFORTLINE','Virtus_Comfortline_AT.html')" src="../../img/nombres/Virtus_Comfortline_AT.png" position="-2 0.3 -0.5" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
-			  	<a-image  onclick="javaScript:visibleDos('CONFORTLINE','Virtus_Comfortline_MT.html')" src="../../img/nombres/Virtus_Comfortline_MT.png" position="-1.99 -0.2 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
+			   	<a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Virtus_Comfortline_AT.html')" src="../../img/nombres/Virtus_Comfortline_AT.png" position="-2 0.3 -0.5" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
+			  	<a-image  onclick="javaScript:visibleDos('CONFORTLINE_MT','Virtus_Comfortline_MT.html')" src="../../img/nombres/Virtus_Comfortline_MT.png" position="-1.99 -0.2 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
 			  	<a-image onclick="javaScript:visibleDos('HIGHLINE','Virtus_Highline_AT.html')" src="../../img/nombres/Virtus_Highline_AT.png" position="-2 0.1 0.3" scale="1.5 0.8 0" rotation="0 90 0"></a-image>		
 		  </a-entity>
 		  		
 		 
                 
 		  <a-entity id="HIGHLINE"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Virtus_Highline_AT.png" position="-2 0.1 0.3" scale="1.5 0.8 0" rotation="0 90 0"></a-image>		
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Virtushln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Virtushln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Virtushln2"></a-sky></a-entity>
@@ -74,7 +79,24 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Virtushln7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="CONFORTLINE" visible="false">
+		  <a-entity id="CONFORTLINE_AT" visible="false">
+			  
+			   	<a-image src="../../img/nombres/Virtus_Comfortline_AT.png" position="-2 0.3 -0.5" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Virtusconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Virtusconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Virtusconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Virtusconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Virtusconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Virtusconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Virtusconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Virtusconfln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORTLINE_MT" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Virtus_Comfortline_MT.png" position="-1.99 -0.2 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Virtusconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Virtusconfln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Virtusconfln2"></a-sky></a-entity>

@@ -54,8 +54,10 @@
 		  <a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-			   <!-- interior -->
-		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+		  		<!-- interior -->
+		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.15 0.15 0" position="-1 0.15 0.01" rotation="0 90 0"></a-image>
+		  		<!--- 360 --->
+		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
 			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
@@ -66,13 +68,16 @@
 			  	
 			  	<a-image onclick="javaScript:visibleDos('CONFORLINE','T-Cross_Comfortline_AT.html')" src="../../img/nombres/T-Cross_Comfortline_AT.png" position="-2 -0.26 0.76" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
 			  	<a-image onclick="javaScript:visibleDos('CONFORLINE2','T-Cross_Comfortline_Plus_AT.html')" src="../../img/nombres/T-Cross_Comfortline_Plus_AT.png" position="-2 0.4 -0.8" scale="1.5 0.8 0" rotation="0 90 0"></a-image>	
-			  	<a-image onclick="javaScript:visibleDos('TRENDLINE','T-Cross_Trendline_AT.html')" src="../../img/nombres/T-Cross_Trendline_AT.png" position="-2 -0.3 -0.8" scale="1.5 0.9 0" rotation="0 90 0"></a-image>	
-			  	<a-image onclick="javaScript:visibleDos('TRENDLINE','T-Cross_Trendline_MT.html')" src="../../img/nombres/T-Cross_Trendline_MT.png" position="-2 0.26 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>	
+			  	<a-image onclick="javaScript:visibleDos('TRENDLINE_AT','T-Cross_Trendline_AT.html')" src="../../img/nombres/T-Cross_Trendline_AT.png" position="-2 -0.3 -0.8" scale="1.5 0.9 0" rotation="0 90 0"></a-image>	
+			  	<a-image onclick="javaScript:visibleDos('TRENDLINE_MT','T-Cross_Trendline_MT.html')" src="../../img/nombres/T-Cross_Trendline_MT.png" position="-2 0.26 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>	
 		</a-entity>
 		  		
 		 
                 
 		  <a-entity id="CONFORLINE" visible="false">
+			  
+			  		<a-image src="../../img/nombres/T-Cross_Comfortline_AT.png" position="-2 -0.26 0.76" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Tcrossconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcrossconfln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcrossconfln2"></a-sky></a-entity>
@@ -84,6 +89,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="CONFORLINE2" visible="false">
+			  
+			  		<a-image src="../../img/nombres/T-Cross_Comfortline_Plus_AT.png" position="-2 0.4 -0.8" scale="1.5 0.8 0" rotation="0 90 0"></a-image>	
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Tcross2confln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcross2confln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcross2confln2"></a-sky></a-entity>
@@ -94,7 +102,24 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tcross2confln7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="TRENDLINE" visible="false">
+		  <a-entity id="TRENDLINE_AT" visible="false">
+			  
+			  		<a-image src="../../img/nombres/T-Cross_Trendline_AT.png" position="-2 -0.3 -0.8" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Tcrosstln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcrosstln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcrosstln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tcrosstln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tcrosstln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tcrosstln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tcrosstln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tcrosstln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="TRENDLINE_MT" visible="false">
+			  
+			  		<a-image src="../../img/nombres/T-Cross_Trendline_MT.png" position="-2 0.26 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>	
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Tcrosstln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tcrosstln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tcrosstln2"></a-sky></a-entity>

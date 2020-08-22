@@ -50,11 +50,13 @@
 		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
 		  <a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
-			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-			   <!-- interior -->
-		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+		  		<!-- interior -->
+		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.15 0.15 0" position="-1 0.26 0" rotation="0 90 0"></a-image>
+		  		<!--- 360 --->
+		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
-			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
+			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
 		  
 		  </a-entity>
@@ -63,15 +65,32 @@
 				<a-sky radius="30" src="#Vanalta"></a-sky>
 			  
 			  <a-image onclick="javaScript:visibleDos('DOBLECABINA','Crafter_35_Doca_MT.html')" src="../../img/nombres/Crafter_35_Doca_MT.png" position="-1.98 -0.6 0.76" scale="2 1 0" rotation="0 90 0"></a-image>
-			  <a-image onclick="javaScript:visibleDos('TECHOALTO','Crafter_35_Panel_MT_4x2_Techo_Alto.html')" src="../../img/nombres/Crafter_35_Panel_MT_4x2_Techo_Alto.png" position="-2 0.3 1" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
+			  <a-image onclick="javaScript:visibleDos('TECHOALTO4x2','Crafter_35_Panel_MT_4x2_Techo_Alto.html')" src="../../img/nombres/Crafter_35_Panel_MT_4x2_Techo_Alto.png" position="-2 0.3 1" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
 			  <a-image onclick="javaScript:visibleDos('TECHOBAJO','Crafter_35_Panel_MT_4x2_Techo_Bajo.html')" src="../../img/nombres/Crafter_35_Panel_MT_4x2_Techo_Bajo.png" position="-1.98 -0.1 1" scale="1.6 0.7 0" rotation="0 90 0"></a-image>
-			  <a-image onclick="javaScript:visibleDos('TECHOALTO','Crafter_35_Panel_MT_4x4_TechoAlto.html')" src="../../img/nombres/Crafter_35_Panel_MT_4x4_TechoAlto.png" position="-2 0.3 -1.1" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
+			  <a-image onclick="javaScript:visibleDos('TECHOALTO4x4','Crafter_35_Panel_MT_4x4_TechoAlto.html')" src="../../img/nombres/Crafter_35_Panel_MT_4x4_TechoAlto.png" position="-2 0.3 -1.1" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
 			  
 		  </a-entity>
 		  		
 		 
                 
-		  <a-entity id="TECHOALTO"  visible="false">
+		  <a-entity id="TECHOALTO4x2"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Crafter_35_Panel_MT_4x2_Techo_Alto.png" position="-2 0.3 1" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Vanalta"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Vanalta1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Vanalta2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Vanalta3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Vanalta4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Vanalta5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Vanalta6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Vanalta7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="TECHOALTO4x4"  visible="false">
+			  
+			 		<a-image src="../../img/nombres/Crafter_35_Panel_MT_4x4_TechoAlto.png" position="-2 0.3 -1.1" scale="1.5 0.75 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Vanalta"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Vanalta1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Vanalta2"></a-sky></a-entity>
@@ -83,6 +102,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="TECHOBAJO" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Crafter_35_Panel_MT_4x2_Techo_Bajo.png" position="-1.98 -0.1 1" scale="1.6 0.7 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Vanbaja"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Vanbaja1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Vanbaja2"></a-sky></a-entity>
@@ -94,6 +116,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="DOBLECABINA" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Crafter_35_Doca_MT.png" position="-1.98 -0.6 0.76" scale="2 1 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Vandoble"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Vandoble1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Vandoble2"></a-sky></a-entity>

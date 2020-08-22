@@ -34,12 +34,14 @@
                 <a-image onclick="javaScript:changeCarById(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180">
                 </a-image>
 		  		<!-- interior -->
-		  		<a-image  onclick="javaScript:To('Interiores/Fox_Xtreme_MT.html')" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+		  		<a-image  onclick="javaScript:To('Interiores/Fox_Xtreme_MT.html')" src="../../img/icons/Interior.png" scale="0.15 0.15 0" position="-1 0.15 0" rotation="0 90 0"></a-image>
+		  		<!--- 360 --->
+		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
                 <!--Anterior-->
                 <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
                 </a-image>
                 
-			  		<a-image src="../../img/nombres/Fox_Xtreme_MT.png" position="-2 0.2 0.6" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
+			  		<a-image src="../../img/nombres/Fox_Xtreme_MT.png" position="-2 0.5 0.6" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
 		  
           			<a-entity id="0" ><a-sky radius="30" src="#Fox"></a-sky></a-entity> 
                     <a-entity id="1" visible="false" ><a-sky radius="30" src="#Fox1"></a-sky></a-entity>
@@ -49,7 +51,29 @@
                     <a-entity id="5" visible="false" ><a-sky radius="30" src="#Fox5"></a-sky></a-entity>
                     <a-entity id="6" visible="false" ><a-sky radius="30" src="#Fox6"></a-sky></a-entity>  
                     <a-entity id="7" visible="false" ><a-sky radius="30" src="#Fox7"></a-sky></a-entity>
+		  			
+		  			<a-entity class="Garantia"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Garantia.png" position="-2 0.4 -0.9" scale="1 0.7 0" rotation="0 90 0"></a-image></a-entity>
+		  			
+			  		<a-entity class="Altura"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Altura.png" position="-2 -1 -0.9" scale="1.5 0.25 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  			<a-entity class="Faros"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Faros.png" position="-2 -0.2 -01" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  			<a-entity class="Motor"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Motor.png" position="-2 -0.1 1" scale="1.5 0.5 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  			<a-entity class="Rines"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Rines.png" position="-2 -0.8 -1.5" scale="1 0.3 0" rotation="0 90 0"></a-image></a-entity>
 		  
+		  			<a-entity class="Frenos"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Frenos.png" position="-2 -0.75 1.3" scale="1.6 0.5 0" rotation="0 90 0"></a-image></a-entity>  		
+		  			
+		  			<a-entity class="Vidrios"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Vidrios.png" position="-2 0.2 0.8" scale="1 0.55 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  
+		  			<a-entity class="btnGarantia"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-2 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Garantia')"></a-image></a-entity>			  		
+		  			<a-entity class="btnAltura"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-2 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Altura')"></a-image></a-entity>			  		
+		  			<a-entity class="btnFaros"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-2 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Faros')"></a-image></a-entity>			  		
+		  			<a-entity class="btnMotor"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-2 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Motor')"></a-image></a-entity>			  		
+		  			<a-entity class="btnRines"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-2 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>			  		
+		  			<a-entity class="btnFrenos"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-2 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Frenos')"></a-image></a-entity>			  		
+		  			<a-entity class="btnVidrios"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-2 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Vidrios')"></a-image></a-entity>
 		  
           
       </a-entity>

@@ -53,25 +53,30 @@
 		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
 		  	<a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
-			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-		  	 <!-- interior -->
-		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+		  		<!-- interior -->
+		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.15 0.15 0" position="-1 0.15 0.01" rotation="0 90 0"></a-image>
+		  		<!--- 360 --->
+		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
-			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
+			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
 		  </a-entity>
 		  
 		  <a-entity id="Select">
 			  <a-sky radius="30" src="#Jettaspl"></a-sky>
 		 		
-		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Jetta_Comfortline_AT.html')" src="../../img/nombres/Jetta_Comfortline_AT.png" position="-2 -0.5 -1" scale="1.5 1 0" rotation="0 90 0"></a-image>
-		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Jetta_Comfortline_MT.html')" src="../../img/nombres/Jetta_Comfortline_MT.png" position="-1.98 -0.5 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
+		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Jetta_Comfortline_AT.html')" src="../../img/nombres/Jetta_Comfortline_AT.png" position="-2 -0.5 -1" scale="1.5 1 0" rotation="0 90 0"></a-image>
+		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_MT','Jetta_Comfortline_MT.html')" src="../../img/nombres/Jetta_Comfortline_MT.png" position="-1.98 -0.5 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
 			  	<a-image  onclick="javaScript:visibleDos('HIGHLINE','Jetta_Highline_AT.html')" src="../../img/nombres/Jetta_Highline_AT.png" position="-2 0.3 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			  	<a-image onclick="javaScript:visibleDos('SPORTLINE','Jetta_Sportline_AT.html')" src="../../img/nombres/Jetta_Sportline_AT.png" position="-1.99 0 1" scale="1 0.5 0" rotation="0 90 0"></a-image>	
 		  </a-entity>
 		  		
                 
 		  <a-entity id="SPORTLINE"visible="false">
+			  
+			  		<a-image src="../../img/nombres/Jetta_Sportline_AT.png" position="-1.99 0 1" scale="1 0.5 0" rotation="0 90 0"></a-image>	
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Jettaspl"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettaspl1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Jettaspl2"></a-sky></a-entity>
@@ -82,7 +87,24 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Jettaspl7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="CONFORTLINE" visible="false">
+		  <a-entity id="CONFORTLINE_AT" visible="false">
+			  
+		  			<a-image src="../../img/nombres/Jetta_Comfortline_AT.png" position="-2 -0.5 -1" scale="1.5 1 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Jettaconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettaconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Jettaconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Jettaconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Jettaconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Jettaconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Jettaconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Jettaconfln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORTLINE_MT" visible="false">
+			  
+		  			<a-image src="../../img/nombres/Jetta_Comfortline_MT.png" position="-1.98 -0.5 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Jettaconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettaconfln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Jettaconfln2"></a-sky></a-entity>
@@ -94,6 +116,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="HIGHLINE" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Jetta_Highline_AT.png" position="-2 0.3 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Jettahln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettahln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Jettahln2"></a-sky></a-entity>

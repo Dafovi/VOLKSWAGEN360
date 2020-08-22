@@ -44,8 +44,10 @@
 		  <a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-			 <!-- interior -->
-		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+		  		<!-- interior -->
+		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.15 0.15 0" position="-1 0.15 0.03" rotation="0 90 0"></a-image>
+		  		<!--- 360 --->
+		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
 			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
@@ -55,15 +57,32 @@
 		  	<a-entity id="Select">
 				<a-sky radius="30" src="#Voyageconfln"></a-sky>
 				
-				<a-image onclick="javaScript:visibleDos('CONFORTLINE','Voyage_Comfortline_MT.html')" src="../../img/nombres/Voyage_Comfortline_MT.png" position="-2 -0.4 1" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
-			  	<a-image  onclick="javaScript:visibleDos('CONFORTLINE','Voyage_Comfortline_AT.html')" src="../../img/nombres/Voyage_Comfortline_AT.png" position="-2 -0.4 -0.95" scale="1.5 0.98 0" rotation="0 90 0"></a-image>
-			  	<a-image onclick="javaScript:visibleDos('TRENDLINE','Voyage_Trendline_AT.html')" src="../../img/nombres/Voyage_Trendline_AT.png" position="-2 0.3 -0.8" scale="1.5 0.8 0" rotation="0 90 0"></a-image>	
-			  	<a-image onclick="javaScript:visibleDos('TRENDLINE','Voyage_Trendline_MT.html')" src="../../img/nombres/Voyage_Trendline_MT.png" position="-2 0.2 0.54" scale="1.5 0.92 0" rotation="0 90 0"></a-image>		
+				<a-image onclick="javaScript:visibleDos('CONFORTLINE_MT','Voyage_Comfortline_MT.html')" src="../../img/nombres/Voyage_Comfortline_MT.png" position="-2 -0.4 1" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
+			  	<a-image  onclick="javaScript:visibleDos('CONFORTLINE_AT','Voyage_Comfortline_AT.html')" src="../../img/nombres/Voyage_Comfortline_AT.png" position="-2 -0.4 -0.95" scale="1.5 0.98 0" rotation="0 90 0"></a-image>
+			  	<a-image onclick="javaScript:visibleDos('TRENDLINE_AT','Voyage_Trendline_AT.html')" src="../../img/nombres/Voyage_Trendline_AT.png" position="-2 0.3 -0.8" scale="1.5 0.8 0" rotation="0 90 0"></a-image>	
+			  	<a-image onclick="javaScript:visibleDos('TRENDLINE_MT','Voyage_Trendline_MT.html')" src="../../img/nombres/Voyage_Trendline_MT.png" position="-2 0.2 0.54" scale="1.5 0.92 0" rotation="0 90 0"></a-image>		
 			</a-entity>
 		  		
 		 
                 
-		  <a-entity id="TRENDLINE" visible="false">
+		  <a-entity id="TRENDLINE_AT" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Voyage_Trendline_AT.png" position="-2 0.3 -0.8" scale="1.5 0.8 0" rotation="0 90 0"></a-image>	
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Voyagetrnln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Voyagetrnln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Voyagetrnln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Voyagetrnln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Voyagetrnln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Voyagetrnln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Voyagetrnln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Voyagetrnln7"></a-sky></a-entity>
+		  </a-entity>
+			
+		  <a-entity id="TRENDLINE_MT" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Voyage_Trendline_MT.png" position="-2 0.2 0.54" scale="1.5 0.92 0" rotation="0 90 0"></a-image>	
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Voyagetrnln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Voyagetrnln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Voyagetrnln2"></a-sky></a-entity>
@@ -74,7 +93,24 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Voyagetrnln7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="CONFORTLINE"  visible="false">
+		  <a-entity id="CONFORTLINE_AT"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Voyage_Comfortline_AT.png" position="-2 -0.4 -0.95" scale="1.5 0.98 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Voyageconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Voyageconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Voyageconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Voyageconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Voyageconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Voyageconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Voyageconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Voyageconfln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORTLINE_MT"  visible="false">
+			  
+					<a-image src="../../img/nombres/Voyage_Comfortline_MT.png" position="-2 -0.4 1" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Voyageconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Voyageconfln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Voyageconfln2"></a-sky></a-entity>

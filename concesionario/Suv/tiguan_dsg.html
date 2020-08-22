@@ -53,18 +53,20 @@
 		  
 		  <a-entity id="Flechas"  visible="false">
 			<!-- Siguiente-->
-			<a-image onclick="javaScript:changeCarByClassNameDos(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-			   <!-- interior -->
-		  	<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+		  		<!-- interior -->
+		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.15 0.15 0" position="-1 0.15 0" rotation="0 90 0"></a-image>
+		  		<!--- 360 --->
+		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 			<!--Anterior-->
-			<a-image onclick="javaScript:changeCarByClassNameDos(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
+			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
 		  </a-entity>
 		   <a-entity id="Select">
 				<a-sky radius="30" src="#Tiguantln"></a-sky>
 			  	
-			  	<a-image onclick="javaScript:visibleDos('CONFORLINE','Tiguan_Comfortline-_DSG_2.0.html')" src="../../img/nombres/Tiguan_Comfortline-_DSG_2.0.png" position="-2 -0.4 -0.8" scale="1.5 1.1 0" rotation="0 90 0"></a-image>
-			  	<a-image onclick="javaScript:visibleDos('CONFORLINE','Tiguan_Comfortline_DSG_1.4.html')" src="../../img/nombres/Tiguan_Comfortline_DSG_1.4.png" position="-2 -0.4 1.1" scale="1 0.4 0" rotation="0 90 0"></a-image>
+			  	<a-image onclick="javaScript:visibleDos('CONFORLINE_DSG2','Tiguan_Comfortline-_DSG_2.0.html')" src="../../img/nombres/Tiguan_Comfortline-_DSG_2.0.png" position="-2 -0.4 -0.8" scale="1.5 1.1 0" rotation="0 90 0"></a-image>
+			  	<a-image onclick="javaScript:visibleDos('CONFORLINE_DSG','Tiguan_Comfortline_DSG_1.4.html')" src="../../img/nombres/Tiguan_Comfortline_DSG_1.4.png" position="-2 -0.4 1.1" scale="1 0.4 0" rotation="0 90 0"></a-image>
 			  	<a-image onclick="javaScript:visibleDos('HIGHLINE','Tiguan_Highline_DSG.html')" src="../../img/nombres/Tiguan_Highline_DSG.png" position="-2 0.3 -0.6" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			  	<a-image onclick="javaScript:visibleDos('TRENDLINE','Tiguan_Trendline_DSG.html')" src="../../img/nombres/Tiguan_Trendline_DSG.png" position="-2 0.18 0.35" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			   
@@ -73,6 +75,9 @@
 		 
                 
 		  <a-entity id="TRENDLINE" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Tiguan_Trendline_DSG.png" position="-2 0.18 0.35" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Tiguantln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguantln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguantln2"></a-sky></a-entity>
@@ -83,7 +88,24 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tiguantln7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="CONFORLINE" visible="false">
+		  <a-entity id="CONFORLINE_DSG2" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Tiguan_Comfortline-_DSG_2.0.png" position="-2 -0.4 -0.8" scale="1.5 1.1 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Tiguantconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguantconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguantconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tiguantconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tiguantconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tiguantconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tiguantconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tiguantconfln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORLINE_DSG" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Tiguan_Comfortline_DSG_1.4.png" position="-2 -0.4 1.1" scale="1 0.4 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Tiguantconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguantconfln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguantconfln2"></a-sky></a-entity>
@@ -95,6 +117,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="HIGHLINE" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Tiguan_Highline_DSG.png" position="-2 0.3 -0.6" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Tiguahln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguahln1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguahln2"></a-sky></a-entity>
