@@ -17,6 +17,13 @@ var Motor= document.getElementsByClassName('Motor');
 var Rines= document.getElementsByClassName('Rines');
 var Frenos= document.getElementsByClassName('Frenos');
 var Vidrios= document.getElementsByClassName('Vidrios');
+var btnGarantia= document.getElementsByClassName('btnGarantia');
+var btnAltura= document.getElementsByClassName('btnAltura');
+var btnFaros= document.getElementsByClassName('btnFaros');
+var btnMotor= document.getElementsByClassName('btnMotor');
+var btnRines= document.getElementsByClassName('btnRines');
+var btnFrenos= document.getElementsByClassName('btnFrenos');
+var btnVidrios= document.getElementsByClassName('btnVidrios');
 
 function interior(){
 	if(int!="")
@@ -87,7 +94,6 @@ function changeCarById(i,n){
 	if(s>n){
 		s=0;
 		visible(0,n)
-		
 	}
 	
 	if(s<0){
@@ -98,6 +104,18 @@ function changeCarById(i,n){
     visible(s,s-1)
 	if(i===-1)
 	visible(s,s+1)
+	
+	if(s===0){
+		for (i = 0; i < Rines.length; i++) {
+		Rines[i].setAttribute('visible','false');
+		btnRines[i].setAttribute('visible','false');
+		}
+	}
+	if(s===1){
+		for (i = 0; i < Garantia.length; i++) {
+		Garantia[i].setAttribute('visible','false');
+		}
+	}
 }
 function visible(visible,noVisible){
     	document.getElementById(visible).setAttribute('visible','true');
