@@ -55,16 +55,32 @@
 			  
 			  		<a-sky radius="30" src="#Golconfln"></a-sky>
 			  
-			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Gol_Comfortline_AT.html')" src="../../img/nombres/Gol_Comfortline_AT.png" position="-2 -0.2 -1" scale="2 1 0" rotation="0 90 0"></a-image>
-			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE','Gol_Comfortline_MT.html')"  src="../../img/nombres/Gol_Comfortline_MT.png" position="-2. -0.3 0.9" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Gol_Comfortline_AT.html')" src="../../img/nombres/Gol_Comfortline_AT.png" position="-2 -0.2 -1.2" scale="2 1 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_MT','Gol_Comfortline_MT.html')"  src="../../img/nombres/Gol_Comfortline_MT.png" position="-2 -0.3 1.1" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
 			  		
-			  		<a-image onclick="javaScript:visibleDos('TRENDLINE','Gol_Trendline_AT.html')"  src="../../img/nombres/Gol_Trendline_AT.png" position="-2 0.24 0.2" scale="1.6 0.7 0" rotation="0 90 0"></a-image>
-			  		<a-image onclick="javaScript:visibleDos('TRENDLINE','Gol_Trendline_MT.html')"  src="../../img/nombres/Gol_Trendline_MT.png" position="-2 0.2 -0.44" scale="1.6 0.9 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('TRENDLINE_AT','Gol_Trendline_AT.html')"  src="../../img/nombres/Gol_Trendline_AT.png" position="-2 0.24 0.2" scale="1.6 0.7 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('TRENDLINE_MT','Gol_Trendline_MT.html')"  src="../../img/nombres/Gol_Trendline_MT.png" position="-1.99 0.2 -0.44" scale="1.6 0.9 0" rotation="0 90 0"></a-image>
 			  
 			  
 		  </a-entity>
                 
-		  <a-entity id="TRENDLINE"  visible="false">
+		  <a-entity id="TRENDLINE_AT"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Gol_Trendline_AT.png" position="-2 0.24 0.2" scale="1.6 0.7 0" rotation="0 90 0"></a-image>
+			  
+          			<a-entity class="0" ><a-sky radius="30" src="#Goltrnln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Goltrnln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Goltrnln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Goltrnln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Goltrnln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Goltrnln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Goltrnln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Goltrnln7"></a-sky></a-entity>
+		  </a-entity>
+                
+		  <a-entity id="TRENDLINE_MT"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Gol_Trendline_MT.png" position="-1.99 0.2 -0.44" scale="1.6 0.9 0" rotation="0 90 0"></a-image>
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Goltrnln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Goltrnln1"></a-sky></a-entity>
@@ -76,7 +92,23 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Goltrnln7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="CONFORTLINE" visible="false">
+		  <a-entity id="CONFORTLINE_AT" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Gol_Comfortline_AT.png" position="-2 -0.2 -1.2" scale="2 1 0" rotation="0 90 0"></a-image>
+			  		
+          			<a-entity class="0" ><a-sky radius="30" src="#Golconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Golconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Golconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Golconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Golconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Golconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Golconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Golconfln7"></a-sky></a-entity>
+		  </a-entity>
+		  
+		  <a-entity id="CONFORTLINE_MT" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Gol_Comfortline_MT.png" position="-2 -0.3 1.1" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
 			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Golconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Golconfln1"></a-sky></a-entity>

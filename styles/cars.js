@@ -48,6 +48,16 @@ function volver(atras){
 			aftS="";
 		}
 }
+function visibleByClassName(visible,noVisible){
+    var x= document.getElementsByClassName(visible);
+    var y= document.getElementsByClassName(noVisible);
+	
+	var i;
+	for (i = 0; i < x.length; i++) {
+	  	x[i].setAttribute('visible','true');
+		y[i].setAttribute('visible','false');
+	}
+}
 /*----- PARA 1 CARRO ----*/
 function changeCarById(i,n){
     s+=i;
@@ -82,15 +92,6 @@ function visibleDos(visible,interior){
 			console.log(interior);
 		}
 }
-
-function visibleByClassName(visible,noVisible){
-    var x= document.getElementsByClassName(visible);
-    var y= document.getElementsByClassName(noVisible);
-	x[0].setAttribute('visible','true');
-	x[1].setAttribute('visible','true');
-	y[0].setAttribute('visible','false');
-	y[1].setAttribute('visible','false');
-}
 function changeCarByClassName(i,n){
     s+=i;
 	if(s>n){
@@ -114,70 +115,6 @@ function visibleTres(visible,noVisible,noVisibleDos){
     document.getElementById(visible).setAttribute('visible','true');
     document.getElementById(noVisible).setAttribute('visible','false');
     document.getElementById(noVisibleDos).setAttribute('visible','false');
-}
-
-function visibleByClassNameDos(visible,noVisible){
-    var x= document.getElementsByClassName(visible);
-    var y= document.getElementsByClassName(noVisible);
-	x[0].setAttribute('visible','true');
-	x[1].setAttribute('visible','true');
-	x[2].setAttribute('visible','true');
-	y[0].setAttribute('visible','false');
-	y[1].setAttribute('visible','false');
-	y[2].setAttribute('visible','false');
-}
-function changeCarByClassNameDos(i,n){
-    s+=i;
-	if(s>n){
-		s=0;
-		visibleByClassNameDos(0,n)
-	}
-	
-	if(s<0){
-		s=n;
-		visibleByClassNameDos(n,0)
-	}
-	if(i===1)
-    visibleByClassNameDos(s,s-1)
-	if(i===-1)
-	visibleByClassNameDos(s,s+1)
-}
-
-/*----- PARA 7 CARROS ----*/
-
-function visibleByClassNameTres(visible,noVisible){
-    var x= document.getElementsByClassName(visible);
-    var y= document.getElementsByClassName(noVisible);
-	x[0].setAttribute('visible','true');
-	x[1].setAttribute('visible','true');
-	x[2].setAttribute('visible','true');
-	x[3].setAttribute('visible','true');
-	x[4].setAttribute('visible','true');
-	x[5].setAttribute('visible','true');
-	x[6].setAttribute('visible','true');
-	y[0].setAttribute('visible','false');
-	y[1].setAttribute('visible','false');
-	y[2].setAttribute('visible','false');
-	y[3].setAttribute('visible','false');
-	y[4].setAttribute('visible','false');
-	y[5].setAttribute('visible','false');
-	y[6].setAttribute('visible','false');
-}
-function changeCarByClassNameTres(i,n){
-    s+=i;
-	if(s>n){
-		s=0;
-		visibleByClassNameTres(0,n)
-	}
-	
-	if(s<0){
-		s=n;
-		visibleByClassNameTres(n,0)
-	}
-	if(i===1)
-    visibleByClassNameTres(s,s-1)
-	if(i===-1)
-	visibleByClassNameTres(s,s+1)
 }
 
 

@@ -56,13 +56,29 @@
 		  <a-entity id="Select">
 			  <a-sky radius="30" src="#Polohln"></a-sky>
 			  
-			  <a-image onclick="javaScript:visibleDos('CONFORTLINE','Polo_Comfortline_AT.html')" src="../../img/nombres/Polo_Comfortline_AT.png" position="-2 -0.2 -0.8" scale="1.5 1 0" rotation="0 90 0"></a-image>
-			  <a-image  onclick="javaScript:visibleDos('CONFORTLINE','Polo_Comfortline_MT.html')" src="../../img/nombres/Polo_Comfortline_MT.png" position="-2 0.2 0.5" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  <a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Polo_Comfortline_AT.html')" src="../../img/nombres/Polo_Comfortline_AT.png" position="-2 -0.2 -0.8" scale="1.5 1 0" rotation="0 90 0"></a-image>
+			  <a-image  onclick="javaScript:visibleDos('CONFORTLINE_MT','Polo_Comfortline_MT.html')" src="../../img/nombres/Polo_Comfortline_MT.png" position="-2 0.2 0.5" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			  <a-image onclick="javaScript:visibleDos('HIGHLINE','Polo_Highline_AT.html')" src="../../img/nombres/Polo_Highline_AT.png" position="-2 0.35 -0.4" scale="1.5 1 0" rotation="0 90 0"></a-image>			  
 			  
 		  </a-entity>
                 
-		  <a-entity id="CONFORTLINE"  visible="false">
+		  <a-entity id="CONFORTLINE_AT"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Polo_Comfortline_AT.png" position="-2 -0.2 -0.8" scale="1.5 1 0" rotation="0 90 0"></a-image>
+			  		
+          			<a-entity class="0" ><a-sky radius="30" src="#Poloconfln"></a-sky></a-entity> 
+                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Poloconfln1"></a-sky></a-entity>
+                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Poloconfln2"></a-sky></a-entity>
+                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Poloconfln3"></a-sky></a-entity>
+                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Poloconfln4"></a-sky></a-entity>
+                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Poloconfln5"></a-sky></a-entity>
+                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Poloconfln6"></a-sky></a-entity>
+                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Poloconfln7"></a-sky></a-entity>
+		  </a-entity>
+                
+		  <a-entity id="CONFORTLINE_MT"  visible="false">
+			  
+			  		<a-image src="../../img/nombres/Polo_Comfortline_MT.png" position="-2 0.2 0.5" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Poloconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Poloconfln1"></a-sky></a-entity>
@@ -74,7 +90,9 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Poloconfln7"></a-sky></a-entity>
 		  </a-entity>
 		  
-		  <a-entity id="HIGHLINE">
+		  <a-entity id="HIGHLINE" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Polo_Highline_AT.png" position="-2 0.35 -0.4" scale="1.5 1 0" rotation="0 90 0"></a-image>
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Polohln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Polohln1"></a-sky></a-entity>

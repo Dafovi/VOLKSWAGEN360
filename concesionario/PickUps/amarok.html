@@ -96,11 +96,11 @@
 		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
 		  	<a-entity id="Flechas"  visible="false">
 				<!-- Siguiente-->
-				<a-image onclick="javaScript:changeCarByClassNameTres(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+				<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 				<!-- interior -->
 				<a-image onclick="javaScript:interior()" src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
 				<!--Anterior-->
-				<a-image onclick="javaScript:changeCarByClassNameTres(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
+				<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 				</a-image>
 		  	</a-entity>
 		  
@@ -114,12 +114,15 @@
 			  		<a-image onclick="javaScript:visibleDos('TRENDLINE','Amarok_Trendline_MT.html')" src="../../img/nombres/Amarok_Trendline_MT.png" position="-1.99 0.1 0.5" scale="1.5 0.6 0" rotation="0 90 0"></a-image>
 			  		<a-image onclick="javaScript:visibleDos('TRENDLINE_T','Amarok_Trendline_T_MT_Cabina_Doble.html')" src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Doble.png" position="-2 -0.2 -1" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			  		<a-image onclick="javaScript:visibleDos('CHASIS','Amarok_Trendline_T_MT_Cabina_Sencilla.html')" src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Sencilla.png" position="-2 0.2 -1" scale="1.5 0.64 0" rotation="0 90 0"></a-image>
-			  		<a-image onclick="javaScript:visibleDos('HIGHLINE','Amarok_V6_Highline_AT.html')" src="../../img/nombres/Amarok_V6_Highline_AT.png" position="-1.98 -0.2 1" scale="1.5 0.55 0" rotation="0 90 0"></a-image>
+			  		<a-image onclick="javaScript:visibleDos('PLUS','Amarok_V6_Highline_AT.html')" src="../../img/nombres/Amarok_V6_Highline_AT.png" position="-1.98 -0.2 1" scale="1.5 0.55 0" rotation="0 90 0"></a-image>
 			  
 			  
 		  </a-entity>
                 
 		  <a-entity id="EXTREME"  visible="false">
+			  
+			  
+			  		<a-image src="../../img/nombres/Amarok-_V6_Extreme_AT.png" position="-1.99 -0.55 -1.2" scale="1.5 0.6 0" rotation="0 90 0"></a-image>
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Amarokext"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amarokext1"></a-sky></a-entity>
@@ -132,6 +135,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="CONFORTLINE" visible="false">
+			  
+			  
+			  		<a-image src="../../img/nombres/Amarok_Comfortline_AT.png" position="-1.97 -0.6 1.3" scale="1.5 0.5 0" rotation="0 90 0"></a-image>
 			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Amarokconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amarokconfln1"></a-sky></a-entity>
@@ -145,6 +151,9 @@
                 
 		  <a-entity id="PLUS" visible="false">
 			  
+			  
+			  		<a-image src="../../img/nombres/Amarok_V6_Highline_AT.png" position="-1.98 -0.2 1" scale="1.5 0.55 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Amarokplus"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amarokplus1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Amarokplus2"></a-sky></a-entity>
@@ -156,6 +165,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="TRENDLINE" visible="false">
+			  
+			  
+			  		<a-image src="../../img/nombres/Amarok_Trendline_MT.png" position="-1.99 0.1 0.5" scale="1.5 0.6 0" rotation="0 90 0"></a-image>
 			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Amaroktln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amaroktln1"></a-sky></a-entity>
@@ -168,6 +180,9 @@
 		  </a-entity>
 		  
 		  <a-entity id="CHASIS" visible="false">
+			  
+			  
+			  		<a-image src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Sencilla.png" position="-2 0.2 -1" scale="1.5 0.64 0" rotation="0 90 0"></a-image>
 			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Amaroktlnchs"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amaroktlnchs1"></a-sky></a-entity>
@@ -181,6 +196,9 @@
                 
 		  <a-entity id="TRENDLINE_T" visible="false">
 			  
+			  
+			  		<a-image src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Doble.png" position="-2 -0.2 -1" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  
           			<a-entity class="0" ><a-sky radius="30" src="#Amaroktlnt"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amaroktlnt1"></a-sky></a-entity>
                     <a-entity class="2" visible="false" ><a-sky radius="30" src="#Amaroktlnt2"></a-sky></a-entity>
@@ -192,6 +210,8 @@
 		  </a-entity>
 		  
 		  <a-entity id="HIGHLINE" visible="false">
+			  
+			  		<a-image src="../../img/nombres/Amarok_Hightline_AT.png" position="-2 0.3 0.3" scale="1.5 0.6 0" rotation="0 90 0"></a-image>
 			  		
           			<a-entity class="0" ><a-sky radius="30" src="#Amarokhln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amarokhln1"></a-sky></a-entity>
