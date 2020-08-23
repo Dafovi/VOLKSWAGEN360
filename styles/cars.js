@@ -17,6 +17,10 @@ var Motor= document.getElementsByClassName('Motor');
 var Rines= document.getElementsByClassName('Rines');
 var Frenos= document.getElementsByClassName('Frenos');
 var Vidrios= document.getElementsByClassName('Vidrios');
+var Normativa= document.getElementsByClassName('Normativa');
+var Aplicaciones= document.getElementsByClassName('Aplicaciones');
+var Sistema= document.getElementsByClassName('Sistema');
+
 var btnGarantia= document.getElementsByClassName('btnGarantia');
 var btnAltura= document.getElementsByClassName('btnAltura');
 var btnFaros= document.getElementsByClassName('btnFaros');
@@ -24,6 +28,9 @@ var btnMotor= document.getElementsByClassName('btnMotor');
 var btnRines= document.getElementsByClassName('btnRines');
 var btnFrenos= document.getElementsByClassName('btnFrenos');
 var btnVidrios= document.getElementsByClassName('btnVidrios');
+var btnNormativa= document.getElementsByClassName('btnNormativa');
+var btnAplicaciones= document.getElementsByClassName('btnAplicaciones');
+var btnSistema= document.getElementsByClassName('btnSistema');
 
 function interior(){
 	if(int!="")
@@ -91,6 +98,12 @@ function visibleByClassName(visible,noVisible){
 /*----- PARA 1 CARRO ----*/
 function changeCarById(i,n){
     s+=i;
+	
+	if(i===1 && s<=n)
+    visible(s,s-1)
+	if(i===-1 && s>=0)
+	visible(s,s+1)
+	
 	if(s>n){
 		s=0;
 		visible(0,n)
@@ -100,22 +113,8 @@ function changeCarById(i,n){
 		s=n;
 		visible(n,0)
 	}
-	if(i===1)
-    visible(s,s-1)
-	if(i===-1)
-	visible(s,s+1)
 	
-	if(s===0){
-		for (i = 0; i < Rines.length; i++) {
-		Rines[i].setAttribute('visible','false');
-		btnRines[i].setAttribute('visible','false');
-		}
-	}
-	if(s===1){
-		for (i = 0; i < Garantia.length; i++) {
-		Garantia[i].setAttribute('visible','false');
-		}
-	}
+	info();
 }
 function visible(visible,noVisible){
     	document.getElementById(visible).setAttribute('visible','true');
@@ -136,6 +135,11 @@ function visibleDos(visible,interior){
 }
 function changeCarByClassName(i,n){
     s+=i;
+	
+	if(i===1 && s<=n)
+    visibleByClassName(s,s-1)
+	if(i===-1 && s>=0)
+	visibleByClassName(s,s+1)
 	if(s>n){
 		s=0;
 		visibleByClassName(0,n)
@@ -145,10 +149,8 @@ function changeCarByClassName(i,n){
 		s=n;
 		visibleByClassName(n,0)
 	}
-	if(i===1)
-    visibleByClassName(s,s-1)
-	if(i===-1)
-	visibleByClassName(s,s+1)
+	
+	info();
 }
 
 /*----- PARA 3 CARROS ----*/
@@ -160,4 +162,98 @@ function visibleTres(visible,noVisible,noVisibleDos){
 }
 
 
-
+function info(){
+	//console.log(s);
+	if(s!=0){
+		for (i = 0; i < btnAltura.length; i++) {
+			btnAltura[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Altura.length; i++) {
+			Altura[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnMotor.length; i++) {
+			btnMotor[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Motor.length; i++) {
+			Motor[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnFrenos.length; i++) {
+			btnFrenos[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Frenos.length; i++) {
+			Frenos[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Normativa.length; i++) {
+		Normativa[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Aplicaciones.length; i++) {
+		Aplicaciones[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Sistema.length; i++) {
+		Sistema[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnVidrios.length; i++) {
+			btnVidrios[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Vidrios.length; i++) {
+			Vidrios[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < Faros.length; i++) {
+		Faros[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnFaros.length; i++) {
+		btnFaros[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnNormativa.length; i++) {
+		btnNormativa[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnAplicaciones.length; i++) {
+		btnAplicaciones[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnSistema.length; i++) {
+		btnSistema[i].setAttribute('visible','false');
+		}
+	}else{
+		for (i = 0; i < btnAltura.length; i++) {
+			btnAltura[i].setAttribute('visible','true');
+		}
+		for (i = 0; i < btnMotor.length; i++) {
+			btnMotor[i].setAttribute('visible','true');
+		}
+		for (i = 0; i < btnFrenos.length; i++) {
+			btnFrenos[i].setAttribute('visible','true');
+		}
+		
+		for (i = 0; i < btnVidrios.length; i++) {
+			btnVidrios[i].setAttribute('visible','true');
+		}
+		for (i = 0; i < btnFaros.length; i++) {
+		btnFaros[i].setAttribute('visible','true');
+		}
+		for (i = 0; i < btnNormativa.length; i++) {
+		btnNormativa[i].setAttribute('visible','true');
+		}
+		for (i = 0; i < btnAplicaciones.length; i++) {
+		btnAplicaciones[i].setAttribute('visible','true');
+		}
+		for (i = 0; i < btnSistema.length; i++) {
+		btnSistema[i].setAttribute('visible','true');
+		}
+	}
+	
+	if(s!=1){
+		for (i = 0; i < Rines.length; i++) {
+		Rines[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < btnRines.length; i++) {
+		btnRines[i].setAttribute('visible','false');
+		}
+	}else{
+		for (i = 0; i < btnRines.length; i++) {
+		btnRines[i].setAttribute('visible','true');
+		}
+		for (i = 0; i < btnGarantia.length; i++) {
+		btnGarantia[i].setAttribute('visible','true');
+		}
+	}
+}

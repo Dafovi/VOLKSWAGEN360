@@ -61,6 +61,11 @@
 			<!--Anterior-->
 			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
+				
+				<!-- botones -->
+				<a-entity class="btnGarantia"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Garantia')"></a-image></a-entity>			  		
+		  			<a-entity class="btnMotor"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.35 0.2" rotation="0 90 0" onclick="javaScript:botonClass('Motor')"></a-image></a-entity>			  		
+		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 -0.6 -0.95" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>
 		  </a-entity>
 		  
 		  <a-entity id="Select">
@@ -68,14 +73,14 @@
 		 		
 		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Jetta_Comfortline_AT.html')" src="../../img/nombres/Jetta_Comfortline_AT.png" position="-2 -0.5 -1" scale="1.5 1 0" rotation="0 90 0"></a-image>
 		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_MT','Jetta_Comfortline_MT.html')" src="../../img/nombres/Jetta_Comfortline_MT.png" position="-1.98 -0.5 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
-			  	<a-image  onclick="javaScript:visibleDos('HIGHLINE','Jetta_Highline_AT.html')" src="../../img/nombres/Jetta_Highline_AT.png" position="-2 0.3 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  	<a-image  onclick="javaScript:visibleDos('HIGHLINE','Jetta_Highline_AT.html')" src="../../img/nombres/Jetta_Highline_AT.png" position="-1.998 0.3 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			  	<a-image onclick="javaScript:visibleDos('SPORTLINE','Jetta_Sportline_AT.html')" src="../../img/nombres/Jetta_Sportline_AT.png" position="-1.99 0 1" scale="1 0.5 0" rotation="0 90 0"></a-image>	
 		  </a-entity>
 		  		
                 
-		  <a-entity id="SPORTLINE"visible="false">
+		  <a-entity id="SPORTLINE" visible="false">
 			  
-			  		<a-image src="../../img/nombres/Jetta_Sportline_AT.png" position="-1.99 0 1" scale="1 0.5 0" rotation="0 90 0"></a-image>	
+			  		<a-image src="../../img/nombres/Jetta_Sportline_AT.png" position="-2.1 0.5 0.5" scale="1 0.5 0" rotation="0 90 0"></a-image>	
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Jettaspl"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettaspl1"></a-sky></a-entity>
@@ -85,11 +90,19 @@
                     <a-entity class="5" visible="false" ><a-sky radius="30" src="#Jettaspl5"></a-sky></a-entity>
                     <a-entity class="6" visible="false" ><a-sky radius="30" src="#Jettaspl6"></a-sky></a-entity>
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Jettaspl7"></a-sky></a-entity>
+			  
+			  
+		  			<!-- botones -->
+		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Sport_AT/Garantia.png" position="-2 0.4 -0.95" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
+			  
+		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Motor.png" position="-2 0 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Rin.png" position="-2 -0.8 -1.5" scale="1 0.3 0" rotation="0 90 0"></a-image></a-entity>	
 		  </a-entity>
 		  
 		  <a-entity id="CONFORTLINE_AT" visible="false">
 			  
-		  			<a-image src="../../img/nombres/Jetta_Comfortline_AT.png" position="-2 -0.5 -1" scale="1.5 1 0" rotation="0 90 0"></a-image>
+		  			<a-image src="../../img/nombres/Jetta_Comfortline_AT.png" position="-2.1 0.5 -0.6" scale="1.5 1.2 0" rotation="0 90 0"></a-image>
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Jettaconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettaconfln1"></a-sky></a-entity>
@@ -99,11 +112,19 @@
                     <a-entity class="5" visible="false" ><a-sky radius="30" src="#Jettaconfln5"></a-sky></a-entity>
                     <a-entity class="6" visible="false" ><a-sky radius="30" src="#Jettaconfln6"></a-sky></a-entity>
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Jettaconfln7"></a-sky></a-entity>
+			  
+		  			<!-- botones -->
+		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Comfort_AT/Garantia.png" position="-2 0.4 -0.95" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
+			  
+		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Comfort_AT/Motor.png" position="-2 0 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Comfort_AT/Rin.png" position="-2 -0.8 -1.5" scale="1 0.4 0" rotation="0 90 0"></a-image></a-entity>	
+			  
 		  </a-entity>
 		  
 		  <a-entity id="CONFORTLINE_MT" visible="false">
 			  
-		  			<a-image src="../../img/nombres/Jetta_Comfortline_MT.png" position="-1.98 -0.5 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
+		  			<a-image src="../../img/nombres/Jetta_Comfortline_MT.png" position="-2.1 0.4 0.5" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Jettaconfln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettaconfln1"></a-sky></a-entity>
@@ -113,11 +134,19 @@
                     <a-entity class="5" visible="false" ><a-sky radius="30" src="#Jettaconfln5"></a-sky></a-entity>
                     <a-entity class="6" visible="false" ><a-sky radius="30" src="#Jettaconfln6"></a-sky></a-entity>
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Jettaconfln7"></a-sky></a-entity>
+			  
+		  			<!-- botones -->
+		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Comfort_MT/Garantia.png" position="-2 0.4 -0.95" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
+			  
+		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Comfort_MT/Motor.png" position="-2 0 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Comfort_MT/Rin.png" position="-2 -0.8 -1.5" scale="1 0.4 0" rotation="0 90 0"></a-image></a-entity>
+			  
 		  </a-entity>
 		  
 		  <a-entity id="HIGHLINE" visible="false">
 			  
-			  		<a-image src="../../img/nombres/Jetta_Highline_AT.png" position="-2 0.3 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
+			  		<a-image src="../../img/nombres/Jetta_Highline_AT.png" position="-2 0.5 0" scale="1.5 1 0" rotation="0 90 0"></a-image>
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Jettahln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Jettahln1"></a-sky></a-entity>
@@ -127,6 +156,13 @@
                     <a-entity class="5" visible="false" ><a-sky radius="30" src="#Jettahln5"></a-sky></a-entity>
                     <a-entity class="6" visible="false" ><a-sky radius="30" src="#Jettahln6"></a-sky></a-entity>
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Jettahln7"></a-sky></a-entity>
+			  
+		  			<!-- botones -->
+		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Higline_AT/Garantia.png" position="-2 0.4 -0.95" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
+			  
+		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Higline_AT/Motor.png" position="-2 0 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
+			  		
+		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Higline_AT/Rin.png" position="-2 -0.8 -1.5" scale="1 0.4 0" rotation="0 90 0"></a-image></a-entity>
 		  </a-entity>
           
       </a-entity>
