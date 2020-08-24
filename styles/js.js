@@ -17,7 +17,7 @@ function open(n){
 }
 function close(){
 	document.getElementById("window").style.display="none";
-	document.getElementById("vid_modelos").style.display="none";
+	//document.getElementById("vid_modelos").style.display="none";
 	document.getElementById("vid_finan").style.display="none";
 	document.getElementById("vid_ptpago").style.display="none";
 	document.getElementById("vid_mtpago").style.display="none";
