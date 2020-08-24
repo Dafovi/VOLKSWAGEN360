@@ -49,6 +49,21 @@
 
         </a-entity>
 
+         <a-entity id="volanteBtn">
+            <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.1 0.1 0" position="-0.57 -0.01 -0.9."></a-image>
+        </a-entity>
+        <a-entity id="ArtbagBtn">
+            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.3 0.1 -0.9."></a-image>
+        </a-entity>
+        <a-entity id="infoBtn">
+            <a-image onclick="javaScript:boton('Infoentrenamiento')" src="#aro" scale="0.1 0.1 0" position="0 -0.1 -0.9."></a-image>
+        </a-entity>
+        <a-entity id="CinturonBtn">
+            <a-image onclick="javaScript:boton('Cinturon')" src="#aro" scale="0.4 0.4 0" position="0 -1.5 2." rotation="0 0 0"></a-image>
+        </a-entity>
+           <a-entity id= "ErgonomiaBtn">
+        <a-image onclick="javaScript:botonDos('Ergonomia', 'infoBtn', 'ArtbagBtn')" src="#aro" scale="0.2 0.2 0" position="-0.1 -0.5 -0.9." rotation="90 0 0"></a-image>
+        </a-entity>
         <!-- Camera + cursor. -->
         <a-entity camera look-controls cursor="rayOrigin: mouse">
 

@@ -1,36 +1,75 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	  <meta charset="utf-8">
+
+<head>
+    <meta charset="utf-8">
     <title>Gol_Comfortline_MT</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
-  </head>
+</head>
 
-	<body>
+<body>
     <a-scene vr-mode-ui="enabled: false">
-      <a-assets>
-        <img id="interior" src="../../../img/concesionario/Interiores/">
-          
-        <img id="atras" src="../../../img/icons/atras.png">
-      </a-assets>
-      
-     
-      <!-- 360-degree image scenes.-->
-      <a-entity id="concesionario" rotation="0 -90 0">
-		  
-          	<a-sky radius="30" src="#interior"></a-sky>
-  
-      </a-entity>
-      
-      <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
-		  <a-image onclick="javaScript:To('../gol.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
-      </a-entity>
-                  
+        <a-assets>
+            <img id="interior" src="../../../img/concesionario/Interiores/GOL_COMFORTLINE_MT.jpg">
+
+            <img id="atras" src="../../../img/icons/atras.png">
+            <img id="aro" src="../../../img/icons/aro.png">
+            <img id="aroAirbag" src="../../../img/icons/aro.png">
+            <img id="aroInfoentrenamiento" src="../../../img/icons/aro.png">
+            <img id="aroCinturon" src="../../../img/icons/aro.png">
+            <img id="aroErgonomico" src="../../../img/icons/aro.png">
+        </a-assets>
+
+
+        <!-- 360-degree image scenes.-->
+        <a-entity id="concesionario" rotation="0 -90 0">
+
+            <a-sky radius="30" src="#interior"></a-sky>
+
+            <a-entity id="volante" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Gol_Comfort_AT/Volante.png" scale="1 1.3 0 " position="-1 0.65 0.1" rotation="0 90 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="Airbag" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Airbag.png" scale="1 1.2 0 " position="-1 0.7 0.2" rotation="0 90 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="Infoentrenamiento" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Gol_Comfort_AT/Infoentretenimiento.png" scale="1 1.2 0 " position="-1 0.54 -0.5" rotation="0 90 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="Cinturon" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Gol_Comfort_AT/cinturon.png" scale="2 2 0 " position="2 -0.7 0.8" rotation="0 -120 0 "></a-image>
+            </a-entity>
+            <a-entity id="Ergonomia" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Gol_Comfort_MT/Mecanica.png" scale="2 2 0 " position="-2 -0.1 1.4" rotation="0 90 0 "></a-image>
+            </a-entity>
+
+        </a-entity>
+
+        <a-entity id="volanteBtn">
+            <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.1 0.1 0" position="-0.57 -0.01 -0.9."></a-image>
+        </a-entity>
+        <a-entity id="ArtbagBtn">
+            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.3 0.1 -0.9."></a-image>
+        </a-entity>
+        <a-entity id="infoBtn">
+            <a-image onclick="javaScript:boton('Infoentrenamiento')" src="#aro" scale="0.1 0.1 0" position="0 -0.1 -0.9."></a-image>
+        </a-entity>
+        <a-entity id="CinturonBtn">
+            <a-image onclick="javaScript:boton('Cinturon')" src="#aro" scale="0.4 0.4 0" position="0 -1.5 2." rotation="0 0 0"></a-image>
+        </a-entity>
+        <a-entity id="ErgonomiaBtn">
+            <a-image onclick="javaScript:botonDos('Ergonomia', 'volanteBtn', 'infoBtn')" src="#aro" scale="0.2 0.2 0" position="-0.1 -0.5 -0.9." rotation="90 0 0"></a-image>
+        </a-entity>
+        <!-- Camera + cursor. -->
+        <a-entity camera look-controls cursor="rayOrigin: mouse">
+
+            <a-image onclick="javaScript:To('../gol.html')" src="#atras" scale=" 0.2 0.06 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+
+        </a-entity>
+
     </a-scene>
-  </body>
-</html>
+</body></html>
