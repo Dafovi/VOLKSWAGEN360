@@ -28,7 +28,7 @@
             <a-sky radius="30" src="#interior"></a-sky>
 
             <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Airbag.png" scale="1.2 1.2 0 " position="-2.02 0.3 -1.8" rotation="0 50 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Airbag.png" scale="1.2 1.2 0 " position="-2.02 0.4 -1.5" rotation="0 50 0 "></a-image>
             </a-entity>
             <a-entity id="Ventana" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Vidrios.png" scale="2 1.33 0 " position="-0.2 0.5 -3" rotation="0 0 0 "></a-image>
@@ -37,13 +37,13 @@
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Aire.png" scale="2 0.9 0 " position="-2 -0.3 -1.05" rotation="0 90 0 "></a-image>
             </a-entity>
               <a-entity id="Aisitente" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Asistente.png" scale="2 2 0 " position="-2.1 -1.6 -0.2" rotation="0 80 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Asistente.png" scale="2 2 0 " position="-2.1 -1.75 0.2" rotation="0 80 0 "></a-image>
             </a-entity>
             <a-entity id="Frenos" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Frenos.png" scale="1 0.8 0 " position="-1.2 -0.75 0.3" rotation="-20 90 0 "></a-image>
             </a-entity>
             <a-entity id="Asiento" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Puestos.png" scale="2 1 0 " position="-0.7 -2 0.8" rotation="-135 -45 180 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/Puestos.png" scale="2 1 0 " position="-1.2 -2 1.1" rotation="-40 90 0"></a-image>
             </a-entity>
 			
 			
@@ -51,32 +51,32 @@
 
         <a-entity id="BotonesInterior">
 			<a-entity id="ArtbagBtn">
-			<a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.4 -0.1 -0.8"></a-image></a-entity>
+			<a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.4 -0.1 -1"></a-image></a-entity>
 			<a-entity id="VentanaBtn">
-			<a-image onclick="javaScript:boton('Ventana')" src="#aro" scale="0.2 0.2 0" position="2 -0.3 0" rotation="0 90 0"></a-image>
+			<a-image onclick="javaScript:boton('Ventana')" src="#aro" scale="0.1 0.1 0" position="1 -0.3 0" rotation="0 90 0"></a-image>
 			</a-entity>
 			<a-entity id="Aisitentebtn">
-			<a-image onclick="javaScript:boton('Aisitente')" src="#aro" scale="0.2 0.2 0" position="-0.5 -0.9 -1.1" rotation="0 0 0"></a-image>
+			<a-image onclick="javaScript:boton('Aisitente')" src="#aro" scale="0.1 0.1 0" position="-0.5 -0.9 -1" rotation="0 0 0"></a-image>
 			</a-entity>
 			 <a-entity id= "Airebtn">
-			<a-image onclick="javaScript:botonDos('Aire','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.2 0.2 0" position="0.02 -0.2 -0.9." rotation="0 0 0"></a-image>
+			<a-image onclick="javaScript:botonDos('Aire','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="0.02 -0.2 -1" rotation="0 0 0"></a-image>
 			</a-entity>
 			<a-entity id="Frenosbtn">
-			<a-image onclick="javaScript:botonDos('Frenos','Aisitentebtn','Airebtn')" src="#aro" scale="0.1 0.1 0" position="-0.5 -0.6 -0.7"></a-image>
+			<a-image onclick="javaScript:botonDos('Frenos','Aisitentebtn','Aisitentebtn')" src="#aro" scale="0.1 0.1 0" position="-0.7 -0.85 -1"></a-image>
 			</a-entity>
 			<a-entity id="AsientoBtn">
-			<a-image onclick="javaScript:boton('Asiento')" src="#aro" scale="0.2 0.2 0" position="-0.6 -1 0" rotation="90 0 0"></a-image>
-			</a-entity>
-			 <a-entity id= "atras">
-			<a-image onclick="javaScript:botonDos('VagonInterior','BotonesInterior','concesionario')" src="#aro" scale="0.2 0.2 0" position="0.02 -0.2 0.9." rotation="0 0 0"></a-image>
+			<a-image onclick="javaScript:boton('Asiento')" src="#aro" scale="0.2 0.2 0" position="-1.5 -1.5 -0.7" rotation="90 0 0"></a-image>
 			</a-entity>
 		</a-entity>
 		
 		
+		 <a-entity id= "atras">
+			<a-image onclick="javaScript:botonDos('VagonInterior','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="0 0.4 -1" rotation="0 0 0"></a-image>
+			</a-entity>
+		
 
         <a-entity id="VagonInterior" visible="false">
 			 <a-sky radius="30" src="#Vagon" rotation="0 90 0"></a-sky>
-			<a-image src="#aro" scale="0.2 0.2 0" position="0.02 -0.2 0.9." rotation="0 0 0"></a-image>
 		</a-entity>
 		
 		

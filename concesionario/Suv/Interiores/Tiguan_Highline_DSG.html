@@ -26,13 +26,13 @@
 
             <a-sky radius="30" src="#interior"></a-sky>
             <a-entity id="volante" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Tecnologia.png" scale="1 0.8 0 " position="-1 -0.1 0.1" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Tecnologia.png" scale="1 0.8 0 " position="-1.1 -0.1 0.25" rotation="0 90 0 "></a-image>
             </a-entity>
             <a-entity id="volante2" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Heads.png" scale="1 1 0 " position="-1 0.2 -0.1" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Heads.png" scale="1 1 0 " position="-1.1 0.2 -0.1" rotation="0 90 0 "></a-image>
             </a-entity>
             <a-entity id="volante3" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Motion.png" scale="1.2 1.2 0 " position="-1.5 -1 -0.35" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Motion.png" scale="1.2 1.2 0 " position="-1.5 -0.6 -0.4" rotation="0 90 0 "></a-image>
             </a-entity>
 
             <a-entity id="Airbag" visible="false">
@@ -40,7 +40,7 @@
             </a-entity>
 
             <a-entity id="Infoentrenamiento" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Infoentretenimiento.png" scale="1 1.2 0 " position="-1 0.1 -0.45" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Infoentretenimiento.png" scale="1 1.2 0 " position="-1.1 0.15 -0.4" rotation="0 90 0 "></a-image>
             </a-entity>
             <a-entity id="vidrios" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Sonido.png" scale="2 2 0 " position="-2.1 0.3 -3.5" rotation="0 50 0 "></a-image>
@@ -49,23 +49,24 @@
 
 
         <a-entity id="VolanteBtn">
-            <a-image onclick="javaScript:botonDos('volante','ArtbagBtn','infoBtn')" src="#aro" scale="0.1 0.1 0" position="-0.6 -0.3 -0.9."></a-image>
+            <a-image onclick="javaScript:botonDos('volante','Volante2Btn','infoBtn')" src="#aro" scale="0.1 0.1 0" position="-0.65 -0.3 -1"></a-image>
         </a-entity>
         <a-entity id="Volante2Btn">
-            <a-image onclick="javaScript:boton('volante2')" src="#aro" scale="0.1 0.1 0" position="-0.38 0.08 -0.9."></a-image>
+            <a-image onclick="javaScript:botonDos('volante2','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.38 0.08 -1"></a-image>
         </a-entity>
         <a-entity id="Volante3Btn">
-            <a-image onclick="javaScript:botonDos('volante3','ArtbagBtn','infoBtn')" src="#aro" scale="0.1 0.1 0" position="-0.1 -0.6 -0.7"></a-image>
+            <a-image onclick="javaScript:botonDos('volante3','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.1 -0.6 -1"></a-image>
         </a-entity>
         <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -0.8"></a-image>
+            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
         </a-entity>
         <a-entity id="infoBtn">
-            <a-image onclick="javaScript:botonDos('Infoentrenamiento','ArtbagBtn','VidriosBtn')" src="#aro" scale="0.1 0.1 0" position="-0.1 -0.2 -0.9."></a-image>
+            <a-image onclick="javaScript:botonDos('Infoentrenamiento','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.1 -0.2 -1"></a-image>
         </a-entity>
         <a-entity id="VidriosBtn">
             <a-image onclick="javaScript:boton('vidrios')" src="#aro" scale="0.2 0.2 0" position="1 0.05 -1" rotation="0 0 0"></a-image>
         </a-entity>
+		
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
