@@ -24,11 +24,11 @@ AFRAME.registerComponent('rotation-reader', {
 		this.el.object3D.rotation.y = -1.99;
 		}
 	}else{
-		if(this.el.object3D.rotation.y>=1.2){
-		this.el.object3D.rotation.y = 1.2;
+		if(this.el.object3D.rotation.y>=0.6){
+		this.el.object3D.rotation.y = 0.6;
 		}
-	  	else if(this.el.object3D.rotation.y<=-1.2){
-		this.el.object3D.rotation.y = -1.2;
+	  	else if(this.el.object3D.rotation.y<=-0.6){
+		this.el.object3D.rotation.y = -0.6;
 		}
 	}  
   }
