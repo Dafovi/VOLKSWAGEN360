@@ -32,28 +32,40 @@
             <a-entity id="Airbag" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_MT/Airbag.png" scale="1.5 1.5 0 " position="-2.02 0.8 0.1" rotation="0 90 0 "></a-image>
             </a-entity>
-
-            <a-entity id="Cinturon" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_MT/cinturon.png" scale="2 2 0 " position="2 -0.3 0.8" rotation="0 -120 0 "></a-image>
-            </a-entity>
             <a-entity id="Ergonomia" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_MT/Transmision.png" scale="2 2 0 " position="-2 -0.01 1.1" rotation="0 90 0 "></a-image>
             </a-entity>
             
         </a-entity>
 
+		<a-entity id="BotonesInterior">
         <a-entity id="volanteBtn">
             <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.1 0.1 0" position="-0.6 0.1 -1"></a-image>
         </a-entity>
         <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
-        </a-entity>
-        <a-entity id="CinturonBtn">
-            <a-image onclick="javaScript:boton('Cinturon')" src="#aro" scale="0.1 0.1 0" position="0 -0.5 1" rotation="0 0 0"></a-image>
+            <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
         </a-entity>
         <a-entity id="ErgonomiaBtn">
             <a-image onclick="javaScript:botonDos('Ergonomia', 'volanteBtn', 'volanteBtn')" src="#aro" scale="0.1 0.1 0" position="-0.05 -0.5 -1" rotation="0 0 0"></a-image>
         </a-entity>
+		</a-entity>
+		
+		
+		 <a-entity id= "atrasbtn">
+			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="-0.07 0.56 -0.9" rotation="0 0 0"></a-image>
+			</a-entity>
+		
+
+        <a-entity id="parteTrasera" visible="false">
+			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+
+        <a-entity id="CinturonBtn">
+            <a-image onclick="javaScript:boton('Cinturon')" src="#aro" scale="0.1 0.1 0" position="0 -0.7 -1" rotation="0 0 0"></a-image>
+        </a-entity>
+            <a-entity id="Cinturon" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_MT/cinturon.png" scale="2 2 0 " position="1 -0.5 -2.1" rotation="0 0 0 "></a-image>
+            </a-entity>
+		</a-entity>
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 

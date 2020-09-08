@@ -45,11 +45,12 @@
         </a-entity>
 
 
+		<a-entity id="BotonesInterior">
         <a-entity id="volanteBtn">
             <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.1 0.1 0" position="-0.50 -0.27 -0.9."></a-image>
         </a-entity>
         <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.5 -0.2 -0.8"></a-image>
+            <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.5 -0.2 -0.8"></a-image>
         </a-entity>
         <a-entity id="infoBtn">
             <a-image onclick="javaScript:boton('Infoentrenamiento')" src="#aro" scale="0.1 0.1 0" position="0 -0.1 -0.9."></a-image>
@@ -57,6 +58,16 @@
         <a-entity id="CambioBtn">
             <a-image onclick="javaScript:boton('Cambio')" src="#aro" scale="0.2 0.2 0" position="-0.01 -0.95 -1.6"></a-image>
         </a-entity>
+		</a-entity>
+		
+		 <a-entity id= "atrasbtn">
+			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="-0.01 0.23 -0.9" rotation="0 0 0"></a-image>
+			</a-entity>
+		
+
+        <a-entity id="parteTrasera" visible="false">
+			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+		</a-entity>
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 

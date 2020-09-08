@@ -35,12 +35,24 @@
             </a-entity>
         </a-entity>
 
+		<a-entity id="BotonesInterior">
         <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
+            <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
         </a-entity>
         <a-entity id="infoBtn">
             <a-image onclick="javaScript:botonDos('Infoentrenamiento','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.1 -0.2 -1"></a-image>
         </a-entity>
+		</a-entity>
+		
+		
+		 <a-entity id= "atrasbtn">
+			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="-0.07 0.285 -0.9" rotation="0 0 0"></a-image>
+			</a-entity>
+		
+
+        <a-entity id="parteTrasera" visible="false">
+			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+		</a-entity>
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
  

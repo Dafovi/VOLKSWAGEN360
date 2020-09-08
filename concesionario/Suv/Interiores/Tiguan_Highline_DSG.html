@@ -48,17 +48,18 @@
         </a-entity>
 
 
+		<a-entity id="BotonesInterior">
         <a-entity id="VolanteBtn">
             <a-image onclick="javaScript:botonDos('volante','Volante2Btn','infoBtn')" src="#aro" scale="0.1 0.1 0" position="-0.65 -0.3 -1"></a-image>
         </a-entity>
         <a-entity id="Volante2Btn">
-            <a-image onclick="javaScript:botonDos('volante2','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.38 0.08 -1"></a-image>
+            <a-image onclick="javaScript:botonDos('volante2','atrasbtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.38 0.08 -1"></a-image>
         </a-entity>
         <a-entity id="Volante3Btn">
             <a-image onclick="javaScript:botonDos('volante3','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.1 -0.6 -1"></a-image>
         </a-entity>
         <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
+            <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
         </a-entity>
         <a-entity id="infoBtn">
             <a-image onclick="javaScript:botonDos('Infoentrenamiento','ArtbagBtn','ArtbagBtn')" src="#aro" scale="0.1 0.1 0" position="-0.1 -0.2 -1"></a-image>
@@ -66,6 +67,17 @@
         <a-entity id="VidriosBtn">
             <a-image onclick="javaScript:boton('vidrios')" src="#aro" scale="0.2 0.2 0" position="1 0.05 -1" rotation="0 0 0"></a-image>
         </a-entity>
+		</a-entity>
+		
+		
+		 <a-entity id= "atrasbtn">
+			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="-0.095 0.22 -0.9" rotation="0 0 0"></a-image>
+			</a-entity>
+		
+
+        <a-entity id="parteTrasera" visible="false">
+			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+		</a-entity>
 		
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">

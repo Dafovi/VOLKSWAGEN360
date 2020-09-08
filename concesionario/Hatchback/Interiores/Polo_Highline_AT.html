@@ -48,6 +48,7 @@
 
         </a-entity>
 
+		<a-entity id="BotonesInterior">
         <a-entity id="volanteBtn">
             <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.1 0.1 0" position="-0.44 -0.08 -0.9."></a-image>
         </a-entity>
@@ -64,6 +65,16 @@
          <a-entity id= "ErgonomiaBtn">
         <a-image onclick="javaScript:botonDos('Ergonomia', 'volanteBtn', 'volanteBtn')" src="#aro" scale="0.2 0.2 0" position="0.02 -0.95 -1.6"></a-image>
         </a-entity>
+		</a-entity>
+		
+		 <a-entity id= "atrasbtn">
+			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="0 0.2 -0.9" rotation="0 0 0"></a-image>
+			</a-entity>
+		
+
+        <a-entity id="parteTrasera" visible="false">
+			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+		</a-entity>
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
