@@ -2,7 +2,7 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Fox</title>
+    <title>Volkswagen Fox Xtreme MT</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../styles/cars.js"></script>
@@ -36,13 +36,11 @@
 		  		<!-- interior -->
 		  		<a-image  onclick="javaScript:To('Interiores/Fox_Xtreme_MT.html')" src="../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
 		  		<!--- 360 --->
-		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+		  		<a-image  src="../../img/icons/360.png" scale="0.25 0.2 0" position="-1 -0.65 0" rotation="0 90 0"></a-image>
                 <!--Anterior-->
                 <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
                 </a-image>
-                
-			  		<a-image src="../../img/nombres/Fox_Xtreme_MT.png" position="-2 0.5 0.6" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
-		  
+               
           			<a-entity id="0" ><a-sky radius="30" src="#Fox"></a-sky></a-entity> 
                     <a-entity id="1" visible="false" ><a-sky radius="30" src="#Fox1"></a-sky></a-entity>
                     <a-entity id="2" visible="false" ><a-sky radius="30" src="#Fox2"></a-sky></a-entity>
@@ -53,7 +51,7 @@
                     <a-entity id="7" visible="false" ><a-sky radius="30" src="#Fox7"></a-sky></a-entity>
 		  			
 		  			<!-- botones -->
-		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Garantia.png" position="-2 0.4 -0.9" scale="1 0.7 0" rotation="0 90 0"></a-image></a-entity>
+		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Garantia.png" position="-2 0.34 -0.5" scale="1 0.45 0" rotation="0 90 0"></a-image></a-entity>
 		  			
 			  		<a-entity class="Altura" visible="false"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Altura.png" position="-2 -1 -0.9" scale="1.5 0.25 0" rotation="0 90 0"></a-image></a-entity>
 			  		
@@ -68,7 +66,9 @@
 		  			<a-entity class="Vidrios" visible="false"><a-image src="../../img/concesionario/Interiores/FOX_EXTREME/Vidrios.png" position="-2 0.2 0.8" scale="1 0.55 0" rotation="0 90 0"></a-image></a-entity>
 			  		
 		  
-		  			<a-entity class="btnGarantia"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Garantia')"></a-image></a-entity>			  		
+		  
+		  			<a-entity class="btnGarantia"><a-image src="../../img/icons/aro.png" scale="0.06 0.06 0" position="-1.94 0.12 0" rotation="0 90 0" onclick="javaScript:botonClass('Garantia')"></a-image></a-entity>
+		  			<a-entity class="btnRetrovisor"><a-image src="../../img/icons/aro.png" scale="0.06 0.06 0" position="-1.94 -0.2 0.63" rotation="0 90 0" onclick="javaScript:botonClass('Retrovisor')"></a-image></a-entity>			  		
 		  			<a-entity class="btnAltura"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.95 -0.12" rotation="0 90 0" onclick="javaScript:botonClass('Altura')"></a-image></a-entity>			  		
 		  			<a-entity class="btnFaros"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.47 -0.5" rotation="0 90 0" onclick="javaScript:botonClass('Faros')"></a-image></a-entity>			  		
 		  			<a-entity class="btnMotor"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.35 0.2" rotation="0 90 0" onclick="javaScript:botonClass('Motor')"></a-image></a-entity>			  		
@@ -83,6 +83,8 @@
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
 		  <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		  
+		  <a-image src="../../img/nombres/Fox_Xtreme_MT.png" position="-1.3 -0.8 -1.2" scale="1 0.3 0" rotation="0 0 0"></a-image>
 		  
       </a-entity>
                   
