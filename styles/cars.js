@@ -27,7 +27,7 @@ function boton(conten){
 		document.getElementById(conten).setAttribute('visible','false');
 		press=false;
 	}
-	console.log(btnname);
+	//console.log(btnname);
 }
 function changeCarById(i,n){
     s+=i;
@@ -54,8 +54,8 @@ function visible(visible,noVisible){
     	document.getElementById(noVisible).setAttribute('visible','false');
 }
 
-window.onload = function(){
-	/*document.getElementById("ActiveZone").addEventListener("mouseover",funtion(){
+/*window.onload = function(){
+	document.getElementById("ActiveZone").addEventListener("mouseover",funtion(){
 	 	var btn= document.getElementsByClassName("btn");
 		for (i = 0; i < btn.length; i++) {
 			btn[i].setAttribute('visible','true');
@@ -67,8 +67,8 @@ window.onload = function(){
 		for (i = 0; i < btn.length; i++) {
 			btn[i].setAttribute('visible','false');
 		}
-	});*/
-}
+	});
+}*/
 function botonVisible(){
 	var x= document.getElementsByClassName("0");
 	var y= document.getElementsByClassName("1");
