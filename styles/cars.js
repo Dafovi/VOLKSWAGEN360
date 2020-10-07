@@ -71,7 +71,7 @@ function visible(visible,noVisible){
 }*/
 function botonVisible(){
 	var x= document.getElementsByClassName("0");
-	var y= document.getElementsByClassName("1");
+	var y= document.getElementsByClassName("2");
 	var info= document.getElementsByClassName("info");
 	
 	if(s==0){
@@ -81,7 +81,7 @@ function botonVisible(){
 		for (i = 0; i < y.length; i++) {
 			y[i].setAttribute('visible','false');
 		}
-	}else if(s==1){
+	}else if(s==2){
 		for (i = 0; i < x.length; i++) {
 			x[i].setAttribute('visible','false');
 		}

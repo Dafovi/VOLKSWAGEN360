@@ -30,8 +30,7 @@
       <a-entity id="concesionario" rotation="0 -90 0">
         
 		  
-		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
-		  	<a-entity id="Flechas"  visible="false">
+		  	<a-entity id="Flechas">
 				<!-- Siguiente-->
 				<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 		  		<!-- interior -->
@@ -49,20 +48,10 @@
 		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.55 -0.97" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>			  		
 		  			<a-entity class="btnFrenos"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.8 -0.6" rotation="0 90 0" onclick="javaScript:botonClass('Frenos')"></a-image></a-entity>	
 		  	</a-entity>
-		  
-		  <a-entity id="Select">
-			  
-			  		<a-sky radius="30" src="#Amarokext"></a-sky>
-			  
-			  		
-			  
-		  </a-entity>
                 
-          <a-entity id="CHASIS" visible="false">
-			  
-			  
-			  		
-            <a-entity class="0" ><a-sky radius="30" src="#Amaroktlnchs"></a-sky></a-entity> 
+          <a-entity id="CHASIS">
+				
+           <a-entity class="0" ><a-sky radius="30" src="#Amaroktlnchs"></a-sky></a-entity> 
           <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amaroktlnchs1"></a-sky></a-entity>
           <a-entity class="2" visible="false" ><a-sky radius="30" src="#Amaroktlnchs2"></a-sky></a-entity>
           <a-entity class="3" visible="false" ><a-sky radius="30" src="#Amaroktlnchs3"></a-sky></a-entity>
@@ -71,7 +60,7 @@
           <a-entity class="6" visible="false" ><a-sky radius="30" src="#Amaroktlnchs6"></a-sky></a-entity>
           <a-entity class="7" visible="false" ><a-sky radius="30" src="#Amaroktlnchs7"></a-sky></a-entity>
             
-            <!-- botones -->
+            <!-- información -->
             <a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Garantia.png" position="-1.96 0 0.92" scale="1 0.4 0" rotation="0 90 0"></a-image></a-entity>
             
             <a-entity class="Faros" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Faros.png" position="-2 -0.2 1.01" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>

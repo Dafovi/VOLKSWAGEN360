@@ -11,60 +11,16 @@
 	<body>
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
-        <img id="Poloconfln" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_08.jpg">
-        <img id="Poloconfln1" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_09.jpg">
-        <img id="Poloconfln2" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_10.jpg">
-        <img id="Poloconfln3" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_11.jpg">
-        <img id="Poloconfln4" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_12.jpg">
-        <img id="Poloconfln5" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_13.jpg">
-        <img id="Poloconfln6" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_14.jpg">
-        <img id="Poloconfln7" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_15.jpg">
-		  
-		  
 		  
         <img id="Polohln" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_16.jpg">
-        <img id="Polohln1" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_17.jpg">
-        <img id="Polohln2" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_18.jpg">
-        <img id="Polohln3" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_19.jpg">
-        <img id="Polohln4" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_20.jpg">
-        <img id="Polohln5" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_21.jpg">
-        <img id="Polohln6" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_22.jpg">
-        <img id="Polohln7" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_23.jpg">
-          
           
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
       
      
-      <!-- 360-degree image scenes.-->
-      <a-entity id="concesionario" rotation="0 -90 0">
-        
-		  
-		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
-		  <a-entity id="Flechas"  visible="false">
-			<!-- Siguiente-->
-			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-		  		<!-- interior -->
-		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
-		  		<!--- 360 --->
-		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
-			<!--Anterior-->
-			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
-			</a-image>
-			  
-			  
-			  <!-- Botones -->
-			  
-			  		<a-entity class="btnGarantia"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Garantia')"></a-image></a-entity>			  				  		
-		  			<a-entity class="btnFaros"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 -0.47 -0.5" rotation="0 90 0" onclick="javaScript:botonClass('Faros')"></a-image></a-entity>			  		
-		  			<a-entity class="btnMotor"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 -0.35 0.2" rotation="0 90 0" onclick="javaScript:botonClass('Motor')"></a-image></a-entity>			  		
-		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 -0.6 -0.95" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>		  		
-		  </a-entity>
-		  
-		  
-		  <!--<a-box scale="1 1.2 3" onclick="javaScript:visible('HIGHLINE','CONFORTLINE',1)" position="-3 -0.5 0"  visible="false"></a-box>-->
+   
 		  <a-entity id="Select">
-			  <a-sky radius="30" src="#Polohln"></a-sky>
+			  <a-sky radius="30" src="#Polohln" rotation="0 -90 0"></a-sky>
 			  
 			  <a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Polo_Comfortline_AT.html')" src="../../img/nombres/Polo_Comfortline_AT.png" position="-2 -0.2 -0.8" scale="1.5 1 0" rotation="0 90 0"></a-image>
 			  <a-image  onclick="javaScript:visibleDos('CONFORTLINE_MT','Polo_Comfortline_MT.html')" src="../../img/nombres/Polo_Comfortline_MT.png" position="-2 0.2 0.5" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
@@ -72,78 +28,6 @@
 			  
 		  </a-entity>
                 
-		  <a-entity id="CONFORTLINE_AT"  visible="false">
-			  
-			  		<a-image src="../../img/nombres/Polo_Comfortline_AT.png" position="-2 0.5 -0.6" scale="1.5 1 0" rotation="0 90 0"></a-image>
-			  		
-          			<a-entity class="0" ><a-sky radius="30" src="#Poloconfln"></a-sky></a-entity> 
-                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Poloconfln1"></a-sky></a-entity>
-                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Poloconfln2"></a-sky></a-entity>
-                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Poloconfln3"></a-sky></a-entity>
-                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Poloconfln4"></a-sky></a-entity>
-                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Poloconfln5"></a-sky></a-entity>
-                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Poloconfln6"></a-sky></a-entity>
-                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Poloconfln7"></a-sky></a-entity>
-			  
-			  
-			  		<!-- botones -->
-		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Comfort_AT/Garantia.png" position="-2 0.4 -0.9" scale="1 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Faros" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Comfort_AT/Faros.png" position="-2 -0.2 -01" scale="1 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Comfort_AT/Motor.png" position="-2 -0.1 1" scale="1.5 0.5 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Comfort_AT/Rin.png" position="-2 -0.8 -1.5" scale="1 0.3 0" rotation="0 90 0"></a-image></a-entity> 
-		  </a-entity>
-                
-		  <a-entity id="CONFORTLINE_MT"  visible="false">
-			  
-			  		<a-image src="../../img/nombres/Polo_Comfortline_MT.png" position="-2 0.4 0.2" scale="1.5 1 0" rotation="0 90 0"></a-image>
-			  		
-          			<a-entity class="0" ><a-sky radius="30" src="#Poloconfln"></a-sky></a-entity> 
-                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Poloconfln1"></a-sky></a-entity>
-                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Poloconfln2"></a-sky></a-entity>
-                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Poloconfln3"></a-sky></a-entity>
-                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Poloconfln4"></a-sky></a-entity>
-                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Poloconfln5"></a-sky></a-entity>
-                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Poloconfln6"></a-sky></a-entity>
-                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Poloconfln7"></a-sky></a-entity>
-			  
-			  		<!-- botones -->
-		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_comfort_MT/Garantia.png" position="-2 0.4 -0.9" scale="1 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Faros" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_comfort_MT/Faros.png" position="-2 -0.2 -01" scale="1 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_comfort_MT/Motor.png" position="-2 -0.1 1" scale="1.5 0.5 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_comfort_MT/Rin.png" position="-2 -0.8 -1.5" scale="1 0.3 0" rotation="0 90 0"></a-image></a-entity> 
-		  </a-entity>
-		  
-		  <a-entity id="HIGHLINE" visible="false">
-			  
-			  		<a-image src="../../img/nombres/Polo_Highline_AT.png" position="-2 0.6 -0.2" scale="1.5 1 0" rotation="0 90 0"></a-image>
-			  
-          			<a-entity class="0" ><a-sky radius="30" src="#Polohln"></a-sky></a-entity> 
-                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Polohln1"></a-sky></a-entity>
-                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Polohln2"></a-sky></a-entity>
-                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Polohln3"></a-sky></a-entity>
-                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Polohln4"></a-sky></a-entity>
-                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Polohln5"></a-sky></a-entity>
-                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Polohln6"></a-sky></a-entity>
-                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Polohln7"></a-sky></a-entity>
-			  
-			  
-			  		<!-- botones -->
-		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Highline_AT/Garantia.png" position="-2 0.4 -0.9" scale="1 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Faros" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Highline_AT/Faros.png" position="-2 -0.2 -01" scale="1 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Highline_AT/Motor.png" position="-2 -0.1 1" scale="1.5 0.5 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Polo_Highline_AT/Rin.png" position="-2 -0.8 -1.5" scale="1 0.3 0" rotation="0 90 0"></a-image></a-entity> 
-		  </a-entity>
-          
-      </a-entity>
       
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">

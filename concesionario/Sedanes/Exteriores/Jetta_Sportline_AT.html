@@ -28,8 +28,7 @@
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
 		  
-		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
-		  	<a-entity id="Flechas"  visible="false">
+		  	<a-entity id="Flechas">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 		  		<!-- interior -->
@@ -45,12 +44,6 @@
 		  			<a-entity class="btnMotor"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.35 0.2" rotation="0 90 0" onclick="javaScript:botonClass('Motor')"></a-image></a-entity>			  		
 		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 -0.6 -0.95" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>
 		  </a-entity>
-		  
-		  <a-entity id="Select">
-			  <a-sky radius="30" src="#Jettaspl"></a-sky>
-		 		
-			  	<a-image onclick="javaScript:visibleDos('SPORTLINE','Jetta_Sportline_AT.html')" src="../../img/nombres/Jetta_Sportline_AT.png" position="-1.99 0 1" scale="1 0.5 0" rotation="0 90 0"></a-image>	
-		  </a-entity>
 		  		
                 
 		  <a-entity id="SPORTLINE" visible="false">
@@ -65,7 +58,7 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Jettaspl7"></a-sky></a-entity>
 			  
 			  
-		  			<!-- botones -->
+		  			<!-- información -->
 		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Sport_AT/Garantia.png" position="-2 0.4 -0.95" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
 			  
 		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Motor.png" position="-2 0 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>

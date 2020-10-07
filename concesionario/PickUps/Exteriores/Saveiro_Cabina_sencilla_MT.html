@@ -29,8 +29,7 @@
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
 		  
-		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
-		  <a-entity id="Flechas"  visible="false">
+		  <a-entity id="Flechas">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 		  		<!-- interior -->
@@ -48,20 +47,8 @@
 		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 -0.55 -1.05" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>
 			  
 		  </a-entity>
-		  
-		 <a-entity id="Select">
-			  
-			  		<a-sky radius="30" src="#Saveiro"></a-sky>
-			  
-			  		
-			  		<a-image onclick="javaScript:visibleDos('SENCILLO','Saveiro_Cabina_Sencilla_MT.html')"  src="../../img/nombres/Saveiro_Cabina_Sencilla_MT.png" position="-1.99 0.3 1" scale="1.5 0.6 0" rotation="0 90 0"></a-image>
-			  
-			  		<a-image onclick="javaScript:visibleDos('PLUS','Saveiro_Plus_MT.html')" src="../../img/nombres/Saveiro_Plus_MT.png" position="-1.99 0.3 -0.9" scale="1.8 0.7 0" rotation="0 90 0"></a-image>
-			  
-			  
-		  </a-entity>
                 
-		  <a-entity id="SENCILLO" visible="false">
+		  <a-entity id="SENCILLO">
 			  
           			<a-entity class="0" ><a-sky radius="30" src="#Saveiro"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Saveiro1"></a-sky></a-entity>
@@ -73,7 +60,7 @@
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Saveiro7"></a-sky></a-entity>
 			  
 		  			
-		  			<!-- botones -->
+		  			<!-- información -->
 		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Garantia.png" position="-2 0 1" scale="1 0.35 0" rotation="0 90 0"></a-image></a-entity>
 		  			
 			  		

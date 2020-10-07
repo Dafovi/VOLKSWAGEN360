@@ -12,14 +12,15 @@
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>  
 		  
-        <img id="Amarokplus" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_64.jpg">
-        <img id="Amarokplus1" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_65.jpg"> 
-        <img id="Amarokplus2" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_66.jpg">
-        <img id="Amarokplus3" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_67.jpg"> 
-        <img id="Amarokplus4" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_68.jpg">
-        <img id="Amarokplus5" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_69.jpg"> 
-        <img id="Amarokplus6" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_70.jpg">
-        <img id="Amarokplus7" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_71.jpg">
+		
+		<img id="Amarokhln" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_32.jpg">
+		<img id="Amarokhln1" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_33.jpg">
+		<img id="Amarokhln2" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_34.jpg">
+		<img id="Amarokhln3" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_35.jpg">
+		<img id="Amarokhln4" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_36.jpg">
+		<img id="Amarokhln5" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_37.jpg">
+		<img id="Amarokhln6" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_38.jpg">
+		<img id="Amarokhln7" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_39.jpg">
 		  
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
@@ -29,8 +30,7 @@
       <a-entity id="concesionario" rotation="0 -90 0">
         
 		  
-		  <!--<a-image onclick="javaScript:To('Hatchback/polo.html')" src="#ver" scale=" 1 0.5 1" position="-5 0.8 0" rotation="0 90 0"></a-image>-->
-		  	<a-entity id="Flechas"  visible="false">
+		  	<a-entity id="Flechas"  >
 				<!-- Siguiente-->
 				<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 		  		<!-- interior -->
@@ -48,13 +48,8 @@
 		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.55 -0.97" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>			  		
 		  			<a-entity class="btnFrenos"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.8 -0.6" rotation="0 90 0" onclick="javaScript:botonClass('Frenos')"></a-image></a-entity>	
 		  	</a-entity>
-		  
-		  <a-entity id="Select">
-			  
-			  		<a-sky radius="30" src="#Amarokext"></a-sky>
-		  </a-entity>
 
-		  <a-entity id="HIGHLINE" visible="false">
+		  <a-entity id="HIGHLINE">
 	
           			<a-entity class="0" ><a-sky radius="30" src="#Amarokhln"></a-sky></a-entity> 
                     <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amarokhln1"></a-sky></a-entity>
@@ -65,7 +60,7 @@
                     <a-entity class="6" visible="false" ><a-sky radius="30" src="#Amarokhln6"></a-sky></a-entity>
                     <a-entity class="7" visible="false" ><a-sky radius="30" src="#Amarokhln7"></a-sky></a-entity>
 
-		  			<!-- botones -->
+		  			<!-- información -->
 		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_Highline_AT_CD/Garantia.png" position="-1.96 0.45 0.8" scale="0.8 0.5 0" rotation="0 90 0"></a-image></a-entity>
 			  		
 		  			<a-entity class="Faros" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_Highline_AT_CD/Faros.png" position="-2 -0.5 1.01" scale="1 0.3 0" rotation="0 90 0"></a-image></a-entity>
