@@ -2,8 +2,9 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Gol</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Gol</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../styles/A-frame.js"></script>
     <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
 	  
     <script src="../../styles/cars.js"></script>
@@ -22,20 +23,18 @@
 			  
 			  		<a-sky radius="30" src="#Golconfln" rotation="0 -90 0"></a-sky>
 			  
-			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Gol_Comfortline_AT.html')" src="../../img/nombres/Gol_Comfortline_AT.png" position="-2 -0.2 -1.2" scale="2 1 0" rotation="0 90 0"></a-image>
-			  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_MT','Gol_Comfortline_MT.html')"  src="../../img/nombres/Gol_Comfortline_MT.png" position="-2 -0.3 1.1" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
-			  		
-			  		<a-image onclick="javaScript:visibleDos('TRENDLINE_AT','Gol_Trendline_AT.html')"  src="../../img/nombres/Gol_Trendline_AT.png" position="-2 0.24 0.2" scale="1.6 0.7 0" rotation="0 90 0"></a-image>
-			  		<a-image onclick="javaScript:visibleDos('TRENDLINE_MT','Gol_Trendline_MT.html')"  src="../../img/nombres/Gol_Trendline_MT.png" position="-1.99 0.2 -0.44" scale="1.6 0.9 0" rotation="0 90 0"></a-image>
-			  
-			  
 		  </a-entity>
                 
 		 
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:volver('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+          
+        <a-image onclick="javaScript:To('Exteriores/Gol_Trendline_MT.html')"  src="../../img/nombres/Gol_Trendline_MT.png" position="-1.1 -0.2 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Gol_Trendline_AT.html')"  src="../../img/nombres/Gol_Trendline_AT.png" position="-1.1 -0.38 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Gol_Comfortline_MT.html')"  src="../../img/nombres/Gol_Comfortline_MT.png" position="-1.1 -0.52 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Gol_Confortline_AT.html')" src="../../img/nombres/Gol_Comfortline_AT.png" position="-1.1 -0.68 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>
 		  
       </a-entity>
                   

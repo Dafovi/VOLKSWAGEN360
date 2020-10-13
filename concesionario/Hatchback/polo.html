@@ -2,8 +2,9 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Polo</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Polo</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../styles/A-frame.js"></script>
     <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../styles/cars.js"></script>
   </head>
@@ -11,28 +12,25 @@
 	<body>
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
-		  
         <img id="Polohln" src="../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_16.jpg">
           
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
-      
-     
    
 		  <a-entity id="Select">
+        
 			  <a-sky radius="30" src="#Polohln" rotation="0 -90 0"></a-sky>
 			  
-			  <a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Polo_Comfortline_AT.html')" src="../../img/nombres/Polo_Comfortline_AT.png" position="-2 -0.2 -0.8" scale="1.5 1 0" rotation="0 90 0"></a-image>
-			  <a-image  onclick="javaScript:visibleDos('CONFORTLINE_MT','Polo_Comfortline_MT.html')" src="../../img/nombres/Polo_Comfortline_MT.png" position="-2 0.2 0.5" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
-			  <a-image onclick="javaScript:visibleDos('HIGHLINE','Polo_Highline_AT.html')" src="../../img/nombres/Polo_Highline_AT.png" position="-2 0.35 -0.4" scale="1.5 1 0" rotation="0 90 0"></a-image>			  
-			  
 		  </a-entity>
-                
       
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:volver('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+
+        <a-image  onclick="javaScript:To('Exteriores/Polo_Comfortline_MT.html')" src="../../img/nombres/Polo_Comfortline_MT.png" position="-1.1 -0.32 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Polo_Comfortline_AT.html')" src="../../img/nombres/Polo_Comfortline_AT.png" position="-1.1 -0.5 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Polo_Highline_AT.html')" src="../../img/nombres/Polo_Highline_AT.png" position="-1.1 -0.68 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>		
 		  
       </a-entity>
                   

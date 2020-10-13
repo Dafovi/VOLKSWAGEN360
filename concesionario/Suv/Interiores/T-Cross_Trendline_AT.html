@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>T-Cross_Trendline_AT</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen T-Cross Trendline AT</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
     <script src="../../../styles/camera.js"></script>
@@ -16,48 +17,76 @@
             <img id="interior" src="../../../img/concesionario/Interiores/T_CROSS_COMFORTLINE_PLUS.jpg">
 
             <img id="atras" src="../../../img/icons/atras.png">
-
             <img id="aro" src="../../../img/icons/aro.png">
         </a-assets>
 
-
+        
         <!-- 360-degree image scenes.-->
-        <a-entity id="concesionario" rotation="0 -90 0">
+        <a-entity id="parteDelantera" rotation="0 -90 0">
 
             <a-sky radius="30" src="#interior"></a-sky>
-          
+
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="VolanteBtn">
+                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.55 1" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="PantallaBtn">
+                    <a-image onclick="javaScript:boton('Pantalla')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.14 -0.18" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="AirbagBtn">
+                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.05 -1.28" rotation="0 90 0"></a-image>
+                </a-entity>
+            </a-entity>
+
+            <!-- Informacion -->
+            <a-entity id="Volante" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/volante.png" scale="1.4 0.9 0" position="-2 -0.9 0.88" rotation="0 90 0 "></a-image>
+            </a-entity>
+            
+            <a-entity id="Pantalla" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/pantalla.png" scale="1.1 1 0" position="-2 0.3 -0.72" rotation="0 90 0 "></a-image>
+            </a-entity>
 
             <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/Asset%202.png" scale="1.5 1.5 0 " position="-2.02 0.8 0.1" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/airbag.png" scale="1.2 0.4 0" position="-2 0 -1.9" rotation="0 90 0 "></a-image>
             </a-entity>
 
-            <a-entity id="Infoentrenamiento" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/Infoentretenimiento.png" scale="1 1.2 0 " position="-1.1 0.6 -0.55" rotation="0 90 0 "></a-image>
-            </a-entity>
-        </a-entity>
+            <!-- Boton Ir Parte Trasera -->
+            <a-entity id="atrasbtn">
+                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 1 0.02" rotation="0 90 0"></a-image>
+            `</a-entity>
 
-		<a-entity id="BotonesInterior">
-        <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
         </a-entity>
-        <a-entity id="infoBtn">
-            <a-image onclick="javaScript:boton('Infoentrenamiento')" src="#aro" scale="0.1 0.1 0" position="0.05 0 -1"></a-image>
-        </a-entity>
-		</a-entity>
-		
-		
-		 <a-entity id= "atrasbtn">
-			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="-0.01 0.42 -0.9" rotation="0 0 0"></a-image>
-			</a-entity>
-		
+        
 
         <a-entity id="parteTrasera" visible="false">
-			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
-		</a-entity>
+
+            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="SistemaBtn">
+                    <a-image onclick="javaScript:boton('Sistema')" src="#aro" scale="0.07 0.07 0" position="-0.4 -1.8 -1.9" rotation="0 0 0"></a-image>
+                </a-entity>
+            </a-entity>
+
+            <!-- Informacion -->
+            <a-entity id="Sistema" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/isofix.png" scale="1.6 0.9 0" position="0.35 -2.12 -2" rotation="0 0 0 "></a-image>
+            </a-entity>
+
+            <!-- Boton Ir Parte Delantera -->
+            <a-entity id="delantebtn">
+               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0 0.6 -1.9" rotation="0 0 0"></a-image>
+            </a-entity>
+            
+       </a-entity>
+        
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
-            <a-image onclick="javaScript:To('../tcross.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+            <a-image onclick="javaScript:exterior('T-Cross_Trendline_AT.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
         </a-entity>
 

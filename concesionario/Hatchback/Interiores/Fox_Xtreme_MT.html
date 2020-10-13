@@ -4,7 +4,8 @@
 <head>
     <meta charset="utf-8">
     <title>Volskwagen Fox Xtreme MT</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
     <script src="../../../styles/camera.js"></script>
@@ -21,68 +22,85 @@
 
 
         <!-- 360-degree image scenes.-->
-        <a-entity id="frente" rotation="0 -90 0">
+        <a-entity id="parteDelantera" rotation="0 -90 0">
 
             <a-sky radius="30" src="#interior"></a-sky>
 
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="volanteBtn">
+                    <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.08 0.08 0" position="-1.9 -1.45 1.2" rotation="0 90 0"></a-image>
+                </a-entity>
+
+                <a-entity id="direccionBtn">
+                    <a-image onclick="javaScript:boton('direccion')" src="#aro" scale="0.07 0.07 0" position="-1.9 -0.2 1" rotation="0 90 0"></a-image>
+                </a-entity>
+
+                <a-entity id="airbagBtn">
+                    <a-image onclick="javaScript:boton('airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.55 -1.28" rotation="0 90 0"></a-image>
+                </a-entity>
+
+                <a-entity id="pantallaBtn">
+                    <a-image onclick="javaScript:boton('pantalla')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.08 -0.05" rotation="0 90 0"></a-image>
+                </a-entity>
+
+                <a-entity id="aireBtn">
+                    <a-image onclick="javaScript:boton('aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.4 -0.05" rotation="0 90 0"></a-image>
+                </a-entity>
+
+                <a-entity id="cojineriaBtn">
+                    <a-image onclick="javaScript:boton('cojineria')" src="#aro" scale="0.06 0.06 0" position="-1.05 -0.2 1.9" rotation="0 0 0"></a-image>
+                </a-entity>
+            </a-entity>
+
+            <!-- Informacion -->
             <a-entity id="volante" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Volante.png" scale="1 1.3 0 " position="-1 0.13 0.1" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Volante.png" scale="2 2 0" position="-2 -0.5 0.25" rotation="0 90 0"></a-image>
             </a-entity>
 
-            <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Airbag.png" scale="1 1.2 0 " position="-1 0.33 0.1" rotation="0 90 0 "></a-image>
+            <a-entity id="direccion" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Direccion.png" scale="2 0.6 0" position="-2 -0.06 1.4" rotation="0 90 0"></a-image>
             </a-entity>
 
-            <a-entity id="Infoentrenamiento" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Infoentretenimiento.png" scale="1 1.2 0 " position="-1 0.08 -0.5" rotation="0 90 0 "></a-image>
+            <a-entity id="airbag" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Airbag.png" scale="1.6 1.6 0" position="-2 0.2 -0.55" rotation="0 90 0"></a-image>
+            </a-entity>
+
+            <a-entity id="pantalla" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Pantalla.png" scale="1.7 1.7 0" position="-2 -0.3 -0.9" rotation="0 90 0"></a-image>
+            </a-entity>
+
+            <a-entity id="aire" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Aire.png" scale="1.6 0.6 0" position="-2 -1.18 0.75" rotation="0 90 0"></a-image>
             </a-entity>
             
-                <a-entity id="Ergonomia" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Ergonomia.png" scale="1 1 0 " position="-1 -0.7 -0.1" rotation="-30 90 0 "></a-image>
-            </a-entity>
-            
-             <a-entity id="NombreCar" visible="true">
-                <a-image src="../../../img/nombres/FoxXtreme.png" scale="1.5 0.5 0 " position="0 5 -0.1" rotation="90 0 0 "></a-image>
-            </a-entity>
-            <a-entity id="NombreCar" visible="true">
-                <a-image src="../../../img/nombres/FoxXtreme.png" scale="1.5 0.5 0 " position="0 -5 -0.1" rotation="-90 0 0 "></a-image>
+            <a-entity id="cojineria" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Cojineria.png" scale="2.1 1.7 0" position="-1.9 -0.35 1.6" rotation="0 120 0"></a-image>
             </a-entity>
 
-        </a-entity>
-		
-		<a-entity id="BotonesInterior">
-        <a-entity id="volanteBtn" >
-        <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.1 0.1 0" position="-0.55 -0.45 -0.9."></a-image>
-        </a-entity>
-        <a-entity id="ArtbagBtn">
-        <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.4 -0.25 -0.9."></a-image>
-        </a-entity>
-        <a-entity id= "infoBtn">
-        <a-image onclick="javaScript:boton('Infoentrenamiento')" src="#aro" scale="0.1 0.1 0" position="0 -0.5 -0.9."></a-image>
-        </a-entity>
-        <a-entity id= "ErgonomiaBtn">
-        <a-image onclick="javaScript:botonDos('Ergonomia', 'infoBtn', 'ArtbagBtn')" src="#aro" scale="0.2 0.2 0" position="-0.5 -1.5 -0.9." rotation="90 0 0"></a-image>
-        </a-entity>
-		</a-entity>
+            <!-- Boton Ir Parte Trasera -->
+            <a-entity id="atrasbtn">
+               <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.55 0.12" rotation="0 90 0"></a-image>
+           `</a-entity>
 
-		
-		 <a-entity id= "atrasbtn">
-			<a-image onclick="javaScript:visible('parteTrasera','concesionario')" src="#aro" scale="0.1 0.1 0" position="-0.05 0.2 -0.9" rotation="0 0 0"></a-image>
-			</a-entity>
+        </a-entity>
 		
 
         <a-entity id="parteTrasera" visible="false">
+
 			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
-			
-		 <a-entity id= "atrasbtn">
-			<a-image onclick="javaScript:visible('concesionario','parteTrasera')" src="#aro" scale="0.1 0.1 0" position="-0.05 0.2 -0.9" rotation="0 0 0"></a-image>
-			</a-entity>
+
+            <!-- Boton Ir Parte Delantera -->
+            <a-entity id="delantebtn">
+               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0 0.5 -1.9" rotation="0 0 0"></a-image>
+            </a-entity>
+
 		</a-entity>
 
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
-            <a-image onclick="javaScript:Exterior('fox.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+            <a-image onclick="javaScript:To('../fox.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
         </a-entity>
 
