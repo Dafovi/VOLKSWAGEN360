@@ -2,94 +2,113 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Tiguan DSG</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-    <script src="../../styles/cars.js"></script>
+    <title>Volkswagen Tiguan Highline DSG 2.0L</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
+    <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../../styles/cars.js"></script>
   </head>
 
 	<body>
     <a-scene vr-mode-ui="enabled: false">
-      <a-assets>
-        <img id="Tiguahln" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_16.jpg">
-        <img id="Tiguahln1" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_17.jpg">
-        <img id="Tiguahln2" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_18.jpg">
-        <img id="Tiguahln3" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_19.jpg">
-        <img id="Tiguahln4" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_20.jpg">
-        <img id="Tiguahln5" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_21.jpg">
-        <img id="Tiguahln6" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_22.jpg">
-        <img id="Tiguahln7" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_23.jpg">
-          
-          
-        <img id="atras" src="../../img/icons/atras.png">
-      </a-assets>
+		<a-assets>
+			<img id="Tiguahln" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_16.jpg">
+			<img id="Tiguahln1" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_17.jpg">
+			<img id="Tiguahln2" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_18.jpg">
+			<img id="Tiguahln3" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_19.jpg">
+			<img id="Tiguahln4" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_20.jpg">
+			<img id="Tiguahln5" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_21.jpg">
+			<img id="Tiguahln6" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_22.jpg">
+			<img id="Tiguahln7" src="../../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_HIGHLINE_2.0/SUV_ZOOM_23.jpg">
+			
+			<img id="atras" src="../../../img/icons/atras.png">
+			<img id="aro" src="../../../img/icons/aro.png">
+		</a-assets>
       
      
-      <!-- 360-degree image scenes.-->
-      <a-entity id="concesionario" rotation="0 -90 0">
-		  		  
-		  <a-entity id="Flechas">
-			<!-- Siguiente-->
-			<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
-		  		<!-- interior -->
-		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
-		  		<!--- 360 --->
-		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
-			<!--Anterior-->
-			<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
-			</a-image>
+		<!-- 360-degree image scenes.-->
+		<a-entity id="concesionario" rotation="0 -90 0">
+					
+			<a-entity id="Flechas">
+				<!-- Siguiente-->
+				<a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+				<!-- interior -->
+				<a-image  onclick="javaScript:interior('Tiguan_Highline_DSG.html')" src="../../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
+				<!--- 360 --->
+				<a-image  src="../../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+				<!--Anterior-->
+				<a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
+				</a-image>
+			</a-entity>
+			
+			<a-entity id="HIGHLINE">
+				
+				<!-- Vistas -->
+				<a-entity id="0" ><a-sky radius="30" src="#Tiguahln"></a-sky></a-entity> 
+				<a-entity id="1" visible="false" ><a-sky radius="30" src="#Tiguahln1"></a-sky></a-entity>
+				<a-entity id="2" visible="false" ><a-sky radius="30" src="#Tiguahln2"></a-sky></a-entity>
+				<a-entity id="3" visible="false" ><a-sky radius="30" src="#Tiguahln3"></a-sky></a-entity>
+				<a-entity id="4" visible="false" ><a-sky radius="30" src="#Tiguahln4"></a-sky></a-entity>
+				<a-entity id="5" visible="false" ><a-sky radius="30" src="#Tiguahln5"></a-sky></a-entity>
+				<a-entity id="6" visible="false" ><a-sky radius="30" src="#Tiguahln6"></a-sky></a-entity>
+				<a-entity id="7" visible="false" ><a-sky radius="30" src="#Tiguahln7"></a-sky></a-entity>
+
+				<!-- Botones -->
+				<a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.08 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+				<a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+				<a-entity id="btnCaja" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 0.01" rotation="0 90 0" onclick="javaScript:boton('Caja')"></a-image></a-entity>
+				<a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 -0.88" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+				<a-entity id="btnSensorLuz" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.43 1.43" rotation="0 90 0" onclick="javaScript:boton('SensorLuz')"></a-image></a-entity>
+				<a-entity id="btnSensores" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 1.45" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
+				<a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.66 -1.41" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
+				<a-entity id="btnEasyOpen" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 -1.41" rotation="0 90 0" onclick="javaScript:boton('EasyOpen')"></a-image></a-entity>
+				<a-entity id="btnLuces" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.28 -1.4" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
+				<a-entity id="btnSeguridad" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -1.3" rotation="0 90 0" onclick="javaScript:boton('Seguridad')"></a-image></a-entity>
+				<a-entity id="btnTecho" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.15 -0.15" rotation="0 90 0" onclick="javaScript:boton('Techo')"></a-image></a-entity>
+				<a-entity id="btnLluvia" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.08 0.68" rotation="0 90 0" onclick="javaScript:boton('Lluvia')"></a-image></a-entity>
+				<a-entity id="btnAsistente" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.15 1.1" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
+				
+				<!-- información -->
+				<a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Garantia.png" position="-2 0.35 -0.08" scale="1.2 0.8 0" rotation="0 90 0"></a-image></a-entity>
+				
+				<a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Motor.png" position="-2 -0.34 -0.78" scale="1.7 0.6 0" rotation="0 90 0"></a-image></a-entity>
+				
+				<a-entity id="Caja" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/CajaDSG.png" position="-2.4 -1.4 1.25" scale="1.8 1 0" rotation="0 90 0"></a-image></a-entity>
+	  
+				<a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Rin.png" position="-2 -0.92 -1.05" scale="1 0.75 0" rotation="0 90 0"></a-image></a-entity>
+		
+				<a-entity id="SensorLuz" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/sensorLuz.png" position="-2 -0.5 1.95" scale="1.4 0.4 0" rotation="0 90 0"></a-image></a-entity>
+				
+				<a-entity id="Sensores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/sensores.png" position="-2 -0.67 2.05" scale="1.4 0.55 0" rotation="0 90 0"></a-image></a-entity>
+	  
+				<a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/SensoresTraseros.png" position="-2 -0.8 -2.1" scale="1.4 0.6 0" rotation="0 90 0"></a-image></a-entity>
+
+				<a-entity id="EasyOpen" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/EasyOpen.png" position="-2 -0.86 -2.14" scale="1.5 0.8 0" rotation="0 90 0"></a-image></a-entity>
+				
+				<a-entity id="Luces" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Luces.png" position="-2 -0.33 -1.91" scale="1.1 0.4 0" rotation="0 90 0"></a-image></a-entity>
+				
+				<a-entity id="Seguridad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Seguridad.png" position="-2 0.21 -2.2" scale="1.8 1.1 0" rotation="0 90 0"></a-image></a-entity>
+				
+				<a-entity id="Techo" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/Techo.png" position="-2 0.4 0.5" scale="1.3 0.8 0" rotation="0 90 0"></a-image></a-entity>
 			  
-			  
-		  			<!-- botones -->
-			  		<a-entity class="btnGarantia"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 0.15 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Garantia')"></a-image></a-entity>			  		
-		  			<a-entity class="btnAltura"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 0.15 0.4" rotation="0 90 0" onclick="javaScript:botonClass('Altura')"></a-image></a-entity>			  		
-		  			<a-entity class="btnFaros"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.47 -0.5" rotation="0 90 0" onclick="javaScript:botonClass('Faros')"></a-image></a-entity>			  		
-		  			<a-entity class="btnMotor"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.35 0.2" rotation="0 90 0" onclick="javaScript:botonClass('Motor')"></a-image></a-entity>			
-			  		<a-entity class="btnVidrios"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.1 -0.4" rotation="0 90 0" onclick="javaScript:botonClass('Vidrios')"></a-image></a-entity>
-		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.98 0.1 -1.2" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>			  		
-		  			<a-entity class="btnFrenos"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.94 -0.2 0.5" rotation="0 90 0" onclick="javaScript:botonClass('Frenos')"></a-image></a-entity>
-		  </a-entity>
-		  
-		  <a-entity id="HIGHLINE">
-			  
-			  		<a-image src="../../img/nombres/Tiguan_Highline_DSG.png" position="-2 0.6 -0.4" scale="1.5 1. 0" rotation="0 90 0"></a-image>
-			  
-          			<a-entity class="0" ><a-sky radius="30" src="#Tiguahln"></a-sky></a-entity> 
-                    <a-entity class="1" visible="false" ><a-sky radius="30" src="#Tiguahln1"></a-sky></a-entity>
-                    <a-entity class="2" visible="false" ><a-sky radius="30" src="#Tiguahln2"></a-sky></a-entity>
-                    <a-entity class="3" visible="false" ><a-sky radius="30" src="#Tiguahln3"></a-sky></a-entity>
-                    <a-entity class="4" visible="false" ><a-sky radius="30" src="#Tiguahln4"></a-sky></a-entity>
-                    <a-entity class="5" visible="false" ><a-sky radius="30" src="#Tiguahln5"></a-sky></a-entity>
-                    <a-entity class="6" visible="false" ><a-sky radius="30" src="#Tiguahln6"></a-sky></a-entity>
-                    <a-entity class="7" visible="false" ><a-sky radius="30" src="#Tiguahln7"></a-sky></a-entity>
-			  
-			  
-			  		
-			  <!-- información -->
-		  			<a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Tiguan_Highline_DSG/Garantia.png" position="-2 0.4 -0.9" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
-		  			
-			  		<a-entity class="Altura" visible="false"><a-image src="../../img/concesionario/Interiores/Tiguan_Highline_DSG/Techo.png" position="-1.99 0.5 1.2" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Faros" visible="false"><a-image src="../../img/concesionario/Interiores/Tiguan_Highline_DSG/Luces.png" position="-2 -0.2 -1.1" scale="1.2 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Tiguan_Highline_DSG/Motor.png" position="-2 -0.1 1" scale="1.5 0.5 0" rotation="0 90 0"></a-image></a-entity>
-			  
-			  		<a-entity class="Vidrios" visible="false"><a-image src="../../img/concesionario/Interiores/Tiguan_Highline_DSG/CajaDSG.png" position="-1.99 0.15 -1" scale="1.2 0.6 0" rotation="0 90 0"></a-image></a-entity>
-			  		
-		  			<a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Tiguan_Highline_DSG/EasyOpen.png" position="-1.999 0.35 -0.7" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
-		  
-		  			<a-entity class="Frenos" visible="false"><a-image src="../../img/concesionario/Interiores/Tiguan_Highline_DSG/Asistente.png" position="-2 0.2 1.35" scale="1.6 0.8 0" rotation="0 90 0"></a-image></a-entity>  
-			  
-		  </a-entity>
-          
-      </a-entity>
+				<a-entity id="Lluvia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/sensorLluvia.png" position="-2 0.1 1.15" scale="1.1 0.5 0" rotation="0 90 0"></a-image></a-entity>
+				
+				<a-entity id="Asistente" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Tiguan_Highline_DSG/asistencia.png" position="-2 0.25 1.76" scale="1.4 1 0" rotation="0 90 0"></a-image></a-entity>
+				
+			  </a-entity>
+				
+			</a-entity>
+			
+		</a-entity>
       
-      <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
-		  <a-image onclick="javaScript:volver('../suv.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
-      </a-entity>
+		<!-- Camera + cursor. -->
+		<a-entity camera look-controls cursor="rayOrigin: mouse">
+			
+			<a-image onclick="javaScript:To('../tiguan_dsg.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+			
+			<a-image src="../../../img/nombres/Tiguan-Highline-DSG.png" position="-1.1 -0.68 -1" scale="1.35 0.45 0" rotation="0 0 0"></a-image>
+			
+		</a-entity>
                   
     </a-scene>
   </body>

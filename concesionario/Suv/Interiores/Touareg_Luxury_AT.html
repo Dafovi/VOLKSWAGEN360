@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Touareg_Luxury_AT</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Touareg Luxury AT</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
     <script src="../../../styles/camera.js"></script>
@@ -21,58 +22,68 @@
 
 
         <!-- 360-degree image scenes.-->
-        <a-entity id="concesionario" rotation="0 -90 0">
+        <a-entity id="parteDelantera" rotation="0 -90 0">
 
             <a-sky radius="30" src="#interior"></a-sky>
 
-            <a-entity id="Heads" visible="false">
-            <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Heads.png" scale="1 1 0 " position="-1 0.35 0.9" rotation="0 110 0 "></a-image>
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="CockpitBtn">
+                    <a-image onclick="javaScript:boton('Cockpit')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.15 0.78" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="IluminacionBtn">
+                    <a-image onclick="javaScript:boton('Iluminacion')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.35 1.7" rotation="0 120 0"></a-image>
+                </a-entity>
+                <a-entity id="PantallaBtn">
+                    <a-image onclick="javaScript:boton('Pantalla')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.72 -0.32" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="MotionBtn">
+                    <a-image onclick="javaScript:boton('Motion')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.05 0.03" rotation="-40 90 0"></a-image>
+                </a-entity>
+                <a-entity id="CajaBtn">
+                    <a-image onclick="javaScript:boton('Caja')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.1 -0.15" rotation="0 90 0"></a-image>
+                </a-entity>
             </a-entity>
 
-            <a-entity id="iluminacion" visible="false">
-            <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Iluminacion.png" scale="1 1 0 " position="-1.1 0.15 -0.1" rotation="20 90 0 "></a-image>
+            <!-- Informacion -->
+            <a-entity id="Cockpit" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/cockpit.png" scale="1.6 0.75 0" position="-2 -0.08 1.55" rotation="0 120 0 "></a-image>
             </a-entity>
 
-            <a-entity id="infoEntr" visible="false">
-            <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Infoentretenimiento.png" scale="1 1.1 0 " position="-1.1 0.2 0.3" rotation="0 100 0 "></a-image>
+            <a-entity id="Iluminacion" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Iluminacion.png" scale="1.8 0.8 0" position="-2 -0.55 2.75" rotation="0 140 0 "></a-image>
+            </a-entity>
+            
+            <a-entity id="Pantalla" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/pantalla.png" scale="1.3 1 0" position="-2 -0.38 -0.88" rotation="0 90 0 "></a-image>
+            </a-entity>
+            
+            <a-entity id="Motion" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Motion.png" scale="1.8 0.8 0" position="-2 -2.35 -0.8" rotation="-20 90 0 "></a-image>
+            </a-entity>
+            
+            <a-entity id="Caja" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Caja.png" scale="1.2 0.4 0" position="-2 -1.2 -0.7" rotation="-20 90 0 "></a-image>
             </a-entity>
 
-            <a-entity id="motion" visible="false">
-            <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Motion.png" scale="1 1 0 " position="-1.1 -0.6 -0.4" rotation="0 80 0 "></a-image>
-            </a-entity>
+            <!-- Boton Ir Parte Trasera -->
+            <a-entity id="atrasbtn">
+                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.4 -0.03" rotation="0 90 0"></a-image>
+            `</a-entity>
 
-            <a-entity id="virtual" visible="false">
-            <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Virtual.png" scale="1 1 0 " position="-1.1 0.15 0.6" rotation="0 110 0 "></a-image>
-            </a-entity>
+        </a-entity>
 
-           
-			<a-entity id="HeadsBtn" >
-        	<a-image onclick="javaScript:boton('Heads')" src="#aro" scale="0.1 0.1 0" position="-1 -0.15 0.35" rotation="0 90 0"></a-image>  
-			</a-entity>
-			<a-entity id="iluminacionBtn" >
-        	<a-image onclick="javaScript:botonDos('iluminacion','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="-1 -0.27 -0.45" rotation="0 90 0"></a-image>
-        	</a-entity>
-			<a-entity id="infoEntrBtn" >
-        	<a-image onclick="javaScript:boton('infoEntr')" src="#aro" scale="0.1 0.1 0" position="-1 -0.32 -0.15" rotation="0 90 0"></a-image>
-        	</a-entity>
-			<a-entity id="motionBtn" >
-        	<a-image onclick="javaScript:botonDos('motion','iluminacionBtn','infoEntrBtn')" src="#aro" scale="0.1 0.1 0" position="-1 -0.9 0.075" rotation="0 90 0"></a-image>
-        	</a-entity>
-			<a-entity id="virtualBtn" >
-        	<a-image onclick="javaScript:boton('virtual')" src="#aro" scale="0.1 0.1 0" position="-1 -0.3 0.1" rotation="0 90 0"></a-image>
-        	</a-entity>
-
-  		</a-entity>
-		
-		
-		 <a-entity id= "atrasbtn">
-			<a-image onclick="javaScript:botonDos('parteTrasera','concesionario','concesionario')" src="#aro" scale="0.1 0.1 0" position="0.01 0.16 -0.9" rotation="0 0 0"></a-image>
-			</a-entity>
-		
 
         <a-entity id="parteTrasera" visible="false">
-			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
-		</a-entity>
+
+            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+
+            <!-- Boton Ir Parte Delantera -->
+            <a-entity id="delantebtn">
+               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="-0.01 0.2 -1.9" rotation="0 0 0"></a-image>
+            </a-entity>
+            
+       </a-entity>
 
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
