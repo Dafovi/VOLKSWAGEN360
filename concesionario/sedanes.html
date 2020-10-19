@@ -2,8 +2,9 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Sedanes</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volskwagen Sedanes</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../styles/A-frame.js"></script>
     <link rel="icon" href="../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../styles/cars.js"></script>
   </head>
@@ -13,7 +14,6 @@
       <a-assets>
         <img id="Hatchback" src="../img/concesionario/CATEGORIAS/SEDANES/SEDANES.jpg">
           
-          
         <img id="atras" src="../img/icons/atras.png">
       </a-assets>
       
@@ -22,23 +22,23 @@
       <a-entity id="concesionario" rotation="0 -90 0">
         <a-sky radius="30" src="#Hatchback"></a-sky>
 		  
-		  <a-image onclick="javaScript:To('Sedanes/voyage.html')" src="../img/nombres/Voyage.png" scale="2 1 0" position="-5 -2 6" rotation="0 90 0"></a-image>
-		  <a-box onclick="javaScript:To('Sedanes/voyage.html')" scale="2 1 1" position="-3.5 -0.2 3.5" visible="false"></a-box>
-		  
-		  <a-image onclick="javaScript:To('Sedanes/virtus.html')" src="../img/nombres/Virtus.png" scale="2 1 0" position="-5 -2.1 2.2" rotation="0 90 0"></a-image>
-		  <a-box onclick="javaScript:To('Sedanes/virtus.html')" scale="2 1 1" position="-3.5 -0.2 1" visible="false"></a-box>
-		  
-		  <a-image onclick="javaScript:To('Sedanes/jetta_spl.html')" src="../img/nombres/Jetta.png" scale="2 1 0" position="-5 -2 -3" rotation="0 90 0"></a-image>
-		  <a-box onclick="javaScript:To('Sedanes/jetta_spl.html')" scale="2 1 1" position="-3.5 -0.2 -1.5" visible="false"></a-box>
-          
-          <a-image onclick="javaScript:To('Sedanes/jetta_gli.html')" src="../img/nombres/Jetta.png" scale="2 1 0" position="-5 -2 -7" rotation="0 90 0"></a-image>
-		  <a-box onclick="javaScript:To('Sedanes/jetta_gli.html')" scale="1.5 1 1" position="-3.5 -0.2 -4" visible="false"></a-box>
+        <a-image onclick="javaScript:To('Sedanes/voyage.html')" src="../img/nombres/Voyage.png" scale="2 1 0" position="-5 -2 6" rotation="0 90 0"></a-image>
+        <a-box onclick="javaScript:To('Sedanes/voyage.html')" scale="2 1 1" position="-3.5 -0.2 3.5" visible="false"></a-box>
+        
+        <a-image onclick="javaScript:To('Sedanes/virtus.html')" src="../img/nombres/Virtus.png" scale="2 1 0" position="-5 -2.1 2.2" rotation="0 90 0"></a-image>
+        <a-box onclick="javaScript:To('Sedanes/virtus.html')" scale="2 1 1" position="-3.5 -0.2 1" visible="false"></a-box>
+        
+        <a-image onclick="javaScript:To('Sedanes/jetta_spl.html')" src="../img/nombres/Jetta.png" scale="2 1 0" position="-5 -2 -3" rotation="0 90 0"></a-image>
+        <a-box onclick="javaScript:To('Sedanes/jetta_spl.html')" scale="2 1 1" position="-3.5 -0.2 -1.5" visible="false"></a-box>
+            
+        <a-image onclick="javaScript:To('Sedanes/jetta_gli.html')" src="../img/nombres/Jetta_GLI.png" scale="2 0.9 0" position="-5 -2.15 -7" rotation="0 90 0"></a-image>
+        <a-box onclick="javaScript:To('Sedanes/jetta_gli.html')" scale="1.5 1 1" position="-3.5 -0.2 -4" visible="false"></a-box>
       </a-entity>
       
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:To('categorias.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		    <a-image onclick="javaScript:To('categorias.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 		  
       </a-entity>
     </a-scene>

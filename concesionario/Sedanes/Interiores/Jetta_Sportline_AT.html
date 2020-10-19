@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Jetta_Sportline_AT</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Jetta Sportline AT</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
     <script src="../../../styles/camera.js"></script>
@@ -16,71 +17,106 @@
             <img id="interior" src="../../../img/concesionario/Interiores/JETTA_GLI.jpg">
 
             <img id="atras" src="../../../img/icons/atras.png">
-
             <img id="aro" src="../../../img/icons/aro.png">
         </a-assets>
 
 
         <!-- 360-degree image scenes.-->
-        <a-entity id="concesionario" rotation="0 -90 0">
+        <a-entity id="parteDelantera" rotation="0 -90 0">
 
             <a-sky radius="30" src="#interior"></a-sky>
-            <a-entity id="volante" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Manejo.png" scale="1 1.3 0 " position="-1.2 0.2 0.3" rotation="0 90 0 "></a-image>
+
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="AireBtn">
+                    <a-image onclick="javaScript:boton('Aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.96 0.6" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="cockpitBtn">
+                    <a-image onclick="javaScript:boton('cockpit')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.28 0.75" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="EspacioBtn">
+                    <a-image onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.1 -0.9" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="AirbagBtn">
+                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.45 -0.52" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="LucesBtn">
+                    <a-image onclick="javaScript:botonDos('Luces','atrasbtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.48 -0.72" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="EntretenimientoBtn">
+                    <a-image onclick="javaScript:boton('Entretenimiento')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.6 0.16" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="ModosBtn">
+                    <a-image onclick="javaScript:boton('Modos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.55 0.21" rotation="10 90 0"></a-image>
+                </a-entity>
+                <a-entity id="TapiceriaBtn">
+                    <a-image onclick="javaScript:boton('Tapiceria')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.4 -0.14" rotation="10 90 0"></a-image>
+                </a-entity>
+                <a-entity id="AsientosBtn">
+                    <a-image onclick="javaScript:boton('Asientos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.5 0.9" rotation="10 120 0"></a-image>
+                </a-entity>
+            </a-entity>
+
+            <!-- Informacion -->
+            <a-entity id="Aire" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Aire.png" scale="1.7 1.4 0" position="-2 -0.4 1.5" rotation="0 100 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="cockpit" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/cocktip.png" scale="2 1.5 0" position="-2 0.37 1.85" rotation="0 120 0 "></a-image>
+            </a-entity>
+            
+            <a-entity id="Espacio" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Espacio.png" scale="1 0.45 0" position="-2 0.13 -1.45" rotation="0 90 0 "></a-image>
             </a-entity>
 
             <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Seguridad.png" scale="1.5 1.5 0 " position="-2.02 0.2 0.1" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Airbag.png" scale="0.9 1 0" position="-2 0.02 -0.1" rotation="0 90 0 "></a-image>
             </a-entity>
 
-            <a-entity id="Infoentrenamiento" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Infoentretenimiento.png" scale="1 1.2 0 " position="-1 0.35 -0.3" rotation="0 90 0 "></a-image>
+            <a-entity id="Luces" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Luces.png" scale="1.5 1.2 0" position="-2 0.1 0.02" rotation="0 90 0 "></a-image>
             </a-entity>
-            <a-entity id="Cambio" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Aire.png" scale="2 2 0 " position="-2.1 0.5 -1.0" rotation="0 90 0 "></a-image>
+
+            <a-entity id="Entretenimiento" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Pantalla.png" scale="1 1.4 0" position="-2 0.08 -0.34" rotation="0 90 0 "></a-image>
             </a-entity>
-              <a-entity id="Piso" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Tecnologia.png" scale="2 2 0 " position="-2.1 -0.5 -0.1" rotation="0 90 0 "></a-image>
+
+            <a-entity id="Modos" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Manejo.png" scale="1.1 1.1 0" position="-2 -1.1 -0.32" rotation="0 90 0 "></a-image>
             </a-entity>
-            <a-entity id="Sensor" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Luces.png" scale="1 1.3 0 " position="-1.2 0.6 1.3" rotation="0 90 0 "></a-image>
+
+            <a-entity id="Tapiceria" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Tapiceria.png" scale="1 0.6 0" position="-2 -1.18 -0.65" rotation="0 90 0 "></a-image>
             </a-entity>
+
+            <a-entity id="Asientos" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Asientos.png" scale="1.3 0.6 0" position="-2 -1.19 0.22" rotation="0 100 0 "></a-image>
+            </a-entity>
+
+            <!-- Boton Ir Parte Trasera -->
+            <a-entity id="atrasbtn">
+                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.45 0.4" rotation="0 90 0"></a-image>
+            `</a-entity>
+
         </a-entity>
 
-		<a-entity id="BotonesInterior">
-        <a-entity id="volanteBtn">
-            <a-image onclick="javaScript:botonDos('volante','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="-0.6 -0.3 -0.9."></a-image>
-        </a-entity>
-        <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.3 -0.2 -0.8"></a-image>
-        </a-entity>
-        <a-entity id="infoBtn">
-            <a-image onclick="javaScript:boton('Infoentrenamiento')" src="#aro" scale="0.1 0.1 0" position="-0.2 -0.2 -0.9."></a-image>
-        </a-entity>
-        <a-entity id="CambioBtn">
-            <a-image onclick="javaScript:boton('Cambio')" src="#aro" scale="0.2 0.2 0" position="1 -0.2 -1" rotation="0 0 0"></a-image>
-        </a-entity>
-           <a-entity id="PisoBtn">
-            <a-image onclick="javaScript:botonDos('Piso' , 'infoBtn', 'atrasbtn')" src="#aro" scale="0.2 0.2 0" position="0.6 -0.8 -1.1" rotation="0 0 0"></a-image>
-        </a-entity>
-         <a-entity id="sensorBtn">
-            <a-image onclick="javaScript:boton('Sensor')" src="#aro" scale="0.1 0.1 0" position="-0.6 0.01 -0.9."></a-image>
-        </a-entity>
-		</a-entity>
-		
-		
-		 <a-entity id= "atrasbtn">
-			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="-0.189 0.15 -0.9" rotation="0 0 0"></a-image>
-			</a-entity>
-		
 
         <a-entity id="parteTrasera" visible="false">
-			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
-		</a-entity>
+
+            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+
+            <!-- Boton Ir Parte Delantera -->
+            <a-entity id="delantebtn">
+               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0 0.5 -1.9" rotation="0 0 0"></a-image>
+            </a-entity>
+            
+        </a-entity>
+
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
-            <a-image onclick="javaScript:To('../jetta_spl.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+            <a-image onclick="javaScript:exterior('Jetta_Sportline_AT.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
         </a-entity>
 

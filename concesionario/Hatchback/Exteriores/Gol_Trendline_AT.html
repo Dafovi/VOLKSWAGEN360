@@ -36,7 +36,7 @@
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 		  		<!-- interior -->
-		  		<a-image  onclick="javaScript:interior('Gol_Trendline_AT.html')" src="../../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
+		  		<a-image onclick="javaScript:interior('Gol_Trendline_AT.html')" src="../../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
 		  		<!--- 360 --->
 		  		<a-image  src="../../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
           <!--Anterior-->
@@ -60,7 +60,7 @@
           <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
           <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
           <a-entity id="btnCabina" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 0.48" rotation="0 90 0" onclick="javaScript:boton('Cabina')"></a-image></a-entity>
-          <a-entity id="btnParrilla" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 0" rotation="0 90 0" onclick="javaScript:boton('Parrilla')"></a-image></a-entity>
+          <a-entity id="btnParrilla" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 0" rotation="0 90 0" onclick="javaScript:botonDos('Parrilla','Flechas')"></a-image></a-entity>
           <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.84 -0.9" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
           <a-entity id="btnFrenos" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.8" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
 
@@ -71,12 +71,12 @@
           
           <a-entity id="Cabina" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Cabina.png" position="-1.99 0.32 -0.15" scale="1.3 0.55 0" rotation="0 90 0"></a-image></a-entity>
           
-          <a-entity id="Parrilla" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Parrilla.png" position="-2.4 -1.46 -1.1" scale="2.2 1 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Parrilla" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Parrilla.png" position="-2.4 -1.35 -1.1" scale="2.2 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Rin.png" position="-2 -1.07 -1.57" scale="1.3 0.4 0" rotation="0 90 0"></a-image></a-entity>
   
-          <!-- TODO: Falta IMG -->
-          <!-- <a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_MT/Frenos.png" position="-2 -0.93 1.75" scale="1.9 0.4 0" rotation="0 90 0"></a-image></a-entity> -->
+          <!-- TODO: Falta IMG, se tomo otra -->
+          <a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_MT/Frenos.png" position="-2 -0.93 1.75" scale="1.9 0.4 0" rotation="0 90 0"></a-image></a-entity>
   
         </a-entity>
 		  
@@ -87,7 +87,7 @@
   		
         <a-image onclick="javaScript:To('../gol.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
         
-        <a-image src="../../../img/nombres/Gol_Trendline_AT.png" position="-1.1 -0.68 -1" scale="0.8 0.2 0" rotation="0 0 0"></a-image>
+        <a-image src="../../../img/nombres/Gol_Trendline_AT.png" position="-1.1 -0.68 -1" scale="0.6 0.15 0" rotation="0 0 0"></a-image>
 		  
       </a-entity>
                   

@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Crafter_35_Doca_MT</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volskwagen Crafter 35 Chasis Doble Cabina 4x4</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
     <script src="../../../styles/camera.js"></script>
@@ -14,6 +15,7 @@
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
             <img id="interior" src="../../../img/concesionario/Interiores/CRAFTER_DOCA.jpg">
+            <!-- <img id="Vagon" src="../../../img/concesionario/Interiores/CRAFTER_VAGON.jpg"> -->
             
             <img id="atras" src="../../../img/icons/atras.png">
             <img id="aro" src="../../../img/icons/aro.png">
@@ -40,7 +42,7 @@
 
             <!-- Informacion -->
             <a-entity id="Vidrios" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/Vidrios.png" scale="2 1.7 0" position="-2 -0.6 3" rotation="0 140 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/Vidrios.png" scale="2 1.8 0" position="-1.45 -0.65 4" rotation="0 140 0 "></a-image>
             </a-entity>
             
             <a-entity id="Puestos" visible="false">
@@ -52,23 +54,35 @@
             </a-entity>
 
             <!-- Boton Ir Parte Trasera -->
-            <!-- <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 1.5 -0.11" rotation="0 90 0"></a-image>
-            `</a-entity> -->
+            <a-entity id="atrasbtn">
+                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.8 0.47" rotation="0 90 0"></a-image>
+            `</a-entity>
 
         </a-entity>
 
 
-        <!-- <a-entity id="parteTrasera" visible="false">
+        <a-entity id="parteTrasera" visible="false">
 
-            <a-sky radius="30" src="#Vagon" rotation="0 90 0"></a-sky> -->
-
-            <!-- Boton Ir Parte Delantera -->
-            <!-- <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="-0.05 0.85 -1.9" rotation="0 0 0"></a-image>
+            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+            
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="PuestosAtrasBtn">
+                    <a-image onclick="javaScript:boton('PuestosAtras')" src="#aro" scale="0.07 0.07 0" position="0 -1.7 -1.9" rotation="10 0 0"></a-image>
+                </a-entity>
             </a-entity>
             
-       </a-entity> -->
+            <!-- Informacion -->
+            <a-entity id="PuestosAtras" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/4puestos.png" scale="1.5 1.1 0" position="-0.75 -1.35 -2" rotation="0 10 0 "></a-image>
+            </a-entity>
+
+            <!-- Boton Ir Parte Delantera -->
+            <a-entity id="delantebtn">
+               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0 0.7 -1.9" rotation="0 0 0"></a-image>
+            </a-entity>
+            
+       </a-entity>
 
 		
 		<!-- Camera + cursor. -->

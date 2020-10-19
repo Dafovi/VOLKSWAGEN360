@@ -2,90 +2,96 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Amarok</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-    <script src="../../styles/cars.js"></script>
+    <title>Volkswagen Amarok Trendline T Cabina Sencilla Chasis MT 4x4</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
+    <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+    <script src="../../../styles/cars.js"></script>
   </head>
 
 	<body>
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>  
-		  
-	  
-		<img id="Amaroktlnchs" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_56.jpg">
-		<img id="Amaroktlnchs1" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_57.jpg">
-		<img id="Amaroktlnchs2" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_58.jpg">
-		<img id="Amaroktlnchs3" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_59.jpg">
-		<img id="Amaroktlnchs4" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_60.jpg">
-		<img id="Amaroktlnchs5" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_61.jpg">
-		<img id="Amaroktlnchs6" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_62.jpg">
-		<img id="Amaroktlnchs7" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_63.jpg">
+        <img id="Amaroktlnchs" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_56.jpg">
+        <img id="Amaroktlnchs1" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_57.jpg">
+        <img id="Amaroktlnchs2" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_58.jpg">
+        <img id="Amaroktlnchs3" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_59.jpg">
+        <img id="Amaroktlnchs4" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_60.jpg">
+        <img id="Amaroktlnchs5" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_61.jpg">
+        <img id="Amaroktlnchs6" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_62.jpg">
+        <img id="Amaroktlnchs7" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE_CHASIS/PICK_UPS_ZOOM_63.jpg">
 
-        <img id="atras" src="../../img/icons/atras.png">
+        <img id="atras" src="../../../img/icons/atras.png">
+        <img id="aro" src="../../../img/icons/aro.png">
       </a-assets>
       
      
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-        
 		  
 		  	<a-entity id="Flechas">
-				<!-- Siguiente-->
-				<a-image onclick="javaScript:changeCarByClassName(1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
+          <!-- Siguiente-->
+          <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 		  		<!-- interior -->
-		  		<a-image  onclick="javaScript:interior()" src="../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
+		  		<a-image  onclick="javaScript:interior('Amarok_Trendline_T_MT_Cabina_Sencilla.html')" src="../../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
 		  		<!--- 360 --->
-		  		<a-image  src="../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
-				<!--Anterior-->
-				<a-image onclick="javaScript:changeCarByClassName(-1,7)"  src="../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0"></a-image>
-					
-					
-				<!-- Botones -->
-					<a-entity class="btnGarantia"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 0.3 0" rotation="0 90 0" onclick="javaScript:botonClass('Garantia')"></a-image></a-entity>
-		  			<a-entity class="btnFaros"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.4 -0.5" rotation="0 90 0" onclick="javaScript:botonClass('Faros')"></a-image></a-entity>			  		
-		  			<a-entity class="btnMotor"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.25 0" rotation="0 90 0" onclick="javaScript:botonClass('Motor')"></a-image></a-entity>			  		
-		  			<a-entity class="btnRines" visible="false"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.55 -0.97" rotation="0 90 0" onclick="javaScript:botonClass('Rines')"></a-image></a-entity>			  		
-		  			<a-entity class="btnFrenos"><a-image src="../../img/icons/aro.png" scale="0.1 0.1 0" position="-1.92 -0.8 -0.6" rotation="0 90 0" onclick="javaScript:botonClass('Frenos')"></a-image></a-entity>	
+		  		<a-image  src="../../../img/icons/360.png" scale="0.3 0.15 0" position="-1 -0.6 0" rotation="0 90 0"></a-image>
+          <!--Anterior-->
+          <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0"></a-image>
 		  	</a-entity>
                 
-          <a-entity id="CHASIS">
-				
-           <a-entity class="0" ><a-sky radius="30" src="#Amaroktlnchs"></a-sky></a-entity> 
-          <a-entity class="1" visible="false" ><a-sky radius="30" src="#Amaroktlnchs1"></a-sky></a-entity>
-          <a-entity class="2" visible="false" ><a-sky radius="30" src="#Amaroktlnchs2"></a-sky></a-entity>
-          <a-entity class="3" visible="false" ><a-sky radius="30" src="#Amaroktlnchs3"></a-sky></a-entity>
-          <a-entity class="4" visible="false" ><a-sky radius="30" src="#Amaroktlnchs4"></a-sky></a-entity>
-          <a-entity class="5" visible="false" ><a-sky radius="30" src="#Amaroktlnchs5"></a-sky></a-entity>
-          <a-entity class="6" visible="false" ><a-sky radius="30" src="#Amaroktlnchs6"></a-sky></a-entity>
-          <a-entity class="7" visible="false" ><a-sky radius="30" src="#Amaroktlnchs7"></a-sky></a-entity>
-            
-            <!-- información -->
-            <a-entity class="Garantia" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Garantia.png" position="-1.96 0 0.92" scale="1 0.4 0" rotation="0 90 0"></a-image></a-entity>
-            
-            <a-entity class="Faros" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Faros.png" position="-2 -0.2 1.01" scale="1 0.5 0" rotation="0 90 0"></a-image></a-entity>
-            
-            <a-entity class="Motor" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Motor.png" position="-1.99 -0.05 -0.85" scale="1.2 0.45 0" rotation="0 90 0"></a-image></a-entity>
-            
-            <a-entity class="Rines" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Rin.png" position="-2 -0.3 -0.5" scale="1 0.6 0" rotation="0 90 0"></a-image></a-entity>
+        <a-entity id="CHASIS">
 
-            <a-entity class="Frenos" visible="false"><a-image src="../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Frenos.png" position="-2 -0.95 -1.3" scale="1.3 0.4 0" rotation="0 90 0"></a-image></a-entity>  		
-            
+          <!-- Vistas -->
+          <a-entity id="0" ><a-sky radius="30" src="#Amaroktlnchs"></a-sky></a-entity> 
+          <a-entity id="1" visible="false" ><a-sky radius="30" src="#Amaroktlnchs1"></a-sky></a-entity>
+          <a-entity id="2" visible="false" ><a-sky radius="30" src="#Amaroktlnchs2"></a-sky></a-entity>
+          <a-entity id="3" visible="false" ><a-sky radius="30" src="#Amaroktlnchs3"></a-sky></a-entity>
+          <a-entity id="4" visible="false" ><a-sky radius="30" src="#Amaroktlnchs4"></a-sky></a-entity>
+          <a-entity id="5" visible="false" ><a-sky radius="30" src="#Amaroktlnchs5"></a-sky></a-entity>
+          <a-entity id="6" visible="false" ><a-sky radius="30" src="#Amaroktlnchs6"></a-sky></a-entity>
+          <a-entity id="7" visible="false" ><a-sky radius="30" src="#Amaroktlnchs7"></a-sky></a-entity>
 
-</a-entity>
-      
-		  
-
+          <!-- Botones -->
+				<a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.25 -0.01" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+				<a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.23 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+				<a-entity id="btnFaros" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 -0.72" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
+				<a-entity id="btnAsistente" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 1.45" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
+				<a-entity id="btnFrenos" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 1.3" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
+				<a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.77 -0.98" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+				<a-entity id="btnCarga" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 -0.9" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
+				<a-entity id="btnControl" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 -1.5" rotation="0 90 0" onclick="javaScript:boton('Control')"></a-image></a-entity>
+				<a-entity id="btnSuspension" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.8 -1.4" rotation="0 90 0" onclick="javaScript:boton('Suspension')"></a-image></a-entity>
           
+          <!-- información -->
+          <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Garantia.png" position="-2 0.55 0.7" scale="1.4 0.6 0" rotation="0 90 0"></a-image></a-entity>
+          
+          <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Motor.png" position="-2 -0.05 -0.65" scale="1.3 0.4 0" rotation="0 90 0"></a-image></a-entity>
+          
+          <a-entity id="Faros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Faros.png" position="-2 -0.12 -0.14" scale="1.2 0.5 0" rotation="0 90 0"></a-image></a-entity>
+        
+          <a-entity id="Asistente" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Asiste.png" position="-2 -0.52 2.15" scale="1.3 0.5 0" rotation="0 90 0"></a-image></a-entity>
+        
+          <a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Frenos.png" position="-2 -0.88 0.65" scale="1.4 0.4 0" rotation="0 90 0"></a-image></a-entity>
+          
+          <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Rin.png" position="-2 -0.58 -0.56" scale="0.9 0.45 0" rotation="0 90 0"></a-image></a-entity>
+          
+          <a-entity id="Carga" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Capacidad.png" position="-2 0.2 -1.32" scale="0.8 0.35 0" rotation="0 90 0"></a-image></a-entity>
+          
+          <a-entity id="Control" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Control.png" position="-2 -0.45 -2.43" scale="1.5 0.6 0" rotation="0 70 0"></a-image></a-entity>
+        
+          <a-entity id="Suspension" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/Suspension.png" position="-2 -1.15 -2.55" scale="2 0.5 0" rotation="0 80 0"></a-image></a-entity>
+
+        </a-entity>
+
       </a-entity>
       
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:volver('../pickups.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
-		  <a-image onclick="javaScript:visibleDos('CHASIS','Amarok_Trendline_T_MT_Cabina_Sencilla.html')" src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Sencilla.png" position="-1.2 -0.6 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
-		  <a-image src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Sencilla.png" position="1.3 -0.8 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('../amarok.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+        
+        <a-image src="../../../img/nombres/Amarok_Trendline_T_MT_Cabina_Sencilla.png" position="-1.3 -0.8 -1.2" scale="1.25 0.15 0" rotation="0 0 0"></a-image>	
 
       </a-entity>
                   

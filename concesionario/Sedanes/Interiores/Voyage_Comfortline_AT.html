@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Voyage_Comfortline_AT</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Voyage Comfortline AT</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
     <script src="../../../styles/camera.js"></script>
@@ -22,59 +23,79 @@
 
 
         <!-- 360-degree image scenes.-->
-        <a-entity id="concesionario" rotation="0 -90 0">
+        <a-entity id="parteDelantera" rotation="0 -90 0">
 
             <a-sky radius="30" src="#interior"></a-sky>
-            <a-entity id="volante" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Asset%202.png" scale="1.4 1.4 0 " position="-2 0.7 1.5" rotation="0 90 0 "></a-image>
+
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="VolanteBtn">
+                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.07 0.07 0" position="-1.9 -0.57 0.77" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="TransmisionBtn">
+                    <a-image onclick="javaScript:boton('Transmision')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.15 -0.22" rotation="-20 90 0"></a-image>
+                </a-entity>
+                <a-entity id="AirbagBtn">
+                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.1 -1.6" rotation="0 90 0"></a-image>
+                </a-entity>
+                <a-entity id="EntretenimientoBtn">
+                    <a-image onclick="javaScript:boton('Entretenimiento')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.4 -0.38" rotation="0 90 0"></a-image>
+                </a-entity>
+            </a-entity>
+
+            <!-- Informacion -->
+            <a-entity id="Volante" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Volante.png" scale="2.8 2.2 0" position="-2 0.4 1.4" rotation="0 120 0 "></a-image>
+            </a-entity>
+            
+            <a-entity id="Transmision" visible="false">
+                <!-- TODO: Falta img, se tomo otra -->
+                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_MT/Transmision.png" scale="2.5 2.8 0" position="-2 -0.7 0.35" rotation="0 90 0 "></a-image>
             </a-entity>
 
             <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Airbag.png" scale="1.5 1.5 0 " position="-2.02 0.8 0.1" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Airbag.png" scale="1.7 1.6 0" position="-2 0.8 -1.18" rotation="0 90 0 "></a-image>
             </a-entity>
 
-            <a-entity id="Infoentrenamiento" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Infoentretenimiento.png" scale="1 1.2 0 " position="-1 0.64 -0.55" rotation="0 90 0 "></a-image>
+            <a-entity id="Entretenimiento" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Infoentretenimiento.png" scale="1.8 2 0" position="-2 0.25 -1" rotation="0 90 0 "></a-image>
             </a-entity>
-            <a-entity id="Ergonomia" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Transmision.png" scale="2 2 0 " position="-2 0 0.8" rotation="0 90 0 "></a-image>
-            </a-entity>
-            
-        </a-entity>
 
-		<a-entity id="BotonesInterior">
-        <a-entity id="volanteBtn">
-            <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.1 0.1 0" position="-0.4 0 -1"></a-image>
+            <!-- Boton Ir Parte Trasera -->
+            <a-entity id="atrasbtn">
+                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.98 -0.18" rotation="0 90 0"></a-image>
+            `</a-entity>
+
         </a-entity>
-        <a-entity id="ArtbagBtn">
-            <a-image onclick="javaScript:botonDos('Airbag','atrasbtn','atrasbtn')" src="#aro" scale="0.1 0.1 0" position="0.3 0 -1"></a-image>
-        </a-entity>
-        <a-entity id="infoBtn">
-            <a-image onclick="javaScript:boton('Infoentrenamiento')" src="#aro" scale="0.1 0.1 0" position="0.05 0 -1"></a-image>
-        </a-entity>
-        <a-entity id="ErgonomiaBtn">
-            <a-image onclick="javaScript:botonDos('Ergonomia', 'volanteBtn', 'volanteBtn')" src="#aro" scale="0.1 0.1 0" position="0.1 -0.5 -1" rotation="0 0 0"></a-image>
-        </a-entity>
-		</a-entity>
-		
-		 <a-entity id= "atrasbtn">
-			<a-image onclick="javaScript:botonDos('parteTrasera','BotonesInterior','concesionario')" src="#aro" scale="0.1 0.1 0" position="0.085 0.4 -0.9" rotation="0 0 0"></a-image>
-			</a-entity>
-		
+        
 
         <a-entity id="parteTrasera" visible="false">
-			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
-        <a-entity id="CinturonBtn">
-            <a-image onclick="javaScript:boton('Cinturon')" src="#aro" scale="0.1 0.1 0" position="0 -0.7 -1" rotation="0 0 0"></a-image>
-        </a-entity>
-            <a-entity id="Cinturon" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/cinturon.png" scale="2 2 0 " position="1 -0.5 -2.1" rotation="0 0 0 "></a-image>
+
+            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="SistemaBtn">
+                    <a-image onclick="javaScript:boton('Sistema')" src="#aro" scale="0.06 0.06 0" position="-0.6 -1.3 -1.9" rotation="0 0 0"></a-image>
+                </a-entity>
             </a-entity>
-		</a-entity>
+
+            <!-- Informacion -->
+            <a-entity id="Sistema" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/sistema.png" scale="2.8 2.1 0" position="0.45 -0.45 -2" rotation="0 0 0 "></a-image>
+            </a-entity>
+
+            <!-- Boton Ir Parte Delantera -->
+            <a-entity id="delantebtn">
+               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0.05 0.8 -1.9" rotation="0 0 0"></a-image>
+            </a-entity>
+            
+       </a-entity>
+
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
-            <a-image onclick="javaScript:To('../voyage.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+            <a-image onclick="javaScript:exterior('Voyage_Comfortline_AT.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
         </a-entity>
 

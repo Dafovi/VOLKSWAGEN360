@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Volskwagen Polo_Highline_AT</title>
+    <title>Volkswagen Polo Highline AT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
@@ -29,7 +29,7 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="VolanteBtn">
-                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.1 1" rotation="0 90 0"></a-image>
+                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.1 1.05" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="LevasBtn">
                     <a-image onclick="javaScript:boton('Levas')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.6 1.45" rotation="0 90 0"></a-image>
@@ -44,7 +44,7 @@
                     <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.42 -1.43" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="EntretenimientoBtn">
-                    <a-image onclick="javaScript:boton('Entretenimiento')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.58 -0.27" rotation="0 90 0"></a-image>
+                    <a-image onclick="javaScript:botonDos('Entretenimiento','EspacioBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.58 -0.27" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="EspacioBtn">
                     <a-image onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="-1.9 0 -1.1" rotation="0 90 0"></a-image>
@@ -56,11 +56,11 @@
 
             <!-- Informacion -->
             <a-entity id="Volante" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Volante.png" scale="1.8 2 0" position="-2 -0.48 1.78" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Volante.png" scale="1.8 2 0" position="-2 -0.55 1.9" rotation="0 100 0 "></a-image>
             </a-entity>
             
             <a-entity id="Levas" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/levas.png" scale="1.8 0.65 0" position="-2 -0.93 0.76" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/levas.png" scale="1.7 0.6 0" position="-2 -0.9 0.8" rotation="0 90 0 "></a-image>
             </a-entity>
             
             <a-entity id="Aire" visible="false">
@@ -68,7 +68,7 @@
             </a-entity>
             
             <a-entity id="keyless" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Keyless.png" scale="1.8 2 0" position="-2 -0.93 0.63" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Keyless.png" scale="1.8 2 0" position="-2 -0.9 0.63" rotation="0 90 0 "></a-image>
             </a-entity>
 
             <a-entity id="Airbag" visible="false">

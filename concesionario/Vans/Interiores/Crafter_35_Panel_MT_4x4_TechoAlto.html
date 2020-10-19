@@ -50,24 +50,24 @@
             </a-entity>
 
             <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA/Airbags.png" scale="2.3 2.2 0" position="-2 0.6 -4" rotation="0 50 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA/Airbags.png" scale="2.5 2.3 0" position="-2 0.9 -5.5" rotation="0 40 0 "></a-image>
             </a-entity>
 
             <!-- Boton Ir Parte Trasera -->
             <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 1.5 -0.11" rotation="0 90 0"></a-image>
+                <a-image onclick="javaScript:visible('VagonInterior','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 1.5 -0.11" rotation="0 90 0"></a-image>
             `</a-entity>
 
         </a-entity>
 
 
-        <a-entity id="parteTrasera" visible="false">
+        <a-entity id="VagonInterior" visible="false">
 
             <a-sky radius="30" src="#Vagon" rotation="0 90 0"></a-sky>
 
             <!-- Boton Ir Parte Delantera -->
             <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="-0.05 0.85 -1.9" rotation="0 0 0"></a-image>
+               <a-image onclick="javaScript:visible('parteDelantera','VagonInterior')" src="#aro" scale="0.06 0.06 0" position="-0.05 0.85 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
             
        </a-entity>

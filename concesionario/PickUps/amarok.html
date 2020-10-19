@@ -2,8 +2,9 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Amarok</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Amarok</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../styles/A-frame.js"></script>
     <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../styles/cars.js"></script>
   </head>
@@ -11,30 +12,28 @@
 	<body>
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>  
-		  
-		<img id="Amarokext" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_EXTREME/PICK_UPS_ZOOM_24.jpg">
+		    <img id="Amarokext" src="../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_EXTREME/PICK_UPS_ZOOM_24.jpg">
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
 
-		 
-		  
 		  <a-entity id="Select" rotation="0 -90 0">
 			  
-		<a-sky radius="30" src="#Amarokext"></a-sky>
+		    <a-sky radius="30" src="#Amarokext"></a-sky>
+
+        <a-image onclick="javaScript:To('Exteriores/Amarok_Trendline_T_MT_Cabina_Sencilla.html')" src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Sencilla.png" position="-1.2 0.16 0.9" scale="1.1 0.15 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Amarok_Trendline_T_MT_Cabina_Doble.html')" src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Doble.png" position="-1.2 0 1.03" scale="1.1 0.2 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Amarok_Trendline_MT.html')" src="../../img/nombres/Amarok_Trendline_MT.png" position="-1.2 -0.15 1.02"  scale="1.2 0.2 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Amarok_Comfortline_AT.html')" src="../../img/nombres/Amarok_Comfortline_AT.png" position="-1.2 -0.31 0.97" scale="1.06 0.2 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Amarok_Highline_AT.html')" src="../../img/nombres/Amarok_Hightline_AT.png" position="-1.2 -0.45 1" scale="1.26 0.2 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Amarok_V6_Highline_AT.html')" src="../../img/nombres/Amarok_V6_Highline_AT.png" position="-1.2 -0.6 1" scale="1.15 0.2 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Amarok-_V6_Extreme_AT.html')" src="../../img/nombres/Amarok-V6-Extreme-AT.png" position="-1.2 -0.77 1.2" scale="1 0.45 0" rotation="0 90 0"></a-image>
 			  
 		  </a-entity>
                       
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:volver('../pickups.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  <a-image onclick="javaScript:visibleDos('CONFORTLINE','Amarok_Comfortline_AT.html')" src="../../img/nombres/Amarok_Comfortline_AT.png" position="-1.3 0.4 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
-		  <a-image onclick="javaScript:visibleDos('EXTREME','Amarok-_V6_Extreme_AT.html')" src="../../img/nombres/Amarok-_V6_Extreme_AT.png" position="-1.3 0.2 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
-		  <a-image onclick="javaScript:visibleDos('HIGHLINE','Amarok_Hightline_AT.html')" src="../../img/nombres/Amarok_Hightline_AT.png" position="-1.3 0 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
-		  <a-image onclick="javaScript:visibleDos('TRENDLINE','Amarok_Trendline_MT.html')" src="../../img/nombres/Amarok_Trendline_MT.png" position="-1.3 -0.2 -1.2"  scale="0.9 0.2 0" rotation="0 0 0"></a-image>
-		  <a-image onclick="javaScript:visibleDos('TRENDLINE_T','Amarok_Trendline_T_MT_Cabina_Doble.html')" src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Doble.png" position="-1.3 -0.4 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
-		  <a-image onclick="javaScript:visibleDos('CHASIS','Amarok_Trendline_T_MT_Cabina_Sencilla.html')" src="../../img/nombres/Amarok_Trendline_T_MT_Cabina_Sencilla.png" position="-1.2 -0.6 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
-		  <a-image onclick="javaScript:visibleDos('PLUS','Amarok_V6_Highline_AT.html')" src="../../img/nombres/Amarok_V6_Highline_AT.png" position="-1.3 -0.8 -1.2" scale="0.9 0.2 0" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('../pickups.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
       </a-entity>
                   

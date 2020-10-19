@@ -2,8 +2,9 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Jetta SPL</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Jetta</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../styles/A-frame.js"></script>
     <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../styles/cars.js"></script>
   </head>
@@ -17,20 +18,22 @@
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
       
-
 		  <a-entity id="Select" rotation="0 -90 0">
-			  <a-sky radius="30" src="#Jettaspl"></a-sky>
-		 		
-		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_AT','Jetta_Comfortline_AT.html')" src="../../img/nombres/Jetta_Comfortline_AT.png" position="-2 -0.5 -1" scale="1.5 1 0" rotation="0 90 0"></a-image>
-		  		<a-image onclick="javaScript:visibleDos('CONFORTLINE_MT','Jetta_Comfortline_MT.html')" src="../../img/nombres/Jetta_Comfortline_MT.png" position="-1.98 -0.5 1" scale="1.5 0.7 0" rotation="0 90 0"></a-image>
-			  	<a-image  onclick="javaScript:visibleDos('HIGHLINE','Jetta_Highline_AT.html')" src="../../img/nombres/Jetta_Highline_AT.png" position="-1.998 0.3 0.3" scale="1.5 0.9 0" rotation="0 90 0"></a-image>
-			  	<a-image onclick="javaScript:visibleDos('SPORTLINE','Jetta_Sportline_AT.html')" src="../../img/nombres/Jetta_Sportline_AT.png" position="-1.99 0 1" scale="1 0.5 0" rotation="0 90 0"></a-image>	
+        
+        <a-sky radius="30" src="#Jettaspl"></a-sky>
+        
+        <a-image onclick="javaScript:To('Exteriores/Jetta_Comfortline_MT.html')" src="../../img/nombres/Jetta_Comfortline_MT.png" position="-1.2 -0.16 0.85" scale="0.85 0.23 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Jetta_Comfortline_AT.html')" src="../../img/nombres/Jetta_Comfortline_AT.png" position="-1.2 -0.33 0.83" scale="0.85 0.21 0" rotation="0 90 0"></a-image>
+        <a-image  onclick="javaScript:To('Exteriores/Jetta_Highline_AT.html')" src="../../img/nombres/Jetta_Highline_AT.png" position="-1.2 -0.5 0.88" scale="0.9 0.2 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Jetta_Sportline_AT.html')" src="../../img/nombres/Jetta_Sportline_AT.png" position="-1.2 -0.68 0.89" scale="0.9 0.2 0" rotation="0 90 0"></a-image>
+
 		  </a-entity>
       
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:volver('../sedanes.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+		    <a-image onclick="javaScript:To('../sedanes.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+          
       </a-entity>
                   
     </a-scene>

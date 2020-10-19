@@ -5,6 +5,10 @@ function To(scene) {
 var s = new Number(0);
 var press = false;
 var btnname= new String("");
+var btn2 =  new String("");
+// var clasebtn2 = document.getElementById(btn2).getAttribute("class");
+// var vista0 = document.getElementById("0").getAttribute("visible");
+// var vista2 = document.getElementById("2").getAttribute("visible");
 
 function interior(car){
 	To('../Interiores/'+car);
@@ -27,8 +31,33 @@ function boton(conten){
 		document.getElementById(conten).setAttribute('visible','false');
 		press=false;
 	}
+	if(btn2 != "") {
+		document.getElementById(btn2).setAttribute('visible','true');
+	}
 	//console.log(btnname);
 }
+
+function botonDos(conten, boton){
+	btn2 = boton;
+
+	if(conten!=btnname && btnname!=""){
+		press=false;
+		document.getElementById(btnname).setAttribute('visible','false');
+		document.getElementById(btn2).setAttribute('visible','true');
+	}
+	
+	if(press===false){
+		document.getElementById(conten).setAttribute('visible','true');
+		document.getElementById(boton).setAttribute('visible','false');
+		press=true;
+		btnname=conten;
+	}else{
+		document.getElementById(conten).setAttribute('visible','false');
+		document.getElementById(boton).setAttribute('visible','true');
+		press=false;
+	}
+}
+
 function changeCarById(i,n){
     s+=i;
 	
@@ -46,12 +75,17 @@ function changeCarById(i,n){
 		s=n;
 		visible(n,0)
 	}
+	btn2 = '';
 	botonVisible();
 	
 }
 function visible(visible,noVisible){
     	document.getElementById(visible).setAttribute('visible','true');
     	document.getElementById(noVisible).setAttribute('visible','false');
+		if(document.getElementById('VagonInterior')){
+			console.log(cabina);
+			cabina = !cabina;
+		}
 }
 
 /*window.onload = function(){

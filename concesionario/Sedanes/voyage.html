@@ -2,8 +2,9 @@
 <html>
   <head>
 	  <meta charset="utf-8">
-    <title>Voyage</title>
-    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <title>Volkswagen Voyage</title>
+    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+    <script src="../../styles/A-frame.js"></script>
     <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../styles/cars.js"></script>
   </head>
@@ -13,24 +14,25 @@
       <a-assets>
         <img id="Voyageconfln" src="../../img/concesionario/CATEGORIAS/SEDANES/VOYAGE_CONFORTLINE/SEDANES_ZOOM_40.jpg">
           
-          
         <img id="ver" src="../../img/icons/ver.png">
         <img id="atras" src="../../img/icons/atras.png">
-      	</a-assets>
+      </a-assets>
       
-		  	<a-entity id="Select" rotation="0 -90 0">
-				<a-sky radius="30" src="#Voyageconfln"></a-sky>
-				
-				<a-image onclick="javaScript:visibleDos('CONFORTLINE_MT','Voyage_Comfortline_MT.html')" src="../../img/nombres/Voyage_Comfortline_MT.png" position="-1.98 -0.4 1" scale="1.5 0.8 0" rotation="0 90 0"></a-image>
-			  	<a-image  onclick="javaScript:visibleDos('CONFORTLINE_AT','Voyage_Comfortline_AT.html')" src="../../img/nombres/Voyage_Comfortline_AT.png" position="-1.98 -0.4 -0.95" scale="1.5 0.98 0" rotation="0 90 0"></a-image>
-			  	<a-image onclick="javaScript:visibleDos('TRENDLINE_AT','Voyage_Trendline_AT.html')" src="../../img/nombres/Voyage_Trendline_AT.png" position="-1.98 0.3 -0.8" scale="1.5 0.8 0" rotation="0 90 0"></a-image>	
-			  	<a-image onclick="javaScript:visibleDos('TRENDLINE_MT','Voyage_Trendline_MT.html')" src="../../img/nombres/Voyage_Trendline_MT.png" position="-1.98 0.2 0.54" scale="1.5 0.92 0" rotation="0 90 0"></a-image>		
+      <a-entity id="Select" rotation="0 -90 0">
+        
+        <a-sky radius="30" src="#Voyageconfln"></a-sky>
+        
+        <a-image onclick="javaScript:To('Exteriores/Voyage_Trendline_MT.html')" src="../../img/nombres/Voyage_Trendline_MT.png" position="-1.2 -0.18 0.86" scale="0.8 0.23 0" rotation="0 90 0"></a-image>	
+        <a-image onclick="javaScript:To('Exteriores/Voyage_Trendline_AT.html')" src="../../img/nombres/Voyage_Trendline_AT.png" position="-1.2 -0.34 0.85" scale="0.8 0.2 0" rotation="0 90 0"></a-image>	
+				<a-image onclick="javaScript:To('Exteriores/Voyage_Comfortline_MT.html')" src="../../img/nombres/Voyage_Comfortline_MT.png" position="-1.2 -0.53 0.83" scale="0.8 0.19 0" rotation="0 90 0"></a-image>
+        <a-image onclick="javaScript:To('Exteriores/Voyage_Comfortline_AT.html')" src="../../img/nombres/Voyage_Comfortline_AT.png" position="-1.2 -0.68 0.85" scale="0.8 0.23 0" rotation="0 90 0"></a-image>
+					
 			</a-entity>
 		  		
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
   		
-		  <a-image onclick="javaScript:volver('../sedanes.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+        <a-image onclick="javaScript:To('../sedanes.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 		  
       </a-entity>
                   
