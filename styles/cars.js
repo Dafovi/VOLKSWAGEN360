@@ -6,9 +6,6 @@ var s = new Number(0);
 var press = false;
 var btnname= new String("");
 var btn2 =  new String("");
-// var clasebtn2 = document.getElementById(btn2).getAttribute("class");
-// var vista0 = document.getElementById("0").getAttribute("visible");
-// var vista2 = document.getElementById("2").getAttribute("visible");
 
 function interior(car){
 	To('../Interiores/'+car);
