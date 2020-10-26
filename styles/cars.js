@@ -72,6 +72,10 @@ function changeCarById(i,n){
 		s=n;
 		visible(n,0)
 	}
+
+	if (btn2 == 'Flechas' || btn2 == 'interior') {
+		document.getElementById(btn2).setAttribute('visible','true');
+	}
 	btn2 = '';
 	botonVisible();
 	

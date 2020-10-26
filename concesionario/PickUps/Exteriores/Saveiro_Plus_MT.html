@@ -12,7 +12,7 @@
 	<body>
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
-		  
+
         <img id="Saveiroplus" src="../../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_40.jpg">
         <img id="Saveiroplus1" src="../../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_41.jpg">
         <img id="Saveiroplus2" src="../../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_42.jpg">
@@ -21,17 +21,17 @@
         <img id="Saveiroplus5" src="../../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_45.jpg">
         <img id="Saveiroplus6" src="../../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_46.jpg">
         <img id="Saveiroplus7" src="../../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_PLUS/PICK_UPS_ZOOM_47.jpg">
-          
-          
+
+
         <img id="ver" src="../../../img/icons/ver.png">
         <img id="atras" src="../../../img/icons/atras.png">
         <img id="aro" src="../../../img/icons/aro.png">
       </a-assets>
-      
-     
+
+
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-		  
+
         <a-entity id="Flechas">
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
@@ -43,11 +43,11 @@
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
           </a-image>
   		  </a-entity>
-                
+
 		    <a-entity id="PLUS">
 
           <!-- Vistas -->
-          <a-entity id="0" ><a-sky radius="30" src="#Saveiroplus"></a-sky></a-entity> 
+          <a-entity id="0" ><a-sky radius="30" src="#Saveiroplus"></a-sky></a-entity>
           <a-entity id="1" visible="false" ><a-sky radius="30" src="#Saveiroplus1"></a-sky></a-entity>
           <a-entity id="2" visible="false" ><a-sky radius="30" src="#Saveiroplus2"></a-sky></a-entity>
           <a-entity id="3" visible="false" ><a-sky radius="30" src="#Saveiroplus3"></a-sky></a-entity>
@@ -64,28 +64,27 @@
           <a-entity id="btnParachoques" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 0" rotation="0 90 0" onclick="javaScript:boton('Parachoques')"></a-image></a-entity>
           <a-entity id="btnFrenos" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 0.98" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
           <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 -0.9" rotation="0 90 0" onclick="javaScript:botonDos('Rines','Flechas')"></a-image></a-entity>
-          <!-- <a-entity id="btnCarga" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -0.7" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity> -->
+          <a-entity id="btnCarga" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -0.7" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
           <a-entity id="btnTecho" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 -0.2" rotation="0 90 0" onclick="javaScript:boton('Techo')"></a-image></a-entity>
           <a-entity id="btnCapacidad" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0 0.55" rotation="0 90 0" onclick="javaScript:boton('Capacidad')"></a-image></a-entity>
           <a-entity id="btnRetrovisores" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.25 0.72" rotation="0 90 0" onclick="javaScript:boton('Retrovisores')"></a-image></a-entity>
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Garantia.png" position="-2 0.5 0.6" scale="1.4 0.6 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Motor.png" position="-2 -0.15 -0.58" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Faros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Faros.png" position="-2 -0.18 -0.05" scale="1.3 0.7 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Suspension" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Suspension.png" position="-2 -0.15 -0.11" scale="1.3 0.7 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Parachoques" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/parachoques.png" position="-2 -0.9 0.38" scale="1.3 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Frenos.png" position="-2 -0.65 0.38" scale="1.4 0.7 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Rin.png" position="-2 -1.05 -0.25" scale="1.4 0.5 0" rotation="0 90 0"></a-image></a-entity>
 
-          <!-- TODO: Falta img -->
-          <!-- <a-entity id="Carga" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Carga.png" position="-2 0.3 -1.6" scale="1.9 0.9 0" rotation="0 90 0"></a-image></a-entity> -->
+          <a-entity id="Carga" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/CapacidadCarga.png" position="-2 0.3 -0.02" scale="1.5 0.6 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Techo" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Barras.png" position="-2 0.37 0.38" scale="1.4 0.6 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -94,18 +93,18 @@
           <a-entity id="Retrovisores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_Plus_MT/Retrovisores.png" position="-2 0 1.38" scale="1.6 0.7 0" rotation="0 90 0"></a-image></a-entity>
 
 		    </a-entity>
-          
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
 		    <a-image onclick="javaScript:To('../saveiro.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
-        <a-image src="../../../img/nombres/Saveiro_Plus_MT.png" position="-1.3 -0.8 -1.2" scale="0.95 0.16 0" rotation="0 0 0"></a-image>	
+        <a-image src="../../../img/nombres/Saveiro_Plus_MT.png" position="-1.3 -0.8 -1.2" scale="0.95 0.16 0" rotation="0 0 0"></a-image>
 
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

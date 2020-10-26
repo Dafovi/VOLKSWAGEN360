@@ -33,7 +33,7 @@
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
           <!-- interior -->
-          <a-image  onclick="javaScript:interior('T-Cross_Comfortline_AT.html')" src="../../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
+          <a-image id="interior" onclick="javaScript:interior('T-Cross_Comfortline_AT.html')" src="../../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
           <!--- 360 --->
           <a-image  src="../../../img/icons/360.png" scale="0.25 0.2 0" position="-1 -0.65 0" rotation="0 90 0"></a-image>
           <!--Anterior-->
@@ -58,7 +58,7 @@
           <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
           <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.38 0.02" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
           <a-entity id="btnEstilo" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.7 0.02" rotation="0 90 0" onclick="javaScript:botonDos('Estilo','Flechas')"></a-image></a-entity>
-          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.92 -0.82" rotation="0 90 0" onclick="javaScript:botonDos('Rines','Flechas')"></a-image></a-entity>
+          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.92 -0.82" rotation="0 90 0" onclick="javaScript:botonDos('Rines','interior')"></a-image></a-entity>
           <a-entity id="btnSensores" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.71 1.2" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
           <a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.72 -1.2" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
           <a-entity id="btnLuces" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 -1.18" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>

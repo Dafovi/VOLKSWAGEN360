@@ -14,7 +14,7 @@
 <body>
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
-            <img id="interior" src="../../../img/concesionario/Interiores/T_CROSS_COMFORTLINE_PLUS.jpg">
+            <img id="interior" src="../../../img/concesionario/Interiores/T_CROSS_TRENDLINE_AT.jpg">
 
             <img id="atras" src="../../../img/icons/atras.png">
             <img id="aro" src="../../../img/icons/aro.png">
@@ -29,32 +29,32 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="VolanteBtn">
-                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.55 1" rotation="0 90 0"></a-image>
+                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.1 1.2" rotation="0 100 0"></a-image>
                 </a-entity>
                 <a-entity id="PantallaBtn">
-                    <a-image onclick="javaScript:boton('Pantalla')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.14 -0.18" rotation="0 90 0"></a-image>
+                    <a-image onclick="javaScript:boton('Pantalla')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.52 -0.24" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.05 -1.28" rotation="0 90 0"></a-image>
+                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.38 -1.25" rotation="0 90 0"></a-image>
                 </a-entity>
             </a-entity>
 
             <!-- Informacion -->
             <a-entity id="Volante" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/volante.png" scale="1.4 0.9 0" position="-2 -0.9 0.85" rotation="0 100 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/volante.png" scale="1.4 0.9 0" position="-2 -1.44 1.05" rotation="0 110 0 "></a-image>
             </a-entity>
             
             <a-entity id="Pantalla" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/pantalla.png" scale="1.1 1 0" position="-2 0.3 -0.72" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/pantalla.png" scale="1.1 1 0" position="-2 -0.1 -0.78" rotation="0 90 0 "></a-image>
             </a-entity>
 
             <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/airbag.png" scale="1.1 0.4 0" position="-2 0 -1.9" rotation="0 80 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/airbag.png" scale="1 0.4 0" position="-2 -0.4 -1.88" rotation="0 60 0 "></a-image>
             </a-entity>
 
             <!-- Boton Ir Parte Trasera -->
             <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 1 0.02" rotation="0 90 0"></a-image>
+                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.65 0.02" rotation="0 90 0"></a-image>
             `</a-entity>
 
         </a-entity>
@@ -67,7 +67,7 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="SistemaBtn">
-                    <a-image onclick="javaScript:boton('Sistema')" src="#aro" scale="0.07 0.07 0" position="-0.4 -1.8 -1.9" rotation="0 0 0"></a-image>
+                    <a-image onclick="javaScript:boton('Sistema')" src="#aro" scale="0.07 0.07 0" position="-0.4 -1.8 -1.9" rotation="-10 0 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -78,7 +78,7 @@
 
             <!-- Boton Ir Parte Delantera -->
             <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0 0.6 -1.9" rotation="0 0 0"></a-image>
+               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0.02 -0.08 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
             
        </a-entity>
