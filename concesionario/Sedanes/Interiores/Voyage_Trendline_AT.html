@@ -59,17 +59,10 @@
                 <a-image src="../../../img/concesionario/Interiores/Voyage_Trend_AT/Radio.png" scale="1.6 2 0" position="-2 -0.4 -1.06" rotation="0 80 0 "></a-image>
             </a-entity>
 
-            <!-- Boton Ir Parte Trasera -->
-            <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.39 -0.27" rotation="0 90 0"></a-image>
-            `</a-entity>
-
         </a-entity>
         
 
-        <a-entity id="parteTrasera" visible="false">
-
-            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+        <a-entity id="parteTrasera" rotation="0 180 0">
 
             <!-- Botones -->
             <a-entity id="BotonesInterior">
@@ -81,11 +74,6 @@
             <!-- Informacion -->
             <a-entity id="Sistema" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Voyage_Trend_AT/sistema.png" scale="2.6 1.9 0" position="0.45 -0.78 -2" rotation="0 -10 0 "></a-image>
-            </a-entity>
-
-            <!-- Boton Ir Parte Delantera -->
-            <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0.33 0.25 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
             
        </a-entity>

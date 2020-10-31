@@ -52,17 +52,10 @@
                 <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/airbag.png" scale="1 0.4 0" position="-2 -0.4 -1.88" rotation="0 60 0 "></a-image>
             </a-entity>
 
-            <!-- Boton Ir Parte Trasera -->
-            <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.65 0.02" rotation="0 90 0"></a-image>
-            `</a-entity>
-
         </a-entity>
         
 
-        <a-entity id="parteTrasera" visible="false">
-
-            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+        <a-entity id="parteTrasera" rotation="0 180 0">
 
             <!-- Botones -->
             <a-entity id="BotonesInterior">
@@ -74,11 +67,6 @@
             <!-- Informacion -->
             <a-entity id="Sistema" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/isofix.png" scale="1.6 0.9 0" position="0.35 -2.12 -2" rotation="0 0 0 "></a-image>
-            </a-entity>
-
-            <!-- Boton Ir Parte Delantera -->
-            <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0.02 -0.08 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
             
        </a-entity>

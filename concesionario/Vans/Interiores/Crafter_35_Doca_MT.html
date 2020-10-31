@@ -53,18 +53,11 @@
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/Airbag.png" scale="1.4 0.5 0" position="-2 -0.35 -1.9" rotation="0 40 0 "></a-image>
             </a-entity>
 
-            <!-- Boton Ir Parte Trasera -->
-            <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.84 0.08" rotation="0 90 0"></a-image>
-            `</a-entity>
-
         </a-entity>
 
 
-        <a-entity id="parteTrasera" visible="false">
+        <a-entity id="parteTrasera" rotation="0 180 0">
 
-            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
-            
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="PuestosAtrasBtn">
@@ -75,11 +68,6 @@
             <!-- Informacion -->
             <a-entity id="PuestosAtras" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/4puestos.png" scale="1.5 1 0" position="-0.55 -1.2 -2" rotation="0 10 0 "></a-image>
-            </a-entity>
-
-            <!-- Boton Ir Parte Delantera -->
-            <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0.08 0.72 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
             
        </a-entity>

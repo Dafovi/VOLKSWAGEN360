@@ -35,7 +35,8 @@ AFRAME.registerComponent('rotation-reader', {
 			this.el.object3D.rotation.y = -3.1;
 			}
 		}  
-	}else{
+	}
+	if(document.getElementById('parteDelanteraLimite')){
 		if(this.el.object3D.rotation.y>=0.6){
 		this.el.object3D.rotation.y = 0.6;
 		}

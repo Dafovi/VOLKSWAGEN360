@@ -59,17 +59,10 @@
                 <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/espacio.png" scale="1.2 0.8 0" position="-2 0.38 -1.5" rotation="0 90 0 "></a-image>
             </a-entity>
 
-            <!-- Boton Ir Parte Trasera -->
-            <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 1.01 0.06" rotation="0 90 0"></a-image>
-            `</a-entity>
-
         </a-entity>
         
 
-        <a-entity id="parteTrasera" visible="false">
-
-            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+        <a-entity id="parteTrasera" rotation="0 180 0">
 
             <!-- Botones -->
             <a-entity id="BotonesInterior">
@@ -81,11 +74,6 @@
             <!-- Informacion -->
             <a-entity id="Sistema" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/isofix.png" scale="1.5 1.1 0" position="0.32 -1.45 -2" rotation="0 0 0 "></a-image>
-            </a-entity>
-
-            <!-- Boton Ir Parte Delantera -->
-            <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0 0.6 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
             
        </a-entity>

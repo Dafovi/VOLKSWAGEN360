@@ -22,7 +22,7 @@
 
 
         <!-- 360-degree image scenes.-->
-        <a-entity id="parteDelantera" rotation="0 -90 0">
+        <a-entity id="parteDelanteraLimite" rotation="0 -90 0">
 
             <a-sky radius="30" src="#interior"></a-sky>
 
@@ -73,23 +73,7 @@
                 <a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Cambio.png" scale="2.4 2.1 0" position="-1.75 -2.05 1.1" rotation="-10 120 0 "></a-image>
             </a-entity>
 
-            <!-- Boton Ir Parte Trasera -->
-            <!-- <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.58 0.08" rotation="0 90 0"></a-image>
-            `</a-entity> -->
-
         </a-entity>
-
-        <!-- <a-entity id="parteTrasera" visible="false">
-
-            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky> -->
-
-            <!-- Boton Ir Parte Delantera -->
-            <!-- <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="-0.04 0.7 -1.9" rotation="0 0 0"></a-image>
-            </a-entity>
-            
-        </a-entity> -->
 		
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">

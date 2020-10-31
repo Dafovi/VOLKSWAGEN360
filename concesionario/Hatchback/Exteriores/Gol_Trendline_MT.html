@@ -36,9 +36,9 @@
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
 		  		<!-- interior -->
-		  		<a-image  onclick="javaScript:interior('Gol_Trendline_MT.html')" src="../../../img/icons/Interior.png" scale="0.2 0.1 0" position="-1 -0.63 -0.45" rotation="0 90 0"></a-image>
+		  		<a-image id="interior" onclick="javaScript:interior('Gol_Trendline_MT.html')" src="../../../img/icons/Interior.png" scale="0.34 0.2 0" position="-1 -0.65 -0.45" rotation="0 90 0"></a-image>
 		  		<!--- 360 --->
-		  		<a-image  src="../../../img/icons/360.png" scale="0.25 0.2 0" position="-1 -0.65 0" rotation="0 90 0"></a-image>
+		  		<a-image  src="../../../img/icons/360.png" scale="0.27 0.2 0" position="-1 -0.65 0" rotation="0 90 0"></a-image>
           <!--Anterior-->
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 				  </a-image>
@@ -61,8 +61,8 @@
           <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
           <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
           <a-entity id="btnCabina" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 0.48" rotation="0 90 0" onclick="javaScript:boton('Cabina')"></a-image></a-entity>
-          <a-entity id="btnParrilla" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 -0.1" rotation="0 90 0" onclick="javaScript:boton('Parrilla')"></a-image></a-entity>
-          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.84 -0.9" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+          <a-entity id="btnParrilla" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 -0.1" rotation="0 90 0" onclick="javaScript:botonDos('Parrilla','interior')"></a-image></a-entity>
+          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 -1.02" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
           <a-entity id="btnFrenos" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.8" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
 
           <!-- información -->
@@ -74,7 +74,7 @@
           
           <a-entity id="Parrilla" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_MT/Parrilla.png" position="-2.4 -1.45 -1.15" scale="2.1 1 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_MT/Rines.png" position="-2 -1.07 -1.57" scale="1.3 0.4 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_MT/Rines.png" position="-2 -0.98 -1.68" scale="1.25 0.35 0" rotation="0 90 0"></a-image></a-entity>
   
           <a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_MT/Frenos.png" position="-2 -0.93 1.75" scale="1.9 0.4 0" rotation="0 90 0"></a-image></a-entity>
 

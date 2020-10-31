@@ -29,7 +29,7 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="volanteBtn">
-                    <a-image onclick="javaScript:botonDos('volante','atrasbtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.16 0.8" rotation="-10 90 0"></a-image>
+                    <a-image onclick="javaScript:boton('volante')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.16 0.8" rotation="-10 90 0"></a-image>
                 </a-entity>
 
                 <a-entity id="direccionBtn">
@@ -75,27 +75,10 @@
             </a-entity>
             
             <a-entity id="cojineria" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Cojineria.png" scale="1.4 1 0" position="-2 -2.3 -1.6" rotation="-20 70 0"></a-image>
+                <a-image src="../../../img/concesionario/Interiores/FOX_EXTREME/Cojineria.png" scale="1.5 1.1 0" position="-2 -2.35 -1.65" rotation="-20 70 0"></a-image>
             </a-entity>
-
-            <!-- Boton Ir Parte Trasera -->
-            <a-entity id="atrasbtn">
-               <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.42 -0.14" rotation="0 90 0"></a-image>
-           `</a-entity>
 
         </a-entity>
-		
-
-        <a-entity id="parteTrasera" visible="false">
-
-			 <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
-
-            <!-- Boton Ir Parte Delantera -->
-            <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0.18 0.08 -1.9" rotation="0 0 0"></a-image>
-            </a-entity>
-
-		</a-entity>
 
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">

@@ -22,7 +22,7 @@
 
 
         <!-- 360-degree image scenes.-->
-        <a-entity id="parteDelantera" rotation="0 -90 0">
+        <a-entity id="parteDelanteraLimite" rotation="0 -90 0">
 
             <a-sky radius="30" src="#interior"></a-sky>
 
@@ -59,28 +59,12 @@
                 <a-image src="../../../img/concesionario/Interiores/Amarok_TrendT_CD_MT/pisos.png" scale="1.4 1.5 0" position="-2 -1.8 -0.6" rotation="-10 90 0 "></a-image>
             </a-entity>
 
-            <!-- Boton Ir Parte Trasera -->
-            <!-- <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 1.12 -0.15" rotation="0 90 0"></a-image>
-            `</a-entity> -->
-
         </a-entity>
-
-        <!-- <a-entity id="parteTrasera" visible="false">
-
-            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky> -->
-
-            <!-- Boton Ir Parte Delantera -->
-            <!-- <a-entity id="delantebtn">
-                <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0 0.85 -1.9" rotation="0 0 0"></a-image>
-            </a-entity>
-            
-        </a-entity> -->
 
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
-            <a-image onclick="javaScript:To('Amarok_Trendline_T_MT_Cabina_Sencilla.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+            <a-image onclick="javaScript:exterior('Amarok_Trendline_T_MT_Cabina_Sencilla.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
         </a-entity>
 

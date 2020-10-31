@@ -41,7 +41,7 @@
                     <a-image onclick="javaScript:boton('Filtro')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.4 -0.2" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.58 -1.45" rotation="0 90 0"></a-image>
+                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.58 -1.5" rotation="0 90 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -63,20 +63,13 @@
             </a-entity>
 
             <a-entity id="Airbag" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Tiguan_Trend_DSG/airbag.png" scale="1 0.5 0" position="-2 -0.65 -2.05" rotation="0 60 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Tiguan_Trend_DSG/airbag.png" scale="1 0.5 0" position="-2 -0.65 -2.1" rotation="0 60 0 "></a-image>
             </a-entity>
-
-            <!-- Boton Ir Parte Trasera -->
-            <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('parteTrasera','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.48 -0.18" rotation="0 90 0"></a-image>
-            `</a-entity>
 
         </a-entity>
 
 
-        <a-entity id="parteTrasera" visible="false">
-
-            <a-sky radius="30" src="#interior" rotation="0 90 0"></a-sky>
+        <a-entity id="parteTrasera" rotation="0 180 0">
 
             <!-- Botones -->
             <a-entity id="BotonesInterior">
@@ -88,11 +81,6 @@
             <!-- Informacion -->
             <a-entity id="Sistema" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Tiguan_Trend_DSG/isofix.png" scale="1.7 0.7 0" position="0.63 -1.28 -2" rotation="0 0 0 "></a-image>
-            </a-entity>
-
-            <!-- Boton Ir Parte Delantera -->
-            <a-entity id="delantebtn">
-               <a-image onclick="javaScript:visible('parteDelantera','parteTrasera')" src="#aro" scale="0.06 0.06 0" position="0.12 0.08 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
             
        </a-entity>
