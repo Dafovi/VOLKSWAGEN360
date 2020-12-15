@@ -44,7 +44,7 @@ a {
 	text-decoration: none;
 	font-weight: bold;
 	display: block;
-	margin-bottom: 4%;
+	margin-bottom: 3%;
 }
 
 a:hover {
@@ -61,6 +61,23 @@ img {
 #options {
 	margin: 0 0 0% 5%;
 	padding: 0 0 5% 0;
+}
+#options a {
+	display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+#options a img {
+	float: none;
+    display: inline-block;
+    margin: 0;
+}
+#options a .text {
+	padding: 0;
+	padding-left: 3%;
+}
+#options a .text p {
+	padding: 0;
 }
 
 .icons {
@@ -138,11 +155,11 @@ video {
 	}
 	
 	#options {
-		padding: 0 0 80% 0;
+		padding: 0 0 0 0;
 	}
 
 	a {
-		margin-bottom: 25%;
+		margin-bottom: 18%;
 	}
 	.icons {
 		width: 15%;
