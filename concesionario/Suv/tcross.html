@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen T-Cross</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,31 +19,37 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
-        <img id="Tcrossconfln" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_48.jpg">          
-          
+        <img id="Tcrossconfln" src="../../img/concesionario/CATEGORIAS/SUVS/TCROSS_CONFORLINE/SUV_ZOOM_48.jpg">
+
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
-      
+
 		  <a-entity id="Select" rotation="0 -90 0">
-        
+
         <a-sky radius="30" src="#Tcrossconfln"></a-sky>
-        
-        <a-image onclick="javaScript:To('Exteriores/T-Cross_Trendline_MT.html')" src="../../img/nombres/T-Cross-Trendline-MT.png" position="-1.2 -0.18 0.99" scale="0.7 0.2 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/T-Cross_Trendline_AT.html')" src="../../img/nombres/T-Cross-Trendline-AT.png" position="-1.2 -0.34 0.99" scale="0.7 0.2 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/T-Cross_Comfortline_AT.html')" src="../../img/nombres/T-Cross-Comfortline-AT.png" position="-1.2 -0.51 0.95" scale="0.77 0.2 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/T-Cross_Comfortline_Plus_AT.html')" src="../../img/nombres/T-Cross-Comfortline-plus-AT.png" position="-1.2 -0.68 0.86" scale="0.94 0.2 0" rotation="0 90 0"></a-image>
+
+        <a-image class="c_camionetas t_tcross model_trendline_MT" onclick="javaScript:To('Exteriores/T-Cross_Trendline_MT.html')" src="../../img/nombres/T-Cross-Trendline-MT.png" position="-1.2 -0.18 0.99" scale="0.7 0.2 0" rotation="0 90 0"></a-image>
+        <a-image class="c_camionetas t_tcross model_trendline_AT" onclick="javaScript:To('Exteriores/T-Cross_Trendline_AT.html')" src="../../img/nombres/T-Cross-Trendline-AT.png" position="-1.2 -0.34 0.99" scale="0.7 0.2 0" rotation="0 90 0"></a-image>
+        <a-image class="c_camionetas t_tcross model_comfortline_AT" onclick="javaScript:To('Exteriores/T-Cross_Comfortline_AT.html')" src="../../img/nombres/T-Cross-Comfortline-AT.png" position="-1.2 -0.51 0.95" scale="0.77 0.2 0" rotation="0 90 0"></a-image>
+        <a-image class="c_camionetas t_tcross model_comfortline_plus_AT" onclick="javaScript:To('Exteriores/T-Cross_Comfortline_Plus_AT.html')" src="../../img/nombres/T-Cross-Comfortline-plus-AT.png" position="-1.2 -0.68 0.86" scale="0.94 0.2 0" rotation="0 90 0"></a-image>
 
 		  </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
         <a-image onclick="javaScript:To('../suv.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

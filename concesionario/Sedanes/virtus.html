@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen Virtus</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,31 +19,37 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
-        <img id="Virtushln" src="../../img/concesionario/CATEGORIAS/SEDANES/VIRTUS_HIGHLINE/SEDANES_ZOOM_32.jpg">          
-          
+        <img id="Virtushln" src="../../img/concesionario/CATEGORIAS/SEDANES/VIRTUS_HIGHLINE/SEDANES_ZOOM_32.jpg">
+
         <img id="ver" src="../../img/icons/ver.png">
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
-      
+
       <a-entity id="Select" rotation="0 -90 0">
 
         <a-sky radius="30" src="#Virtushln"></a-sky>
-        
-        <a-image  onclick="javaScript:To('Exteriores/Virtus_Comfortline_MT.html')" src="../../img/nombres/Virtus_Comfortline_MT.png" position="-1.2 -0.26 0.85" scale="1.2 0.25 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Virtus_Comfortline_AT.html')" src="../../img/nombres/Virtus_Comfortline_AT.png" position="-1.2 -0.42 0.86" scale="1.2 0.25 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Virtus_Highline_AT.html')" src="../../img/nombres/Virtus_Highline_AT.png" position="-1.2 -0.6 0.91" scale="1.2 0.3 0" rotation="0 90 0"></a-image>	
-			   
+
+        <a-image class="c_sedanes t_virtus model_comfortline_MT" onclick="javaScript:To('Exteriores/Virtus_Comfortline_MT.html')" src="../../img/nombres/Virtus_Comfortline_MT.png" position="-1.2 -0.26 0.85" scale="1.2 0.25 0" rotation="0 90 0"></a-image>
+        <a-image class="c_sedanes t_virtus model_comfortline_AT" onclick="javaScript:To('Exteriores/Virtus_Comfortline_AT.html')" src="../../img/nombres/Virtus_Comfortline_AT.png" position="-1.2 -0.42 0.86" scale="1.2 0.25 0" rotation="0 90 0"></a-image>
+        <a-image class="c_sedanes t_virtus model_highline_AT" onclick="javaScript:To('Exteriores/Virtus_Highline_AT.html')" src="../../img/nombres/Virtus_Highline_AT.png" position="-1.2 -0.6 0.91" scale="1.2 0.3 0" rotation="0 90 0"></a-image>
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
-        <a-image onclick="javaScript:To('../sedanes.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>	
-		  
+
+        <a-image onclick="javaScript:To('../sedanes.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

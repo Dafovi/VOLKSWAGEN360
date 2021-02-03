@@ -1,43 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	  <meta charset="utf-8">
-    <title>Volkswagen Gol</title>
-    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
-    <script src="../../styles/A-frame.js"></script>
-    <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-	  
-    <script src="../../styles/cars.js"></script>
-  </head>
+    <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+    <!-- End Google Tag Manager -->
+        <meta charset="utf-8">
+        <title>Volkswagen Gol</title>
+        <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+        <script src="../../styles/A-frame.js"></script>
+        <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
 
-	<body>
-    <a-scene vr-mode-ui="enabled: false">
-      <a-assets>
-        <img id="Golconfln" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_24.jpg">
-         
-        <img id="atras" src="../../img/icons/atras.png">
-      </a-assets>
-      
-  
-		  <a-entity id="Select">
-			  
-        <a-sky radius="30" src="#Golconfln" rotation="0 -90 0"></a-sky>
-            
-        <a-image onclick="javaScript:To('Exteriores/Gol_Trendline_MT.html')"  src="../../img/nombres/Gol_Trendline_MT.png" position="-0.88 -0.23 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Gol_Trendline_AT.html')"  src="../../img/nombres/Gol_Trendline_AT.png" position="-0.87 -0.4 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Gol_Comfortline_MT.html')"  src="../../img/nombres/Gol_Comfortline_MT.png" position="-0.86 -0.53 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Gol_Confortline_AT.html')" src="../../img/nombres/Gol_Comfortline_AT.png" position="-0.85 -0.68 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
-			  
-		  </a-entity>
-                
-		 
-      <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
-        <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
-      </a-entity>
-                  
-    </a-scene>
-  </body>
+        <script src="../../styles/cars.js"></script>
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <a-scene vr-mode-ui="enabled: false">
+            <a-assets>
+                <img id="Golconfln" src="../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_CONFORTLINE/HB_ZOOM_24.jpg">
+                <img id="atras" src="../../img/icons/atras.png">
+            </a-assets>
+
+
+            <a-entity id="Select">
+
+                <a-sky radius="30" src="#Golconfln" rotation="0 -90 0"></a-sky>
+
+                <a-image onclick="javaScript:To('Exteriores/Gol_Trendline_MT.html')"  class="c_hatchback t_gol model_trendline_MT" src="../../img/nombres/Gol_Trendline_MT.png" position="-0.88 -0.23 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
+                <a-image onclick="javaScript:To('Exteriores/Gol_Trendline_AT.html')"  class="c_hatchback t_gol model_trendline_AT" src="../../img/nombres/Gol_Trendline_AT.png" position="-0.87 -0.4 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
+                <a-image onclick="javaScript:To('Exteriores/Gol_Comfortline_MT.html')"  class="c_hatchback t_gol model_comfortline_MT" src="../../img/nombres/Gol_Comfortline_MT.png" position="-0.86 -0.53 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
+                <a-image onclick="javaScript:To('Exteriores/Gol_Confortline_AT.html')" class="c_hatchback t_gol model_comfortline_AT" src="../../img/nombres/Gol_Comfortline_AT.png" position="-0.85 -0.68 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
+
+            </a-entity>
+
+
+            <!-- Camera + cursor. -->
+            <a-entity camera look-controls cursor="rayOrigin: mouse">
+
+                <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+
+            </a-entity>
+
+        </a-scene>
+    </body>
 </html>

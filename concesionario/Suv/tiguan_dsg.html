@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen Tiguan</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,31 +19,37 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <img id="Tiguantln" src="../../img/concesionario/CATEGORIAS/SUVS/TIGUAN_TRENDLINE/SUV_ZOOM_40.jpg">
-          
+
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
-      
+
 		   <a-entity id="Select" rotation="0 -90 0">
 
         <a-sky radius="30" src="#Tiguantln"></a-sky>
-        
-        <a-image onclick="javaScript:To('Exteriores/Tiguan_Trendline_DSG.html')" src="../../img/nombres/Tiguan-Trendline-DSG.png" position="-1.2 -0.15 -0.84" scale="0.7 0.22 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Tiguan_Comfortline_DSG_1.4.html')" src="../../img/nombres/Tiguan-Comfortline-1.4.png" position="-1.2 -0.33 -0.95" scale="0.92 0.22 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Tiguan_Comfortline-_DSG_2.0.html')" src="../../img/nombres/Tiguan-Comfortline-2.0.png" position="-1.2 -0.52 -0.95" scale="0.92 0.24 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Tiguan_Highline_DSG.html')" src="../../img/nombres/Tiguan-Highline-DSG.png" position="-1.2 -0.66 -0.84" scale="0.7 0.13 0" rotation="0 90 0"></a-image>
-			   
+
+        <a-image class="c_camionetas t_tiguan model_trendline_DSG" onclick="javaScript:To('Exteriores/Tiguan_Trendline_DSG.html')" src="../../img/nombres/Tiguan-Trendline-DSG.png" position="-1.2 -0.15 -0.84" scale="0.7 0.22 0" rotation="0 90 0"></a-image>
+        <a-image class="c_camionetas t_tiguan model_comfortline_DSG14" onclick="javaScript:To('Exteriores/Tiguan_Comfortline_DSG_1.4.html')" src="../../img/nombres/Tiguan-Comfortline-1.4.png" position="-1.2 -0.33 -0.95" scale="0.92 0.22 0" rotation="0 90 0"></a-image>
+        <a-image class="c_camionetas t_tiguan model_comfortline_DSG20" onclick="javaScript:To('Exteriores/Tiguan_Comfortline-_DSG_2.0.html')" src="../../img/nombres/Tiguan-Comfortline-2.0.png" position="-1.2 -0.52 -0.95" scale="0.92 0.24 0" rotation="0 90 0"></a-image>
+        <a-image class="c_camionetas t_tiguan model_highline_DSG" onclick="javaScript:To('Exteriores/Tiguan_Highline_DSG.html')" src="../../img/nombres/Tiguan-Highline-DSG.png" position="-1.2 -0.66 -0.84" scale="0.7 0.13 0" rotation="0 90 0"></a-image>
+
 		  </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
         <a-image onclick="javaScript:To('../suv.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

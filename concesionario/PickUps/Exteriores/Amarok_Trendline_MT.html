@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	<meta charset="utf-8">
     <title>Volkswagen Amarok Trendline Cabina Doble MT 4X4</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,8 +19,14 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
-      	<a-assets>  
+      	<a-assets>
 			<img id="Amaroktln" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE/PICK_UPS_ZOOM_08.jpg">
 			<img id="Amaroktln1" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE/PICK_UPS_ZOOM_09.jpg">
 			<img id="Amaroktln2" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE/PICK_UPS_ZOOM_10.jpg">
@@ -20,12 +35,12 @@
 			<img id="Amaroktln5" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE/PICK_UPS_ZOOM_13.jpg">
 			<img id="Amaroktln6" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE/PICK_UPS_ZOOM_14.jpg">
 			<img id="Amaroktln7" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_TRENDLINE/PICK_UPS_ZOOM_15.jpg">
-				
+
 			<img id="atras" src="../../../img/icons/atras.png">
 			<img id="aro" src="../../../img/icons/aro.png">
 		</a-assets>
-      
-     
+
+
 		<!-- 360-degree image scenes.-->
 		<a-entity id="concesionario" rotation="0 -90 0">
 
@@ -39,11 +54,11 @@
 				<!--Anterior-->
 				<a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0"></a-image>
 		  	</a-entity>
-		  
+
 		  	<a-entity id="TRENDLINE">
 
 				<!-- Vistas -->
-				<a-entity id="0" ><a-sky radius="30" src="#Amaroktln"></a-sky></a-entity> 
+				<a-entity id="0" ><a-sky radius="30" src="#Amaroktln"></a-sky></a-entity>
 				<a-entity id="1" visible="false" ><a-sky radius="30" src="#Amaroktln1"></a-sky></a-entity>
 				<a-entity id="2" visible="false" ><a-sky radius="30" src="#Amaroktln2"></a-sky></a-entity>
 				<a-entity id="3" visible="false" ><a-sky radius="30" src="#Amaroktln3"></a-sky></a-entity>
@@ -53,48 +68,48 @@
 				<a-entity id="7" visible="false" ><a-sky radius="30" src="#Amaroktln7"></a-sky></a-entity>
 
 				<!-- Botones -->
-				<a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.25 -0.01" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
-				<a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.23 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-				<a-entity id="btnFaros" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 -0.72" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
-				<a-entity id="btnAsistente" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 1.45" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
-				<a-entity id="btnFrenos" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 1.3" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
-				<a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.77 -0.98" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
-				<a-entity id="btnCarga" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 -0.9" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
-				<a-entity id="btnControl" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 -1.5" rotation="0 90 0" onclick="javaScript:boton('Control')"></a-image></a-entity>
-				<a-entity id="btnSuspension" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.8 -1.4" rotation="0 90 0" onclick="javaScript:boton('Suspension')"></a-image></a-entity>
+				<a-entity id="btnGarantia" class="0"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.25 -0.01" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+				<a-entity id="btnMotor" class="0"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.23 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+				<a-entity id="btnFaros" class="0"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_faros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 -0.72" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
+				<a-entity id="btnAsistente" class="2" visible="false"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_assist" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 1.45" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
+				<a-entity id="btnFrenos" class="2" visible="false"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_frenos" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 1.3" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
+				<a-entity id="btnRines" class="2" visible="false"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.77 -0.98" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+				<a-entity id="btnCarga" class="2" visible="false"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_carga" src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 -0.9" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
+				<a-entity id="btnControl" class="2" visible="false"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_control" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 -1.5" rotation="0 90 0" onclick="javaScript:boton('Control')"></a-image></a-entity>
+				<a-entity id="btnSuspension" class="2" visible="false"><a-image class="c_pickups t_amarok m_trendline_cabinadoble_MT_4x4 ebtn_suspension" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.8 -1.4" rotation="0 90 0" onclick="javaScript:boton('Suspension')"></a-image></a-entity>
 
 				<!-- información -->
 				<a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Garantia.png" position="-2 0.55 0.7" scale="1.4 0.6 0" rotation="0 90 0"></a-image></a-entity>
-				
+
 				<a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Motor.png" position="-2 -0.05 -0.65" scale="1.3 0.4 0" rotation="0 90 0"></a-image></a-entity>
-			  
+
 				<a-entity id="Faros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/FarosDelanteros.png" position="-2 -0.12 -0.14" scale="1.2 0.5 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 				<a-entity id="Asistente" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Asistente.png" position="-2 -0.52 2.15" scale="1.3 0.5 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 				<a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Frenos.png" position="-2 -0.88 0.65" scale="1.4 0.4 0" rotation="0 90 0"></a-image></a-entity>
-			  
+
 				<a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Rines.png" position="-2 -0.55 -0.6" scale="0.9 0.55 0" rotation="0 90 0"></a-image></a-entity>
-			  
+
 				<a-entity id="Carga" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Capacidad.png" position="-2 0.2 -1.32" scale="0.8 0.35 0" rotation="0 90 0"></a-image></a-entity>
-			  
+
 				<a-entity id="Control" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Control.png" position="-2 -0.45 -2.43" scale="1.5 0.6 0" rotation="0 70 0"></a-image></a-entity>
-			
+
 				<a-entity id="Suspension" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Amarok_Trend_CD_MT/Suspension.png" position="-2 -1.15 -2.55" scale="2 0.5 0" rotation="0 80 0"></a-image></a-entity>
 
 		  	</a-entity>
-          
+
       	</a-entity>
-      
+
 		<!-- Camera + cursor. -->
 		<a-entity camera look-controls cursor="rayOrigin: mouse">
-			
+
 			<a-image onclick="javaScript:To('../amarok.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
-			<a-image src="../../../img/nombres/Amarok_Trendline_MT.png" position="-1.3 -0.8 -1.2" scale="1.25 0.18 0" rotation="0 0 0"></a-image>	
-			
+			<a-image src="../../../img/nombres/Amarok_Trendline_MT.png" position="-1.3 -0.8 -1.2" scale="1.25 0.18 0" rotation="0 0 0"></a-image>
+
 		</a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

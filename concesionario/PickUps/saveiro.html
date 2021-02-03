@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen Saveiro</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,31 +19,37 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <img id="Saveiro" src="../../img/concesionario/CATEGORIAS/PICKUPS/SAVEIRO_SENCILLO/PICK_UPS_ZOOM_48.jpg">
-          
+
         <img id="ver" src="../../img/icons/ver.png">
         <img id="atras" src="../../img/icons/atras.png">
       </a-assets>
-      
-     
+
+
       <a-entity id="Select" rotation="0 -90 0">
-          
+
         <a-sky radius="30" src="#Saveiro"></a-sky>
-        
-        <a-image onclick="javaScript:To('Exteriores/Saveiro_Cabina_sencilla_MT.html')"  src="../../img/nombres/Saveiro_Cabina_Sencilla_MT.png" position="-1.2 -0.53 0.86" scale="0.8 0.2 0" rotation="0 90 0"></a-image>
-        <a-image onclick="javaScript:To('Exteriores/Saveiro_Plus_MT.html')" src="../../img/nombres/Saveiro_Plus_MT.png" position="-1.2 -0.68 0.97" scale="0.8 0.2 0" rotation="0 90 0"></a-image>
-          
+
+        <a-image class="c_pickups t_saveiro model_cabinasencilla_MT" onclick="javaScript:To('Exteriores/Saveiro_Cabina_sencilla_MT.html')"  src="../../img/nombres/Saveiro_Cabina_Sencilla_MT.png" position="-1.2 -0.53 0.86" scale="0.8 0.2 0" rotation="0 90 0"></a-image>
+        <a-image class="c_pickups t_saveiro model_plus_MT" onclick="javaScript:To('Exteriores/Saveiro_Plus_MT.html')" src="../../img/nombres/Saveiro_Plus_MT.png" position="-1.2 -0.68 0.97" scale="0.8 0.2 0" rotation="0 90 0"></a-image>
+
       </a-entity>
-                
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-      
+
         <a-image onclick="javaScript:To('../pickups.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-      
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

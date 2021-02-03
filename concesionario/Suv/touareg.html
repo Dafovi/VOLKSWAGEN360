@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen Touareg</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,6 +19,12 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <img id="Touareg" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_08.jpg">
@@ -20,16 +35,16 @@
         <img id="Touareg5" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_13.jpg">
         <img id="Touareg6" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_14.jpg">
         <img id="Touareg7" src="../../img/concesionario/CATEGORIAS/SUVS/TOUAREG/SUV_ZOOM_15.jpg">
-          
+
         <img id="ver" src="../../img/icons/ver.png">
         <img id="atras" src="../../img/icons/atras.png">
         <img id="aro" src="../../img/icons/aro.png">
       </a-assets>
-      
-     
+
+
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-		  
+
         <a-entity id="Flechas">
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../img/icons/Flecha.png" scale="0.09 0.07 0" position="-1 -0.56 -0.15" rotation="0 90 180"></a-image>
@@ -41,65 +56,65 @@
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../img/icons/Flecha.png" scale="0.09 0.07 0" position="-1 -0.56 0.15" rotation="0 90 0">
           </a-image>
         </a-entity>
-                
+
         <a-entity id="Touareg">
 
           <!-- Vistas -->
-          <a-entity id="0" ><a-sky radius="30" src="#Touareg"></a-sky></a-entity> 
+          <a-entity id="0" ><a-sky radius="30" src="#Touareg"></a-sky></a-entity>
           <a-entity id="1" visible="false" ><a-sky radius="30" src="#Touareg1"></a-sky></a-entity>
           <a-entity id="2" visible="false" ><a-sky radius="30" src="#Touareg2"></a-sky></a-entity>
           <a-entity id="3" visible="false" ><a-sky radius="30" src="#Touareg3"></a-sky></a-entity>
           <a-entity id="4" visible="false" ><a-sky radius="30" src="#Touareg4"></a-sky></a-entity>
           <a-entity id="5" visible="false" ><a-sky radius="30" src="#Touareg5"></a-sky></a-entity>
-          <a-entity id="6" visible="false" ><a-sky radius="30" src="#Touareg6"></a-sky></a-entity>  
+          <a-entity id="6" visible="false" ><a-sky radius="30" src="#Touareg6"></a-sky></a-entity>
           <a-entity id="7" visible="false" ><a-sky radius="30" src="#Touareg7"></a-sky></a-entity>
 
           <!-- Botones -->
-          <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.16 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
-          <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.25 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-          <a-entity id="btnLucesFrente" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 0.73" rotation="0 90 0" onclick="javaScript:boton('LucesFrente')"></a-image></a-entity>
-          <a-entity id="btnVisionNocturna" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.01" rotation="0 90 0" onclick="javaScript:botonDos('VisionNocturna','Flechas')"></a-image></a-entity>
-          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 -0.95" rotation="0 90 0" onclick="javaScript:botonDos('Rines','interior')"></a-image></a-entity>
-          <a-entity id="btnAsistenteFrente" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 1.45" rotation="0 90 0" onclick="javaScript:boton('AsistenteFrente')"></a-image></a-entity>
-          <a-entity id="btnEasyOpen" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 -1.4" rotation="0 90 0" onclick="javaScript:boton('EasyOpen')"></a-image></a-entity>
-          <a-entity id="btnLuces" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.25 -1.5" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
-          <a-entity id="btnTecho" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 -0.22" rotation="0 90 0" onclick="javaScript:boton('Techo')"></a-image></a-entity>
-          <a-entity id="btnAsistente" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.15 1.1" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
-          
+          <a-entity id="btnGarantia" class="0"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.16 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+          <a-entity id="btnMotor" class="0"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.25 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+          <a-entity id="btnLucesFrente" class="0"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_luces" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 0.73" rotation="0 90 0" onclick="javaScript:boton('LucesFrente')"></a-image></a-entity>
+          <a-entity id="btnVisionNocturna" class="0"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_visionnocturna" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.01" rotation="0 90 0" onclick="javaScript:botonDos('VisionNocturna','Flechas')"></a-image></a-entity>
+          <a-entity id="btnRines" class="2" visible="false"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 -0.95" rotation="0 90 0" onclick="javaScript:botonDos('Rines','interior')"></a-image></a-entity>
+          <a-entity id="btnAsistenteFrente" class="2" visible="false"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_assist" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 1.45" rotation="0 90 0" onclick="javaScript:boton('AsistenteFrente')"></a-image></a-entity>
+          <a-entity id="btnEasyOpen" class="2" visible="false"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_easyopen" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 -1.4" rotation="0 90 0" onclick="javaScript:boton('EasyOpen')"></a-image></a-entity>
+          <a-entity id="btnLuces" class="2" visible="false"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_lucestraseras" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.25 -1.5" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
+          <a-entity id="btnTecho" class="2" visible="false"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_techo" src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 -0.22" rotation="0 90 0" onclick="javaScript:boton('Techo')"></a-image></a-entity>
+          <a-entity id="btnAsistente" class="2" visible="false"><a-image class="c_camionetas t_touareg m_luxury_AT ebtn_assist" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.15 1.1" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
+
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/garantia.png" position="-2 0.4 -0.1" scale="1 0.8 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Motor" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/Motor.png" position="-2 -0.3 -0.6" scale="1.4 0.45 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="LucesFrente" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/Luces.png" position="-2 -0.4 1.38" scale="1.4 0.5 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="VisionNocturna" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/Asistente.png" position="-2 -1.4 -0.18" scale="1.7 1.2 0" rotation="-10 90 0"></a-image></a-entity>
-      
+
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/Rin.png" position="-2 -1.25 -1.05" scale="0.9 0.7 0" rotation="0 90 0"></a-image></a-entity>
-      
+
           <a-entity id="AsistenteFrente" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/FrontAssist.png" position="-2 -1.03 2.23" scale="1.6 0.9 0" rotation="0 90 0"></a-image></a-entity>
-      
+
           <a-entity id="EasyOpen" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/EasyOpen.png" position="-2 -0.8 -2.2" scale="1.5 0.6 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Luces" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/lucesTraseras.png" position="-2 -0.28 -2.02" scale="1.1 0.4 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Techo" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/Techo.png" position="-2 0.55 0.44" scale="1.4 0.8 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Asistente" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Touareg_Luxury_AT/asisteteParqueo.png" position="-2 0.25 1.85" scale="1.5 0.9 0" rotation="0 90 0"></a-image></a-entity>
-        
+
         </a-entity>
-          
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
         <a-image onclick="javaScript:To('../suv.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-        
+
         <a-image src="../../img/nombres/Toureg-Luxury-AT.png" position="-1.1 -0.59 -1" scale="1.15 0.36 0" rotation="0 0 0"></a-image>
-		  
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

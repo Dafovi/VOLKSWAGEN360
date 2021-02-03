@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+    <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen Polo Comfortline MT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,6 +19,12 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <img id="Poloconfln" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_08.jpg">
@@ -20,16 +35,16 @@
         <img id="Poloconfln5" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_13.jpg">
         <img id="Poloconfln6" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_14.jpg">
         <img id="Poloconfln7" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_CONFORTLINE/HB_ZOOM_15.jpg">
-		           
-          
+
+
         <img id="atras" src="../../../img/icons/atras.png">
         <img id="aro" src="../../../img/icons/aro.png">
       </a-assets>
-      
-     
+
+
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-        
+
         <a-entity id="Flechas">
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
@@ -41,12 +56,12 @@
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
           </a-image>
         </a-entity>
-		  
-		  
+
+
         <a-entity id="CONFORTLINE_MT">
-              
+
           <!-- Vistas -->
-          <a-entity id="0" ><a-sky radius="30" src="#Poloconfln"></a-sky></a-entity> 
+          <a-entity id="0" ><a-sky radius="30" src="#Poloconfln"></a-sky></a-entity>
           <a-entity id="1" visible="false" ><a-sky radius="30" src="#Poloconfln1"></a-sky></a-entity>
           <a-entity id="2" visible="false" ><a-sky radius="30" src="#Poloconfln2"></a-sky></a-entity>
           <a-entity id="3" visible="false" ><a-sky radius="30" src="#Poloconfln3"></a-sky></a-entity>
@@ -54,44 +69,44 @@
           <a-entity id="5" visible="false" ><a-sky radius="30" src="#Poloconfln5"></a-sky></a-entity>
           <a-entity id="6" visible="false" ><a-sky radius="30" src="#Poloconfln6"></a-sky></a-entity>
           <a-entity id="7" visible="false" ><a-sky radius="30" src="#Poloconfln7"></a-sky></a-entity>
-          
+
           <!-- Botones -->
-          <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
-          <a-entity id="btnFaros" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.64 -0.62" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
-          <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-          <a-entity id="btnDinamico" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 0" rotation="0 90 0" onclick="javaScript:botonDos('Dinamico','interior')"></a-image></a-entity>
-          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.83 -1" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
-          <a-entity id="btnTiltDown" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.15 0.52" rotation="0 90 0" onclick="javaScript:boton('TiltDown')"></a-image></a-entity>
-          <a-entity id="btnEstrellas" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.05 -1.22" rotation="0 90 0" onclick="javaScript:boton('Estrellas')"></a-image></a-entity>
+          <a-entity id="btnGarantia" class="0"><a-image class="c_hatchback t_polo m_comfortline_MT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+          <a-entity id="btnFaros" class="0"><a-image class="c_hatchback t_polo m_comfortline_MT ebtn_faros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.64 -0.62" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
+          <a-entity id="btnMotor" class="0"><a-image class="c_hatchback t_polo m_comfortline_MT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+          <a-entity id="btnDinamico" class="0"><a-image class="c_hatchback t_polo m_comfortline_MT ebtn_dinamico" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 0" rotation="0 90 0" onclick="javaScript:botonDos('Dinamico','interior')"></a-image></a-entity>
+          <a-entity id="btnRines" class="2" visible="false"><a-image class="c_hatchback t_polo m_comfortline_MT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.83 -1" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+          <a-entity id="btnTiltDown" class="2" visible="false"><a-image class="c_hatchback t_polo m_comfortline_MT ebtn_tiltdown" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.15 0.52" rotation="0 90 0" onclick="javaScript:boton('TiltDown')"></a-image></a-entity>
+          <a-entity id="btnEstrellas" class="2" visible="false"><a-image class="c_hatchback t_polo m_comfortline_MT ebtn_estrellas" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.05 -1.22" rotation="0 90 0" onclick="javaScript:boton('Estrellas')"></a-image></a-entity>
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Garantia.png" position="-2 0.5 -0.7" scale="1.49 0.67 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Faros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Faros.png" position="-2 -0.35 -1.45" scale="1.7 0.8 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Motor.png" position="-2 -0.06 0.85" scale="1.7 0.5 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Dinamico" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Diseño.png" position="-2.4 -1.28 -1.07" scale="2.2 0.9 0" rotation="0 90 0"></a-image></a-entity>
-          
-          <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Rin.png" position="-2 -1.05 -1.75" scale="1.5 0.5 0" rotation="0 90 0"></a-image></a-entity> 
-          
-          <a-entity id="TiltDown" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Tilt.png" position="-2 0.3 0" scale="1.9 0.9 0" rotation="0 90 0"></a-image></a-entity> 
-          
+
+          <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Rin.png" position="-2 -1.05 -1.75" scale="1.5 0.5 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="TiltDown" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/Tilt.png" position="-2 0.3 0" scale="1.9 0.9 0" rotation="0 90 0"></a-image></a-entity>
+
           <a-entity id="Estrellas" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_comfort_MT/estrellas.png" position="-2 0.3 -0.5" scale="1.7 1.5 0" rotation="0 90 0"></a-image></a-entity>
-        
+
         </a-entity>
-		  
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
         <a-image onclick="javaScript:To('../polo.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
         <a-image src="../../../img/nombres/Polo_Comfortline_MT.png" position="-1.1 -0.68 -1" scale="0.75 0.15 0" rotation="0 0 0"></a-image>
 
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

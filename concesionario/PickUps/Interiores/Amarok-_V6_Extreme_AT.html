@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8">
     <title>Volkswagen Amarok Highline Extreme Cabina Doble 4x4</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -12,6 +21,12 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
             <img id="interior" src="../../../img/concesionario/Interiores/AMAROK_V6_EXTREME.jpg">
@@ -29,37 +44,37 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="AcabadosLadoBtn">
-                    <a-image onclick="javaScript:boton('AcabadosLado')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.1 0.88" rotation="0 100 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_acabadoslado" onclick="javaScript:boton('AcabadosLado')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.1 0.88" rotation="0 100 0"></a-image>
                 </a-entity>
                 <a-entity id="EspejosBtn">
-                    <a-image onclick="javaScript:boton('Espejos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -0.7 2.1" rotation="0 130 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_espejos" onclick="javaScript:boton('Espejos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -0.7 2.1" rotation="0 130 0"></a-image>
                 </a-entity>
                 <a-entity id="VolanteBtn">
-                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.78 1.78" rotation="-20 110 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_volante" onclick="javaScript:boton('Volante')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.78 1.78" rotation="-20 110 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagLadoBtn">
-                    <a-image onclick="javaScript:boton('AirbagLado')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.48 1.3" rotation="0 130 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_airbaglado" onclick="javaScript:boton('AirbagLado')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.48 1.3" rotation="0 130 0"></a-image>
                 </a-entity>
                 <a-entity id="AireBtn">
-                    <a-image onclick="javaScript:boton('Aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.5 0.2" rotation="-20 90 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_aire" onclick="javaScript:boton('Aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.5 0.2" rotation="-20 90 0"></a-image>
                 </a-entity>
                 <a-entity id="SensorBtn">
-                    <a-image onclick="javaScript:boton('Sensor')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.15 0.7" rotation="0 100 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_sensoreslluvia" onclick="javaScript:boton('Sensor')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.15 0.7" rotation="0 100 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.82 -1.3" rotation="0 60 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.82 -1.3" rotation="0 60 0"></a-image>
                 </a-entity>
                 <a-entity id="VidriosBtn">
-                    <a-image onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.43 -1.6" rotation="0 60 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_vidrios" onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.43 -1.6" rotation="0 60 0"></a-image>
                 </a-entity>
                 <a-entity id="EntretenimientoBtn">
-                    <a-image onclick="javaScript:botonDos('Entretenimiento','AirbagBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1 -0.05" rotation="0 90 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_entretenimiento" onclick="javaScript:botonDos('Entretenimiento','AirbagBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1 -0.05" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="PisoBtn">
-                    <a-image onclick="javaScript:boton('Piso')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.05 -1.1" rotation="-20 90 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_piso" onclick="javaScript:boton('Piso')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.05 -1.1" rotation="-20 90 0"></a-image>
                 </a-entity>
                 <a-entity id="TapizadoBtn">
-                    <a-image onclick="javaScript:boton('Tapizado')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.33 -1.78" rotation="-40 60 0"></a-image>
+                    <a-image class="c_pickups t_amarok m_V6_extreme_AT ibtn_tapiceria" onclick="javaScript:boton('Tapizado')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.33 -1.78" rotation="-40 60 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -72,7 +87,7 @@
                 <!-- TODO: Falta img, se tomo otra -->
                 <a-image src="../../../img/concesionario/Interiores/AmarokV6_Highline_AT_CD/Espejos.png" scale="1 0.6 0" position="-2.05 -0.34 1.53" rotation="0 120 0 "></a-image>
             </a-entity>
-            
+
             <a-entity id="Volante" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Volante.png" scale="1.9 1 0" position="-2.25 -1.4 0.97" rotation="-10 100 0 "></a-image>
             </a-entity>
@@ -111,7 +126,7 @@
             </a-entity>
 
         </a-entity>
-		
+
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 

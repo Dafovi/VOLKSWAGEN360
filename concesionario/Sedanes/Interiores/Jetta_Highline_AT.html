@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8">
     <title>Volkswagen Jetta Highline AT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -12,6 +21,12 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
             <img id="interior" src="../../../img/concesionario/Interiores/JETTA_HIGHLINE_AT.jpg">
@@ -29,22 +44,22 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="AireBtn">
-                    <a-image onclick="javaScript:boton('Aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.14 0.28" rotation="0 90 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-spl m_highline_AT ibtn_aire" onclick="javaScript:boton('Aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.14 0.28" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="EspacioBtn">
-                    <a-image onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.2 -1.15" rotation="0 90 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-spl m_highline_AT ibtn_espacio" onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.2 -1.15" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.5 -1.3" rotation="0 90 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-spl m_highline_AT ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.5 -1.3" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="LucesBtn">
-                    <a-image onclick="javaScript:boton('Luces')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.6 -0.9" rotation="0 90 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-spl m_highline_AT ibtn_luces" onclick="javaScript:boton('Luces')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.6 -0.9" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="EntretenimientoBtn">
-                    <a-image onclick="javaScript:botonDos('Entretenimiento','EspacioBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.75 -0.3" rotation="0 90 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-spl m_highline_AT ibtn_entretenimiento" onclick="javaScript:botonDos('Entretenimiento','EspacioBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.75 -0.3" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="ModosBtn">
-                    <a-image onclick="javaScript:boton('Modos')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.4 -0.02" rotation="-10 90 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-spl m_highline_AT ibtn_modos" onclick="javaScript:boton('Modos')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.4 -0.02" rotation="-10 90 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -52,7 +67,7 @@
             <a-entity id="Aire" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Jetta_Higline_AT/Aire.png" scale="1.6 0.8 0" position="-2 -0.9 1.1" rotation="0 100 0 "></a-image>
             </a-entity>
-            
+
             <a-entity id="Espacio" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Jetta_Higline_AT/Amplio.png" scale="1.1 0.5 0" position="-2 0.03 -1.75" rotation="0 90 0 "></a-image>
             </a-entity>

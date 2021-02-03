@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8">
     <title>Volskwagen Crafter 35 Panel Techo Alto 4x2</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -12,6 +21,12 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
             <img id="interior" src="../../../img/concesionario/Interiores/CRAFTER_TECHO_ALTO.jpg">
@@ -21,7 +36,7 @@
             <img id="aro" src="../../../img/icons/aro.png">
         </a-assets>
 
-        
+
         <!-- 360-degree image scenes.-->
         <a-entity id="parteDelantera" rotation="0 -90 0">
 
@@ -30,13 +45,13 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="VidriosBtn">
-                    <a-image onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.07 0.07 0" position="-1.9 -0.6 2" rotation="0 110 0"></a-image>
+                    <a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techoalto ibtn_vidrios" onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.07 0.07 0" position="-1.9 -0.6 2" rotation="0 110 0"></a-image>
                 </a-entity>
                 <a-entity id="AireBtn">
-                    <a-image onclick="javaScript:boton('Aire')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.65 0" rotation="-10 90 0"></a-image>
+                    <a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techoalto ibtn_aire" onclick="javaScript:boton('Aire')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.65 0" rotation="-10 90 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.1 -1.6" rotation="0 50 0"></a-image>
+                    <a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techoalto ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.1 -1.6" rotation="0 50 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -44,7 +59,7 @@
             <a-entity id="Vidrios" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA/Vidrios.png" scale="1.6 0.5 0" position="-2 -0.4 2.6" rotation="0 140 0 "></a-image>
             </a-entity>
-            
+
             <a-entity id="Aire" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA/Aire.png" scale="1.4 0.8 0" position="-2 -1.35 0.7" rotation="0 90 0 "></a-image>
             </a-entity>
@@ -55,11 +70,11 @@
 
             <!-- Boton Ir Parte Trasera -->
             <a-entity id="atrasbtn">
-                <a-image onclick="javaScript:visible('VagonInterior','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.33 0.2" rotation="0 90 0"></a-image>
+                <a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techoalto ibtn_partetrasera" onclick="javaScript:visible('VagonInterior','parteDelantera')" src="#aro" scale="0.06 0.06 0" position="-1.9 0.33 0.2" rotation="0 90 0"></a-image>
             `</a-entity>
 
         </a-entity>
-        
+
 
         <a-entity id="VagonInterior" visible="false">
 
@@ -69,17 +84,17 @@
             <a-entity id="delantebtn">
                <a-image onclick="javaScript:visible('parteDelantera','VagonInterior')" src="#aro" scale="0.06 0.06 0" position="-0.01 1.08 -1.9" rotation="0 0 0"></a-image>
             </a-entity>
-            
+
        </a-entity>
-		
-		
+
+
 		<!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
 		    <a-image onclick="javaScript:exterior('Crafter_35_Panel_MT_4x2_Techo_Alto.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-        
+
         </a-entity>
-			
+
 
     	</a-scene>
 		</body>

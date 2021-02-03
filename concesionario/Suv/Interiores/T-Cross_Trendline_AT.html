@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8">
     <title>Volkswagen T-Cross Trendline AT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -12,6 +21,12 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
             <img id="interior" src="../../../img/concesionario/Interiores/T_CROSS_TRENDLINE_AT.jpg">
@@ -20,7 +35,7 @@
             <img id="aro" src="../../../img/icons/aro.png">
         </a-assets>
 
-        
+
         <!-- 360-degree image scenes.-->
         <a-entity id="parteDelantera" rotation="0 -90 0">
 
@@ -29,13 +44,13 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="VolanteBtn">
-                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.35 1.13" rotation="-10 110 0"></a-image>
+                    <a-image class="c_camionetas t_tcross m_trendline_AT ibtn_volante" onclick="javaScript:boton('Volante')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.35 1.13" rotation="-10 110 0"></a-image>
                 </a-entity>
                 <a-entity id="PantallaBtn">
-                    <a-image onclick="javaScript:boton('Pantalla')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.78 -0.1" rotation="0 90 0"></a-image>
+                    <a-image class="c_camionetas t_tcross m_trendline_AT ibtn_pantalla" onclick="javaScript:boton('Pantalla')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.78 -0.1" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.62 -1.44" rotation="0 80 0"></a-image>
+                    <a-image class="c_camionetas t_tcross m_trendline_AT ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.62 -1.44" rotation="0 80 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -43,7 +58,7 @@
             <a-entity id="Volante" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/volante.png" scale="1.4 0.9 0" position="-2 -1.75 1.02" rotation="-20 110 0 "></a-image>
             </a-entity>
-            
+
             <a-entity id="Pantalla" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/pantalla.png" scale="1.1 1 0" position="-2 -0.38 -0.63" rotation="0 90 0 "></a-image>
             </a-entity>
@@ -53,14 +68,14 @@
             </a-entity>
 
         </a-entity>
-        
+
 
         <a-entity id="parteTrasera" rotation="0 180 0">
 
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="SistemaBtn">
-                    <a-image onclick="javaScript:boton('Sistema')" src="#aro" scale="0.07 0.07 0" position="-0.4 -1.54 -1.9" rotation="-10 0 0"></a-image>
+                    <a-image class="c_camionetas t_tcross m_trendline_AT ibtn_sistema" onclick="javaScript:boton('Sistema')" src="#aro" scale="0.07 0.07 0" position="-0.4 -1.54 -1.9" rotation="-10 0 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -68,9 +83,9 @@
             <a-entity id="Sistema" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_AT/isofix.png" scale="1.6 0.9 0" position="0.35 -1.85 -2" rotation="0 0 0 "></a-image>
             </a-entity>
-            
+
        </a-entity>
-        
+
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 

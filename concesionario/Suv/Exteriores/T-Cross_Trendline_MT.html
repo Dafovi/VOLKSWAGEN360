@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen T-Cross Trendline MT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,6 +19,12 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <img id="Tcrosstln" src="../../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_24.jpg">
@@ -20,15 +35,15 @@
         <img id="Tcrosstln5" src="../../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_29.jpg">
         <img id="Tcrosstln6" src="../../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_30.jpg">
         <img id="Tcrosstln7" src="../../../img/concesionario/CATEGORIAS/SUVS/TCROSS_TRENDLINE_2/SUV_ZOOM_31.jpg">
-          
+
         <img id="atras" src="../../../img/icons/atras.png">
         <img id="aro" src="../../../img/icons/aro.png">
       </a-assets>
-      
-     
+
+
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-		  		  
+
         <a-entity id="Flechas">
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.09 0.07 0" position="-1 -0.56 -0.15" rotation="0 90 180"></a-image>
@@ -43,9 +58,9 @@
 
 
         <a-entity id="TRENDLINE_MT">
-          
+
           <!-- Vistas -->
-          <a-entity id="0" ><a-sky radius="30" src="#Tcrosstln"></a-sky></a-entity> 
+          <a-entity id="0" ><a-sky radius="30" src="#Tcrosstln"></a-sky></a-entity>
           <a-entity id="1" visible="false" ><a-sky radius="30" src="#Tcrosstln1"></a-sky></a-entity>
           <a-entity id="2" visible="false" ><a-sky radius="30" src="#Tcrosstln2"></a-sky></a-entity>
           <a-entity id="3" visible="false" ><a-sky radius="30" src="#Tcrosstln3"></a-sky></a-entity>
@@ -55,45 +70,45 @@
           <a-entity id="7" visible="false" ><a-sky radius="30" src="#Tcrosstln7"></a-sky></a-entity>
 
           <!-- Botones -->
-          <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
-          <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.38 0.02" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-          <a-entity id="btnEstilo" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.7 0.02" rotation="0 90 0" onclick="javaScript:botonDos('Estilo','Flechas')"></a-image></a-entity>
-          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.92 -0.82" rotation="0 90 0" onclick="javaScript:botonDos('Rines','interior')"></a-image></a-entity>
-          <a-entity id="btnSensores" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.71 1.2" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
-          <a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.72 -1.25" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
-          <a-entity id="btnLuces" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 -1.18" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
-          <a-entity id="btnSeguridad" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 -1.15" rotation="0 90 0" onclick="javaScript:boton('Seguridad')"></a-image></a-entity>
-          
+          <a-entity id="btnGarantia" class="0"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+          <a-entity id="btnMotor" class="0"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.38 0.02" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+          <a-entity id="btnEstilo" class="0"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_estilo" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.7 0.02" rotation="0 90 0" onclick="javaScript:botonDos('Estilo','Flechas')"></a-image></a-entity>
+          <a-entity id="btnRines" class="2" visible="false"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.92 -0.82" rotation="0 90 0" onclick="javaScript:botonDos('Rines','interior')"></a-image></a-entity>
+          <a-entity id="btnSensores" class="2" visible="false"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_sensoresdelanteros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.71 1.2" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
+          <a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.72 -1.25" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
+          <a-entity id="btnLuces" class="2" visible="false"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_luces" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 -1.18" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
+          <a-entity id="btnSeguridad" class="2" visible="false"><a-image class="c_camionetas t_tcross m_trendline_MT ebtn_seguridad" src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 -1.15" rotation="0 90 0" onclick="javaScript:boton('Seguridad')"></a-image></a-entity>
+
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/Garantia.png" position="-2 0.4 0.04" scale="1.3 0.8 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/Motor.png" position="-2 -0.17 -0.68" scale="1.6 0.6 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Estilo" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/Diseno.png" position="-2 -1.08 0.13" scale="1.6 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/Rin.png" position="-2 -1.2 -1.13" scale="1.3 0.6 0" rotation="0 90 0"></a-image></a-entity>
-  
+
           <a-entity id="Sensores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/sensores.png" position="-2 -0.75 1.8" scale="1.4 0.55 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/sensoresTraseros.png" position="-2 -0.81 -1.9" scale="1.4 0.55 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Luces" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/Luces.png" position="-2 -0.46 -1.81" scale="1.3 0.8 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Seguridad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/T-Cross_Trendline_MT/Seguridad.png" position="-2 0.5 -1.9" scale="1.4 1.2 0" rotation="0 90 0"></a-image></a-entity>
-          
+
         </a-entity>
-          
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
         <a-image onclick="javaScript:To('../tcross.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-        
+
         <a-image src="../../../img/nombres/T-Cross-Trendline-MT.png" position="-1.1 -0.63 -1" scale="0.62 0.18 0" rotation="0 0 0"></a-image>
-		  
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

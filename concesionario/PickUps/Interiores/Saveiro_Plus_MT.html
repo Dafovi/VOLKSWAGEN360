@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8">
     <title>Volkswagen Saveiro Plus MT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -12,6 +21,12 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
             <img id="interior" src="../../../img/concesionario/Interiores/SAVEIRO_PLUS.jpg">
@@ -29,28 +44,28 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="VolanteBtn">
-                    <a-image onclick="javaScript:boton('Volante')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.95 1.75" rotation="0 110 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_volante" onclick="javaScript:boton('Volante')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.95 1.75" rotation="0 110 0"></a-image>
                 </a-entity>
                 <a-entity id="SonidoBtn">
-                    <a-image onclick="javaScript:boton('Sonido')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.6 0.4" rotation="0 100 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_sonido" onclick="javaScript:boton('Sonido')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.6 0.4" rotation="0 100 0"></a-image>
                 </a-entity>
                 <a-entity id="AireBtn">
-                    <a-image onclick="javaScript:boton('Aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.23 0.06" rotation="-10 90 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_aire" onclick="javaScript:boton('Aire')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.23 0.06" rotation="-10 90 0"></a-image>
                 </a-entity>
                 <a-entity id="SoporteBtn">
-                    <a-image onclick="javaScript:boton('Soporte')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.08 0.06" rotation="0 90 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_soporte" onclick="javaScript:boton('Soporte')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.08 0.06" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.32 -1.1" rotation="0 80 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.32 -1.1" rotation="0 80 0"></a-image>
                 </a-entity>
                 <a-entity id="VidriosBtn">
-                    <a-image onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.35 -1.35" rotation="0 50 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_vidrios" onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.35 -1.35" rotation="0 50 0"></a-image>
                 </a-entity>
                 <a-entity id="EntretenimientoBtn">
-                    <a-image onclick="javaScript:botonDos('Entretenimiento','AirbagBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.95 0.12" rotation="0 90 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_entretenimiento" onclick="javaScript:botonDos('Entretenimiento','AirbagBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.95 0.12" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="CajaBtn">
-                    <a-image onclick="javaScript:boton('Caja')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.6 0" rotation="-20 90 0"></a-image>
+                    <a-image class="c_pickups t_saveiro m_plus_MT ibtn_caja" onclick="javaScript:boton('Caja')" src="#aro" scale="0.06 0.06 0" position="-1.9 -1.6 0" rotation="-20 90 0"></a-image>
                 </a-entity>
             </a-entity>
 

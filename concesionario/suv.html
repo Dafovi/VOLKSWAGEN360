@@ -1,45 +1,58 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	  <meta charset="utf-8">
-    <title>Volkswagen Suv</title>
-    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
-    <script src="../styles/A-frame.js"></script>
-    <link rel="icon" href="../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-    <script src="../styles/cars.js"></script>
-  </head>
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+        <!-- End Google Tag Manager -->
 
-	<body>
-    <a-scene vr-mode-ui="enabled: false">
-      <a-assets>
-        <img id="Hatchback" src="../img/concesionario/CATEGORIAS/SUVS/SUV.jpg">
-          
-          
-        <img id="atras" src="../img/icons/atras.png">
-      </a-assets>
-      
-     
-      <!-- 360-degree image scenes.-->
-      <a-entity id="concesionario" rotation="0 -90 0">
-        <a-sky radius="30" src="#Hatchback"></a-sky>
-		  
-        <a-image onclick="javaScript:To('Suv/tcross.html')" src="../img/nombres/T-Cross.png" scale="2 0.5 0" position="-5 -2.48 5.5" rotation="0 90 0"></a-image>
-        <a-box onclick="javaScript:To('Suv/tcross.html')" scale="2 1 1" position="-3.5 -0.4 2.7" visible="false"></a-box>
-        
-        <a-image onclick="javaScript:To('Suv/tiguan_dsg.html')" src="../img/nombres/Tiguan.png" scale="2 0.5 0" position="-5 -2.48 -0.25" rotation="0 90 0"></a-image>
-        <a-box onclick="javaScript:To('Suv/tiguan_dsg.html')" scale="2 0.5 1" position="-3.5 -0.65 -0.07" visible="false"></a-box>
-            
-            <a-image onclick="javaScript:To('Suv/touareg.html')" src="../img/nombres/Touareg.png" scale="2 0.5 0" position="-5 -2.46 -7" rotation="0 90 0"></a-image>
-        <a-box onclick="javaScript:To('Suv/touareg.html')" scale="2 1 1" position="-3.5 -0.4 -3." visible="false"></a-box>
-		  
-      </a-entity>
-      
-      <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
-		  <a-image onclick="javaScript:To('categorias.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
-      </a-entity>
-    </a-scene>
-  </body>
+        <meta charset="utf-8">
+        <title>Volkswagen Suv</title>
+        <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+        <script src="../styles/A-frame.js"></script>
+        <link rel="icon" href="../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+        <script src="../styles/cars.js"></script>
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+        <a-scene vr-mode-ui="enabled: false">
+            <a-assets>
+                <img id="Hatchback" src="../img/concesionario/CATEGORIAS/SUVS/SUV.jpg">
+
+
+                <img id="atras" src="../img/icons/atras.png">
+            </a-assets>
+
+
+            <!-- 360-degree image scenes.-->
+            <a-entity id="concesionario" rotation="0 -90 0">
+                <a-sky radius="30" src="#Hatchback"></a-sky>
+
+                <a-image onclick="javaScript:To('Suv/tcross.html')" class="c_camionetas type_tcross"src="../img/nombres/T-Cross.png" scale="2 0.5 0" position="-5 -2.48 5.5" rotation="0 90 0"></a-image>
+                <a-box onclick="javaScript:To('Suv/tcross.html')" class="c_camionetas type_tcross"scale="2 1 1" position="-3.5 -0.4 2.7" visible="false"></a-box>
+
+                <a-image onclick="javaScript:To('Suv/tiguan_dsg.html')" class="c_camionetas type_tiguan"src="../img/nombres/Tiguan.png" scale="2 0.5 0" position="-5 -2.48 -0.25" rotation="0 90 0"></a-image>
+                <a-box onclick="javaScript:To('Suv/tiguan_dsg.html')" class="c_camionetas type_tiguan"scale="2 0.5 1" position="-3.5 -0.65 -0.07" visible="false"></a-box>
+
+                <a-image onclick="javaScript:To('Suv/touareg.html')" class="c_camionetas type_touareg"src="../img/nombres/Touareg.png" scale="2 0.5 0" position="-5 -2.46 -7" rotation="0 90 0"></a-image>
+                <a-box onclick="javaScript:To('Suv/touareg.html')" class="c_camionetas type_touareg"scale="2 1 1" position="-3.5 -0.4 -3." visible="false"></a-box>
+
+            </a-entity>
+
+            <!-- Camera + cursor. -->
+            <a-entity camera look-controls cursor="rayOrigin: mouse">
+
+                <a-image onclick="javaScript:To('categorias.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+
+            </a-entity>
+        </a-scene>
+    </body>
 </html>

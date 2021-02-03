@@ -1,53 +1,68 @@
 <!DOCTYPE html>
 <html>
-  <head>
-	  <meta charset="utf-8">
-    <title>Categorías</title>
-    <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
-    <script src="../styles/A-frame.js"></script>
-    <link rel="icon" href="../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-    <script src="../styles/cars.js"></script>
-  </head>
+    <head>
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+        <!-- End Google Tag Manager -->
 
-	<body>
-    <a-scene vr-mode-ui="enabled: false">
-      <a-assets>
-        <img id="fondo" src="../img/concesionario/CATEGORIAS/Concesionario.jpg">
-          
-        <img id="atras" src="../img/icons/atras.png">
-      </a-assets>
-      
-     
-      <!-- 360-degree image scenes.-->
-      <a-entity id="concesionario" rotation="0 -120 0">
-        <a-sky radius="30" src="#fondo" rotation="0 7 0"></a-sky>
-		  
-        <a-image onclick="javaScript:To('hatchback.html')" src="../img/nombres/Hatchback.png" scale="0.95 0.27 0" position="-3.6 -1.03 -3" rotation="0 10 0"></a-image>
-        <a-box onclick="javaScript:To('hatchback.html')" scale="1 1 1" position="-4 -0.2 -4" visible="false"></a-box>
-        
-        <a-image onclick="javaScript:To('sedanes.html')" src="../img/nombres/Sedane.png" scale="0.93 0.25 0" position="-1.7 -0.97 -3" rotation="0 8 0"></a-image>
-        <a-box onclick="javaScript:To('sedanes.html')"  scale="1 1 1" position="-2 -0.2 -4" visible="false"></a-box>
-        
-        <a-image onclick="javaScript:To('suv.html')" src="../img/nombres/Suv.png" scale="0.95 0.23 0" position="0.02 -0.9 -3" rotation="0 5 0"></a-image>
-        <a-box onclick="javaScript:To('suv.html')"  scale="1 0.5 1" position="0 -0.55 -4" visible="false"></a-box>
-        
-        <a-image onclick="javaScript:To('pickups.html')" src="../img/nombres/Pickup.png" scale="0.95 0.2 0" position="1.8 -0.84 -3" rotation="0 5 0"></a-image>
-        <a-box onclick="javaScript:To('pickups.html')" scale="1 1 1" position="1.9 -0.2 -4" visible="false"></a-box>
-        
-        <a-image onclick="javaScript:To('Vans/vans.html')" src="../img/nombres/Van.png" scale="0.9 0.2 0" position="3.8 -0.76 -3" rotation="0 0 0"></a-image>
-        <a-box onclick="javaScript:To('Vans/vans.html')" scale="1 1 2" position="4.7 -0.1 -4.5" visible="false"></a-box>
-		  
-		    <a-image src="../img/icons/FlechaGris.png" scale=" 1 1 1" position="-7 0 -1.5" rotation="0 90 180"></a-image>
-		  
-      </a-entity>
-      
-      <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
-		  <a-image onclick="javaScript:To('../index.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
-      </a-entity>
-            
-    </a-scene>
-  </body>
+
+        <meta charset="utf-8">
+        <title>Categorías</title>
+        <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
+        <script src="../styles/A-frame.js"></script>
+        <link rel="icon" href="../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
+        <script src="../styles/cars.js"></script>
+    </head>
+
+    <body>
+        <!-- Google Tag Manager (noscript) -->
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+
+        <a-scene vr-mode-ui="enabled: false">
+            <a-assets>
+                <img id="fondo" src="../img/concesionario/CATEGORIAS/Concesionario.jpg">
+                <img id="atras" src="../img/icons/atras.png">
+            </a-assets>
+
+
+            <!-- 360-degree image scenes.-->
+            <a-entity id="concesionario" rotation="0 -120 0">
+                <a-sky radius="30" src="#fondo" rotation="0 7 0"></a-sky>
+
+                <a-image onclick="javaScript:To('hatchback.html')" class="category_hatchback" src="../img/nombres/Hatchback.png" scale="0.95 0.27 0" position="-3.6 -1.03 -3" rotation="0 10 0"></a-image>
+                <a-box onclick="javaScript:To('hatchback.html')" class="category_hatchback" scale="1 1 1" position="-4 -0.2 -4" visible="false"></a-box>
+
+                <a-image onclick="javaScript:To('sedanes.html')" class="category_sedanes" src="../img/nombres/Sedane.png" scale="0.93 0.25 0" position="-1.7 -0.97 -3" rotation="0 8 0"></a-image>
+                <a-box onclick="javaScript:To('sedanes.html')"  class="category_sedanes" scale="1 1 1" position="-2 -0.2 -4" visible="false"></a-box>
+
+                <a-image onclick="javaScript:To('suv.html')" class="category_camionetas" src="../img/nombres/Suv.png" scale="0.95 0.23 0" position="0.02 -0.9 -3" rotation="0 5 0"></a-image>
+                <a-box onclick="javaScript:To('suv.html')"  class="category_camionetas" scale="1 0.5 1" position="0 -0.55 -4" visible="false"></a-box>
+
+                <a-image onclick="javaScript:To('pickups.html')" class="category_pickups" src="../img/nombres/Pickup.png" scale="0.95 0.2 0" position="1.8 -0.84 -3" rotation="0 5 0"></a-image>
+                <a-box onclick="javaScript:To('pickups.html')" class="category_pickups" scale="1 1 1" position="1.9 -0.2 -4" visible="false"></a-box>
+
+                <a-image onclick="javaScript:To('Vans/vans.html')" class="category_vans" src="../img/nombres/Van.png" scale="0.9 0.2 0" position="3.8 -0.76 -3" rotation="0 0 0"></a-image>
+                <a-box onclick="javaScript:To('Vans/vans.html')" class="category_vans" scale="1 1 2" position="4.7 -0.1 -4.5" visible="false"></a-box>
+
+                <a-image src="../img/icons/FlechaGris.png" scale=" 1 1 1" position="-7 0 -1.5" rotation="0 90 180"></a-image>
+
+            </a-entity>
+
+            <!-- Camera + cursor. -->
+            <a-entity camera look-controls cursor="rayOrigin: mouse">
+
+                <a-image onclick="javaScript:To('../index.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+
+            </a-entity>
+
+        </a-scene>
+    </body>
 </html>

@@ -1,19 +1,35 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJ78HHJ');
+    </script>
+    <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen Gol Trendline AT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-	  
+
     <script src="../../../styles/cars.js"></script>
   </head>
 
 	<body>
+      <!-- Google Tag Manager (noscript) -->
+      <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
-		  
+
         <img id="Goltrnln" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_32.jpg">
         <img id="Goltrnln1" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_33.jpg">
         <img id="Goltrnln2" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_34.jpg">
@@ -22,16 +38,16 @@
         <img id="Goltrnln5" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_37.jpg">
         <img id="Goltrnln6" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_38.jpg">
         <img id="Goltrnln7" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/GOL_TRENDLINE/HB_ZOOM_39.jpg">
-          
-         
+
+
         <img id="atras" src="../../../img/icons/atras.png">
         <img id="aro" src="../../../img/icons/aro.png">
       </a-assets>
-      
-     
+
+
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-		  
+
 		  	<a-entity id="Flechas">
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
@@ -41,13 +57,13 @@
 		  		<a-image  src="../../../img/icons/360.png" scale="0.27 0.2 0" position="-1 -0.65 0" rotation="0 90 0"></a-image>
           <!--Anterior-->
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
-				  </a-image>		  		
+				  </a-image>
 		  	</a-entity>
-                
+
         <a-entity id="TRENDLINE_AT">
-          
+
           <!-- Vistas -->
-          <a-entity id="0" ><a-sky radius="30" src="#Goltrnln"></a-sky></a-entity> 
+          <a-entity id="0" ><a-sky radius="30" src="#Goltrnln"></a-sky></a-entity>
           <a-entity id="1" visible="false" ><a-sky radius="30" src="#Goltrnln1"></a-sky></a-entity>
           <a-entity id="2" visible="false" ><a-sky radius="30" src="#Goltrnln2"></a-sky></a-entity>
           <a-entity id="3" visible="false" ><a-sky radius="30" src="#Goltrnln3"></a-sky></a-entity>
@@ -55,41 +71,41 @@
           <a-entity id="5" visible="false" ><a-sky radius="30" src="#Goltrnln5"></a-sky></a-entity>
           <a-entity id="6" visible="false" ><a-sky radius="30" src="#Goltrnln6"></a-sky></a-entity>
           <a-entity id="7" visible="false" ><a-sky radius="30" src="#Goltrnln7"></a-sky></a-entity>
-              
+
           <!-- Botones -->
-          <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
-          <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-          <a-entity id="btnCabina" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.44 0.73" rotation="0 90 0" onclick="javaScript:boton('Cabina')"></a-image></a-entity>
-          <a-entity id="btnParrilla" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 0" rotation="0 90 0" onclick="javaScript:botonDos('Parrilla','interior')"></a-image></a-entity>
-          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 -1.03" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
-          <a-entity id="btnFrenos" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.8" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
+          <a-entity id="btnGarantia" class="0"><a-image class="c_hatchback t_gol m_trendline_AT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+          <a-entity id="btnMotor" class="0"><a-image class="c_hatchback t_gol m_trendline_AT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+          <a-entity id="btnCabina" class="0"><a-image class="c_hatchback t_gol m_trendline_AT ebtn_cabina" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.44 0.73" rotation="0 90 0" onclick="javaScript:boton('Cabina')"></a-image></a-entity>
+          <a-entity id="btnParrilla" class="0"><a-image class="c_hatchback t_gol m_trendline_AT btnParrilla" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 0" rotation="0 90 0" onclick="javaScript:botonDos('Parrilla','interior')"></a-image></a-entity>
+          <a-entity id="btnRines" class="2" visible="false"><a-image class="c_hatchback t_gol m_trendline_AT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 -1.03" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+          <a-entity id="btnFrenos" class="2" visible="false"><a-image class="c_hatchback t_gol m_trendline_AT ebtn_frenos" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.8" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Garantia.png" position="-2 0.52 -0.75" scale="1.5 0.65 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Motor.png" position="-2 -0.06 0.85" scale="1.7 0.5 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Cabina" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Cabina.png" position="-1.99 -0.18 0.15" scale="1.2 0.55 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Parrilla" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Parrilla.png" position="-2.4 -1.35 -1.1" scale="2.2 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Rin.png" position="-2 -0.98 -1.68" scale="1.25 0.35 0" rotation="0 90 0"></a-image></a-entity>
-  
+
           <a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Trend_AT/Frenos.png" position="-2 -0.93 1.65" scale="1.9 0.8 0" rotation="0 90 0"></a-image></a-entity>
-  
+
         </a-entity>
-		  
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
         <a-image onclick="javaScript:To('../gol.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-        
+
         <a-image src="../../../img/nombres/Gol_Trendline_AT.png" position="-1.1 -0.68 -1" scale="0.6 0.15 0" rotation="0 0 0"></a-image>
-		  
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

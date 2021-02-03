@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volskwagen Crafter 35 Panel Techo Bajo 4x2</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,6 +19,12 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
         <img id="Vanbaja" src="../../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_16.jpg">
@@ -20,15 +35,15 @@
         <img id="Vanbaja5" src="../../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_21.jpg">
         <img id="Vanbaja6" src="../../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_22.jpg">
         <img id="Vanbaja7" src="../../../img/concesionario/CATEGORIAS/VANS/TECHO_BAJO/VANS_ZOOM_23.jpg">
-          
+
         <img id="atras" src="../../../img/icons/atras.png">
         <img id="aro" src="../../../img/icons/aro.png">
 	</a-assets>
-      
-     
+
+
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-		  
+
 		<a-entity id="Flechas">
 			<!-- Siguiente-->
 			<a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
@@ -40,11 +55,11 @@
 			<a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 			</a-image>
 		</a-entity>
-		  
+
 		<a-entity id="TECHOBAJO">
-			
+
 			<!-- Vistas -->
-			<a-entity id="0" ><a-sky radius="30" src="#Vanbaja"></a-sky></a-entity> 
+			<a-entity id="0" ><a-sky radius="30" src="#Vanbaja"></a-sky></a-entity>
 			<a-entity id="1" visible="false" ><a-sky radius="30" src="#Vanbaja1"></a-sky></a-entity>
 			<a-entity id="2" visible="false" ><a-sky radius="30" src="#Vanbaja2"></a-sky></a-entity>
 			<a-entity id="3" visible="false" ><a-sky radius="30" src="#Vanbaja3"></a-sky></a-entity>
@@ -52,26 +67,26 @@
 			<a-entity id="5" visible="false" ><a-sky radius="30" src="#Vanbaja5"></a-sky></a-entity>
 			<a-entity id="6" visible="false" ><a-sky radius="30" src="#Vanbaja6"></a-sky></a-entity>
 			<a-entity id="7" visible="false" ><a-sky radius="30" src="#Vanbaja7"></a-sky></a-entity>
-		
+
 			<!-- botones -->
-			<a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.35 -0.01" rotation="0 90 0" onclick="javaScript:botonDos('Garantia','btnCiudad')"></a-image></a-entity>
-			<a-entity id="btnPuestos" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.08 -0.58" rotation="0 90 0" onclick="javaScript:boton('Puestos')"></a-image></a-entity>
-			<a-entity id="btnConsumo" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.26 0.86" rotation="0 90 0" onclick="javaScript:boton('Consumo')"></a-image></a-entity>
-			<a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 -0.02" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-			<a-entity id="btnManufactura" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.66 -0.53" rotation="0 90 0" onclick="javaScript:boton('Manufactura')"></a-image></a-entity>
-			<a-entity id="btnCiudad" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.25 0.75" rotation="0 90 0" onclick="javaScript:boton('Ciudad')"></a-image></a-entity>
-			<a-entity id="btnBalance" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 0.85" rotation="0 90 0" onclick="javaScript:boton('Balance')"></a-image></a-entity>
-			<a-entity id="btnVolumetrica" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -0.2" rotation="0 90 0" onclick="javaScript:boton('Volumetrica')"></a-image></a-entity>
-			<a-entity id="btnAplicaciones" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.4 -1.7" rotation="0 90 0" onclick="javaScript:boton('Aplicaciones')"></a-image></a-entity>
-			<a-entity id="btnFrenos" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -1 1.1" rotation="0 90 0" onclick="javaScript:botonDos('Frenos','Flechas')"></a-image></a-entity>
-			<a-entity id="btnCarga" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.5 -0.2" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
-			<a-entity id="btnSistema" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -1 -0.95" rotation="0 90 0" onclick="javaScript:botonDos('Sistema','Flechas')"></a-image></a-entity>
-		
+			<a-entity id="btnGarantia" class="0"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.35 -0.01" rotation="0 90 0" onclick="javaScript:botonDos('Garantia','btnCiudad')"></a-image></a-entity>
+			<a-entity id="btnPuestos" class="0"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_puestos" src="#aro" scale="0.06 0.06 0" position="-1.94 0.08 -0.58" rotation="0 90 0" onclick="javaScript:boton('Puestos')"></a-image></a-entity>
+			<a-entity id="btnConsumo" class="0"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_consumo" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.26 0.86" rotation="0 90 0" onclick="javaScript:boton('Consumo')"></a-image></a-entity>
+			<a-entity id="btnMotor" class="0"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 -0.02" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+			<a-entity id="btnManufactura" class="0"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_manufactura" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.66 -0.53" rotation="0 90 0" onclick="javaScript:boton('Manufactura')"></a-image></a-entity>
+			<a-entity id="btnCiudad" class="0"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_ciudad" src="#aro" scale="0.06 0.06 0" position="-1.94 0.25 0.75" rotation="0 90 0" onclick="javaScript:boton('Ciudad')"></a-image></a-entity>
+			<a-entity id="btnBalance" class="2" visible="false"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_balance" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 0.85" rotation="0 90 0" onclick="javaScript:boton('Balance')"></a-image></a-entity>
+			<a-entity id="btnVolumetrica" class="2" visible="false"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_volumetrica" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -0.2" rotation="0 90 0" onclick="javaScript:boton('Volumetrica')"></a-image></a-entity>
+			<a-entity id="btnAplicaciones" class="2" visible="false"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_aplicaciones" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.4 -1.7" rotation="0 90 0" onclick="javaScript:boton('Aplicaciones')"></a-image></a-entity>
+			<a-entity id="btnFrenos" class="2" visible="false"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_frenos" src="#aro" scale="0.06 0.06 0" position="-1.94 -1 1.1" rotation="0 90 0" onclick="javaScript:botonDos('Frenos','Flechas')"></a-image></a-entity>
+			<a-entity id="btnCarga" class="2" visible="false"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_carga" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.5 -0.2" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
+			<a-entity id="btnSistema" class="2" visible="false"><a-image class="c_vans t_van m_crafter_35_panel_MT_4x2_techobajo ebtn_sistema" src="#aro" scale="0.06 0.06 0" position="-1.94 -1 -0.95" rotation="0 90 0" onclick="javaScript:botonDos('Sistema','Flechas')"></a-image></a-entity>
+
 			<!-- información -->
 			<a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Garantia.png" position="-2 0.2 0.63" scale="1.3 0.35 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 			<a-entity id="Puestos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/3_Puestos.png" position="-2 0.3 -0.95" scale="0.7 0.45 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 			<a-entity id="Consumo" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Consumo.png" position="-2 -0.28 1.48" scale="1.2 0.4 0" rotation="0 90 0"></a-image></a-entity>
 
 			<a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Motor.png" position="-2 -0.45 -0.8" scale="1.6 0.35 0" rotation="0 90 0"></a-image></a-entity>
@@ -81,30 +96,30 @@
 			<a-entity id="Ciudad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Ciudad.png" position="-2 0.57 -0.53" scale="2.6 0.6 0" rotation="0 90 0"></a-image></a-entity>
 
 			<a-entity id="Balance" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Balance.png" position="-2 0.33 1.37" scale="1 0.45 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 			<a-entity id="Volumetrica" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Volumetrica.png" position="-2 0.08 -0.75" scale="1.1 0.3 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 			<a-entity id="Aplicaciones" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Aplicaciones.png" position="-2 -0.08 -1.35" scale="0.8 0.65 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 			<a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/FrenosABS.png" position="-2 -1.13 0.25" scale="1.8 0.35 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 			<a-entity id="Carga" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/Carga.png" position="-2 -0.25 0.4" scale="1.2 0.5 0" rotation="0 90 0"></a-image></a-entity>
-			
+
 			<a-entity id="Sistema" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TB/SistemaParqueo.png" position="-2 -1.08 0.03" scale="2 0.43 0" rotation="0 90 0"></a-image></a-entity>
 
 		</a-entity>
-          
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
 	<a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
 		<a-image onclick="javaScript:To('../vans.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-		  
+
 		<a-image src="../../../img/nombres/Crafter_35_Panel_MT_4x2_Techo_Bajo.png" position="-1.1 -0.68 -1" scale="0.85 0.1 0" rotation="0 0 0"></a-image>
-		  
+
 	</a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

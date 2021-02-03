@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+    <!-- End Google Tag Manager -->
+
+
 	  <meta charset="utf-8">
     <title>Volkswagen Polo Highline AT</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -10,9 +19,15 @@
   </head>
 
 	<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
       <a-assets>
-		  
+
         <img id="Polohln" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_16.jpg">
         <img id="Polohln1" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_17.jpg">
         <img id="Polohln2" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_18.jpg">
@@ -21,16 +36,16 @@
         <img id="Polohln5" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_21.jpg">
         <img id="Polohln6" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_22.jpg">
         <img id="Polohln7" src="../../../img/concesionario/CATEGORIAS/HATCHBACK/POLO_HIGHLINE/HB_ZOOM_23.jpg">
-          
-          
+
+
         <img id="atras" src="../../../img/icons/atras.png">
         <img id="aro" src="../../../img/icons/aro.png">
       </a-assets>
-      
-     
+
+
       <!-- 360-degree image scenes.-->
       <a-entity id="concesionario" rotation="0 -90 0">
-        
+
         <a-entity id="Flechas">
           <!-- Siguiente-->
           <a-image onclick="javaScript:changeCarById(1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 -0.2" rotation="0 90 180"></a-image>
@@ -42,11 +57,11 @@
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
           </a-image>
         </a-entity>
-      
+
         <a-entity id="HIGHLINE">
-          
+
           <!-- Vistas -->
-          <a-entity id="0" ><a-sky radius="30" src="#Polohln"></a-sky></a-entity> 
+          <a-entity id="0" ><a-sky radius="30" src="#Polohln"></a-sky></a-entity>
           <a-entity id="1" visible="false" ><a-sky radius="30" src="#Polohln1"></a-sky></a-entity>
           <a-entity id="2" visible="false" ><a-sky radius="30" src="#Polohln2"></a-sky></a-entity>
           <a-entity id="3" visible="false" ><a-sky radius="30" src="#Polohln3"></a-sky></a-entity>
@@ -54,50 +69,50 @@
           <a-entity id="5" visible="false" ><a-sky radius="30" src="#Polohln5"></a-sky></a-entity>
           <a-entity id="6" visible="false" ><a-sky radius="30" src="#Polohln6"></a-sky></a-entity>
           <a-entity id="7" visible="false" ><a-sky radius="30" src="#Polohln7"></a-sky></a-entity>
-          
+
           <!-- Botones -->
-          <a-entity id="btnGarantia" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
-          <a-entity id="btnFaros" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.43 -0.52" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
-          <a-entity id="btnMotor" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-          <a-entity id="btnDinamico" class="0"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 0" rotation="0 90 0" onclick="javaScript:boton('Dinamico')"></a-image></a-entity>
-          <a-entity id="btnRines" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 -0.97" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
-          <a-entity id="btnTiltDown" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.16 0.48" rotation="0 90 0" onclick="javaScript:boton('TiltDown')"></a-image></a-entity>
-          <a-entity id="btnEstrellas" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.05 -1.12" rotation="0 90 0" onclick="javaScript:boton('Estrellas')"></a-image></a-entity>
-          <a-entity id="btnSensoresDelanteros" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.58 1.36" rotation="0 90 0" onclick="javaScript:botonDos('SensoresDelanteros','btnTiltDown')"></a-image></a-entity>
-          <a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image src="#aro" scale="0.06 0.06 0" position="-1.94 -0.48 -1.38" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
+          <a-entity id="btnGarantia" class="0"><a-image class="c_hatchback t_polo m_highline_AT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
+          <a-entity id="btnFaros" class="0"><a-image class="c_hatchback t_polo m_highline_AT ebtn_faros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.43 -0.52" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
+          <a-entity id="btnMotor" class="0"><a-image class="c_hatchback t_polo m_highline_AT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+          <a-entity id="btnDinamico" class="0"><a-image class="c_hatchback t_polo m_highline_AT ebtn_dinamico" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 0" rotation="0 90 0" onclick="javaScript:boton('Dinamico')"></a-image></a-entity>
+          <a-entity id="btnRines" class="2" visible="false"><a-image class="c_hatchback t_polo m_highline_AT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 -0.97" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+          <a-entity id="btnTiltDown" class="2" visible="false"><a-image class="c_hatchback t_polo m_highline_AT ebtn_tiltdown" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.16 0.48" rotation="0 90 0" onclick="javaScript:boton('TiltDown')"></a-image></a-entity>
+          <a-entity id="btnEstrellas" class="2" visible="false"><a-image class="c_hatchback t_polo m_highline_AT ebtn_estrellas" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.05 -1.12" rotation="0 90 0" onclick="javaScript:boton('Estrellas')"></a-image></a-entity>
+          <a-entity id="btnSensoresDelanteros" class="2" visible="false"><a-image class="c_hatchback t_polo m_highline_AT ebtn_sensoresdelanteros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.58 1.36" rotation="0 90 0" onclick="javaScript:botonDos('SensoresDelanteros','btnTiltDown')"></a-image></a-entity>
+          <a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image class="c_hatchback t_polo m_highline_AT ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.48 -1.38" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Garantia.png" position="-2 0.5 -0.7" scale="1.6 0.7 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Faros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Faros.png" position="-2 -0.15 -1.32" scale="1.7 0.8 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Motor.png" position="-2 -0.02 0.78" scale="1.8 0.6 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="Dinamico" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Diseño.png" position="-2.4 -0.88 -0.95" scale="2 0.6 0" rotation="0 90 0"></a-image></a-entity>
-          
-          <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Rin.png" position="-2 -1.18 -1.7" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity> 
-          
-          <a-entity id="TiltDown" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Tilt.png" position="-1.99 0.1 1.15" scale="2.1 1.1 0" rotation="0 90 0"></a-image></a-entity> 
-          
+
+          <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Rin.png" position="-2 -1.18 -1.7" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="TiltDown" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Tilt.png" position="-1.99 0.1 1.15" scale="2.1 1.1 0" rotation="0 90 0"></a-image></a-entity>
+
           <a-entity id="Estrellas" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/estrellas.png" position="-1.99 0.4 -0.48" scale="2.1 1 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="SensoresDelanteros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/sensoresDelanteros.png" position="-1.99 -0.4 0.75" scale="1.4 0.9 0" rotation="0 90 0"></a-image></a-entity>
-          
+
           <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Polo_Highline_AT/Sensores.png" position="-2 -0.52 -1.9" scale="1.7 1 0" rotation="0 90 0"></a-image></a-entity>
-        
+
         </a-entity>
-          
+
       </a-entity>
-      
+
       <!-- Camera + cursor. -->
       <a-entity camera look-controls cursor="rayOrigin: mouse">
-  		
+
         <a-image onclick="javaScript:To('../polo.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-        
+
         <a-image src="../../../img/nombres/Polo_Highline_AT.png" position="-1.1 -0.68 -1" scale="0.75 0.15 0" rotation="0 0 0"></a-image>
-		  
+
       </a-entity>
-                  
+
     </a-scene>
   </body>
 </html>

@@ -2,6 +2,15 @@
 <html>
 
 <head>
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-MJ78HHJ');</script>
+  <!-- End Google Tag Manager -->
+
+
     <meta charset="utf-8">
     <title>Volskwagen Crafter 35 Chasis Doble Cabina 4x4</title>
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
@@ -12,11 +21,17 @@
 </head>
 
 <body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MJ78HHJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+
     <a-scene vr-mode-ui="enabled: false">
         <a-assets>
             <img id="interior" src="../../../img/concesionario/Interiores/CRAFTER_DOCA.jpg">
             <!-- <img id="Vagon" src="../../../img/concesionario/Interiores/CRAFTER_VAGON.jpg"> -->
-            
+
             <img id="atras" src="../../../img/icons/atras.png">
             <img id="aro" src="../../../img/icons/aro.png">
         </a-assets>
@@ -30,13 +45,13 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="VidriosBtn">
-                    <a-image onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.15 0.88" rotation="0 120 0"></a-image>
+                    <a-image class="c_vans t_van m_crafter_35_doca_MT ibtn_vidrios" onclick="javaScript:boton('Vidrios')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.15 0.88" rotation="0 120 0"></a-image>
                 </a-entity>
                 <a-entity id="PuestosBtn">
-                    <a-image onclick="javaScript:boton('Puestos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.2 -1.2" rotation="-20 60 0"></a-image>
+                    <a-image class="c_vans t_van m_crafter_35_doca_MT ibtn_puestos" onclick="javaScript:boton('Puestos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.2 -1.2" rotation="-20 60 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
-                    <a-image onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.45 -1.08" rotation="0 50 0"></a-image>
+                    <a-image class="c_vans t_van m_crafter_35_doca_MT ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.45 -1.08" rotation="0 50 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -44,7 +59,7 @@
             <a-entity id="Vidrios" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/Vidrios.png" scale="1.6 0.6 0" position="-2 0.1 1.8" rotation="0 120 0 "></a-image>
             </a-entity>
-            
+
             <a-entity id="Puestos" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/2Puestos.png" scale="1.5 1 0" position="-2 -2.4 -2.1" rotation="0 50 0 "></a-image>
             </a-entity>
@@ -61,25 +76,25 @@
             <!-- Botones -->
             <a-entity id="BotonesInterior">
                 <a-entity id="PuestosAtrasBtn">
-                    <a-image onclick="javaScript:boton('PuestosAtras')" src="#aro" scale="0.07 0.07 0" position="0.15 -1.5 -1.9" rotation="-20 0 0"></a-image>
+                    <a-image class="c_vans t_van m_crafter_35_doca_MT ibtn_puestos" onclick="javaScript:boton('PuestosAtras')" src="#aro" scale="0.07 0.07 0" position="0.15 -1.5 -1.9" rotation="-20 0 0"></a-image>
                 </a-entity>
             </a-entity>
-            
+
             <!-- Informacion -->
             <a-entity id="PuestosAtras" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/4puestos.png" scale="1.5 1 0" position="-0.55 -1.2 -2" rotation="0 10 0 "></a-image>
             </a-entity>
-            
+
        </a-entity>
 
-		
+
 		<!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">
 
 		    <a-image onclick="javaScript:exterior('Crafter_35_Doca_MT.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
-        
+
         </a-entity>
-			
+
 
     	</a-scene>
 		</body>
