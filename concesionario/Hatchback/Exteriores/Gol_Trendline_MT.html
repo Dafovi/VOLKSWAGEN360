@@ -26,6 +26,7 @@
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
 
     <script src="../../../styles/cars.js"></script>
+    <script src="../../../styles/cameraLimit.js" charset="utf-8"></script>
   </head>
 
 	<body>
@@ -49,6 +50,7 @@
 
 
         <img id="atras" src="../../../img/icons/atras.png">
+        <img id="conocemas" >
         <img id="aro" src="../../../img/icons/aro.png">
       </a-assets>
 
@@ -66,6 +68,11 @@
           <!--Anterior-->
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
 				  </a-image>
+
+          <a-image id="conocemas"
+           onclick="javaScript:To('https://www.volkswagen.co/gol')"
+           src="../../../img/concesionario/botones/conocemas.png" scale="0.33 0.10 0" position="-1 -0.63 0.48" rotation="0 90 0"></a-image>
+
 		  	</a-entity>
 
 
@@ -108,7 +115,7 @@
       </a-entity>
 
       <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
+      <a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
         <a-image onclick="javaScript:To('../gol.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 

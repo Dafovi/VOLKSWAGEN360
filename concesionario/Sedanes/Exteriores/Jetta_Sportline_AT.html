@@ -25,6 +25,7 @@
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cameraLimit.js" charset="utf-8"></script>
   </head>
 
 	<body>
@@ -64,6 +65,10 @@
           <!--Anterior-->
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.09 0.07 0" position="-1 -0.54 0.15" rotation="0 90 0">
           </a-image>
+
+          <a-image id="conocemas"
+           onclick="javaScript:To('https://www.volkswagen.co/jetta-tsi-turbo')"
+           src="../../../img/concesionario/botones/conocemas.png" scale="0.33 0.10 0" position="-1 -0.54 0.48" rotation="0 90 0"></a-image>
 		    </a-entity>
 
 
@@ -84,43 +89,52 @@
           <a-entity id="btnMotor" class="0"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.4 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
           <a-entity id="btnEstilo" class="0"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_estilo" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 0.8" rotation="0 90 0" onclick="javaScript:botonDos('Estilo','btnMotor')"></a-image></a-entity>
           <a-entity id="btnLuces" class="0"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_luces" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.52 -0.65" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
-          <a-entity id="btnSensores" class="0"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_sensores" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 -0.65" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
           <a-entity id="btnRines" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.82 -0.96" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
+          <a-entity id="btnEspejos" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_espejos" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.26 0.50" rotation="0 90 0" onclick="javaScript:botonDos('Espejos','btnKeyless')"></a-image></a-entity>
           <a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.6 -1.45" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
+          <a-entity id="btnSensoresDelanteros" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 1.48" rotation="0 90 0" onclick="javaScript:boton('SensoresDelanteros')"></a-image></a-entity>
           <a-entity id="btnLucesTraseras" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_lucestraseras" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 -1.42" rotation="0 90 0" onclick="javaScript:boton('LucesTraseras')"></a-image></a-entity>
           <a-entity id="btnCapacidad" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_capacidad" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.1 -1.4" rotation="0 90 0" onclick="javaScript:boton('Capacidad')"></a-image></a-entity>
           <a-entity id="btnTecho" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_techo" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -0.1" rotation="0 90 0" onclick="javaScript:boton('Techo')"></a-image></a-entity>
           <a-entity id="btnSeguridad" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_seguridad" src="#aro" scale="0.06 0.06 0" position="-1.94 0 0.6" rotation="0 90 0" onclick="javaScript:boton('Seguridad')"></a-image></a-entity>
+          <a-entity id="btnComodidad" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_comodidad" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.80 -0.06" rotation="0 90 0" onclick="javaScript:boton('Comodidad')"></a-image></a-entity>
+          <a-entity id="btnKeyless" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_sportline_AT ebtn_keyless" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 0.03" rotation="0 90 0" onclick="javaScript:botonDos('Keyless', 'btnSeguridad')"></a-image></a-entity>
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Garantia.png" position="-2 0.35 -0.67" scale="1.4 0.5 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Motor.png" position="-2 -0.14 0.9" scale="1.8 0.55 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Motor.png" position="-2 -0.17 1.23" scale="2.57 0.78 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Estilo" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Lineas.png" position="-2 -0.38 0.1" scale="1.5 0.35 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Luces" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/LucesLed2.png" position="-2 -0.7 -1.23" scale="1.1 0.3 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Sensores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/SensorProximidad.png" position="-2 -0.82 -1.32" scale="1.3 0.3 0" rotation="0 90 0"></a-image></a-entity>
-
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Rin.png" position="-2 -1 -1.68" scale="1.4 0.35 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/SensorTrasero.png" position="-2 -0.68 -2.2" scale="1.4 0.3 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Espejos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Espejos.png" position="-2 -0.33 -0.30" scale="1.8 0.90 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Camara.png" position="-2 -0.68 -2.03" scale="1.47 0.81 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="SensoresDelanteros" class="info" visible="false"><a-image  src="../../../img/concesionario/Interiores/Jetta_Sport_AT/SensorProximidad.png" position="-2 -0.69 0.83" scale="1.4 0.3 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="LucesTraseras" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/LucesLed.png" position="-2 -0.52 -0.92" scale="1.1 0.3 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Capacidad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Baul.png" position="-2 0.25 -0.83" scale="1.2 0.7 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Capacidad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Capacidad.png" position="-2 0.23 -0.88" scale="1.2 0.88 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Techo" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Techo.png" position="-2 0.32 0.6" scale="1.4 0.45 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Seguridad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Latin.png" position="-2 0.5 1.22" scale="1.2 1 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="Comodidad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/Comodidad.png" position="-2 -0.52 -0.76" scale="1.55 0.83 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="Keyless" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Sport_AT/KeylessEntry.png" position="-2 -0.14 0.50" scale="1.47 0.62 0" rotation="0 90 0"></a-image></a-entity>
 
 		    </a-entity>
 
       </a-entity>
 
       <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
+      <a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
         <a-image onclick="javaScript:To('../jetta_spl.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 

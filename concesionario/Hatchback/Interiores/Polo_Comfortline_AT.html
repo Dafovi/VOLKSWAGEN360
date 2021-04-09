@@ -58,10 +58,14 @@
                     <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.6 -1.36" rotation="0 80 0"></a-image>
                 </a-entity>
                 <a-entity id="EntretenimientoBtn">
-                    <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_entretenimiento" onclick="javaScript:botonDos('Entretenimiento','EspacioBtn')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.72 -0.35" rotation="0 90 0"></a-image>
+                    <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_entretenimiento" onclick="javaScript:boton('Entretenimiento')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.72 -0.35" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="EspacioBtn">
-                    <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_espacio" onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.1 -1.2" rotation="0 80 0"></a-image>
+                    <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_espacio" onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="0.83 -1.31  -1.31" rotation="-45 0 0"></a-image>
+                </a-entity>
+
+                <a-entity id="TransmisionBtn">
+                    <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_transmision" onclick="javaScript:botonDos('Transmision', 'VolanteBtn')" src="#aro" scale="0.07 0.07 0" position="-1.9 -2.367 -0.004" rotation="-30 90 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -75,11 +79,15 @@
             </a-entity>
 
             <a-entity id="Entretenimiento" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/Infoentretenimiento.png" scale="1.5 1 0" position="-2 -0.25 -1.12" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/Infoentretenimiento.png" scale="1.5 1 0" position="-2 -0.327 -1.016" rotation="0 90 0 "></a-image>
             </a-entity>
 
             <a-entity id="Espacio" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/espacio.png" scale="1.4 1.4 0" position="-1.98 -0.15 -0.6" rotation="0 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/espacio.png" scale="1.68 1.68 0" position="0.21 -1.63 -1.57" rotation="-11.70 0 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="Transmision" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/Transmision.png" scale="2.51 1.6 0" position="-1.98 -1.80 0.95" rotation="0 90 0 "></a-image>
             </a-entity>
 
         </a-entity>
@@ -93,17 +101,18 @@
                     <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_sistema" onclick="javaScript:boton('Sistema')" src="#aro" scale="0.07 0.07 0" position="-0.3 -1.9 -1.9" rotation="-10 0 0"></a-image>
                 </a-entity>
                 <a-entity id="AireBtn">
-                    <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_aire" onclick="javaScript:boton('Aire')" src="#aro" scale="0.07 0.07 0" position="0.05 -1 -1.9" rotation="0 0 0"></a-image>
+                    <a-image class="c_hatchback t_polo m_comfortline_AT ibtn_aire" onclick="javaScript:botonDos('Aire', 'SistemaBtn')" src="#aro" scale="0.07 0.07 0" position="0.40 -1.89 -0.98" rotation="-45 0 0"></a-image>
                 </a-entity>
             </a-entity>
 
             <!-- Informacion -->
             <a-entity id="Sistema" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/sistema.png" scale="1.7 1.7 0" position="0.5 -1.52 -2" rotation="-10 0 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/sistema.png" scale="1.84 1.27 0" position="0.56 -1.37 -2.02" rotation="-10 0 0 "></a-image>
             </a-entity>
 
             <a-entity id="Aire" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/Aire.png" scale="1.6 1 0" position="-0.75 -0.66 -2.2" rotation="0 0 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Polo_Comfort_AT/Aire.png" scale="1.79 1.07 0" position="-0.27 -2.61 -1.91" rotation="-30 0 0 "></a-image>
+
             </a-entity>
 
        </a-entity>

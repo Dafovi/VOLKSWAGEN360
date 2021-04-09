@@ -25,6 +25,7 @@
         <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
 
         <script src="../../../styles/cars.js"></script>
+        <script src="../../../styles/cameraLimit.js" charset="utf-8"></script>
     </head>
 
     <body>
@@ -62,6 +63,10 @@
                     <!--Anterior-->
                     <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.1 0.08 0" position="-1 -0.64 0.2" rotation="0 90 0">
                     </a-image>
+
+                    <a-image id="conocemas"
+                     onclick="javaScript:To('https://www.volkswagen.co/gol')"
+                     src="../../../img/concesionario/botones/conocemas.png" scale="0.33 0.10 0" position="-1 -0.63 0.48" rotation="0 90 0"></a-image>
                 </a-entity>
 
 
@@ -82,6 +87,7 @@
                     <a-entity id="btnMotor" class="0"><a-image class="c_hatchback t_gol m_comfortline_MT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.3 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
                     <a-entity id="btnCabina" class="0"><a-image class="c_hatchback t_gol m_comfortline_MT ebtn_cabina" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.44 0.65" rotation="0 90 0" onclick="javaScript:boton('Cabina')"></a-image></a-entity>
                     <a-entity id="btnParrilla" class="0"><a-image class="c_hatchback t_gol m_comfortline_MT ebtn_parrilla" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 0" rotation="0 90 0" onclick="javaScript:botonDos('Parrilla','interior')"></a-image></a-entity>
+                    <a-entity id="btnBaul" class="2" visible="false"><a-image class="c_hatchback t_gol m_comfortline_MT ebtn_baul" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.476 -1.199" rotation="0 90 0" onclick="javaScript:boton('Baul')"></a-image></a-entity>
                     <a-entity id="btnRines" class="2" visible="false"><a-image class="c_hatchback t_gol m_comfortline_MT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.8 -1.03" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
                     <a-entity id="btnFrenos" class="2" visible="false"><a-image class="c_hatchback t_gol m_comfortline_MT ebtn_frenos" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.8" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
                     <a-entity id="btnSensor" class="2" visible="false"><a-image class="c_hatchback t_gol m_comfortline_MT ebtn_sensor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 -1.1" rotation="0 90 0" onclick="javaScript:boton('Sensor')"></a-image></a-entity>
@@ -96,6 +102,8 @@
                     <a-entity id="Cabina" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Comfort_MT/Cabina.png" position="-2 -0.21 1.27" scale="1.2 0.5 0" rotation="0 90 0"></a-image></a-entity>
 
                     <a-entity id="Parrilla" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Comfort_MT/Parrilla.png" position="-2.4 -1.35 -1.05" scale="2.1 0.8 0" rotation="0 90 0"></a-image></a-entity>
+
+                    <a-entity id="Baul" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Comfort_MT/Baul.png" position="-1.946 -0.123 -2.023" scale="2.1 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
                     <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Gol_Comfort_MT/Rines.png" position="-2 -0.98 -1.68" scale="1.25 0.35 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -112,7 +120,7 @@
             </a-entity>
 
             <!-- Camera + cursor. -->
-            <a-entity camera look-controls cursor="rayOrigin: mouse">
+            <a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
                 <a-image onclick="javaScript:To('../gol.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 

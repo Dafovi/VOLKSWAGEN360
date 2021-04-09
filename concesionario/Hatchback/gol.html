@@ -24,6 +24,8 @@
         <link rel="icon" href="../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
 
         <script src="../../styles/cars.js"></script>
+        <script src="../../styles/cameraLimit.js" charset="utf-8"></script>
+
     </head>
 
     <body>
@@ -47,14 +49,13 @@
                 <a-image onclick="javaScript:To('Exteriores/Gol_Trendline_AT.html')"  class="c_hatchback t_gol model_trendline_AT" src="../../img/nombres/Gol_Trendline_AT.png" position="-0.87 -0.4 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
                 <a-image onclick="javaScript:To('Exteriores/Gol_Comfortline_MT.html')"  class="c_hatchback t_gol model_comfortline_MT" src="../../img/nombres/Gol_Comfortline_MT.png" position="-0.86 -0.53 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
                 <a-image onclick="javaScript:To('Exteriores/Gol_Confortline_AT.html')" class="c_hatchback t_gol model_comfortline_AT" src="../../img/nombres/Gol_Comfortline_AT.png" position="-0.85 -0.68 -1.2" scale="0.7 0.2 0" rotation="0 0 0"></a-image>
-
             </a-entity>
 
 
             <!-- Camera + cursor. -->
-            <a-entity camera look-controls cursor="rayOrigin: mouse">
+            <a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
-                <a-image onclick="javaScript:To('../hatchback.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
+                <a-image onclick="javaScript:To('./../categorias.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
             </a-entity>
 

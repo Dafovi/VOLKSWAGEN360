@@ -25,6 +25,7 @@
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cameraLimit.js" charset="utf-8"></script>
   </head>
 
 	<body>
@@ -64,6 +65,10 @@
           <!--Anterior-->
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.09 0.07 0" position="-1 -0.54 0.15" rotation="0 90 0">
           </a-image>
+
+          <a-image id="conocemas"
+           onclick="javaScript:To('https://www.volkswagen.co/virtus')"
+           src="../../../img/concesionario/botones/conocemas.png" scale="0.33 0.10 0" position="-1 -0.54 0.48" rotation="0 90 0"></a-image>
       </a-entity>
 
       <a-entity id="HIGHLINE">
@@ -101,7 +106,7 @@
 
         <a-entity id="Espacio" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Virtus_Highline_AT/Espacios.png" position="-2 -0.65 0.75" scale="1.6 0.9 0" rotation="0 90 0"></a-image></a-entity>
 
-        <a-entity id="Retrovisores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Virtus_Highline_AT/tilt.png" position="-2 -0.3 -0.15" scale="1.7 0.6 0" rotation="0 90 0"></a-image></a-entity>
+        <a-entity id="Retrovisores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Virtus_Highline_AT/tilt.png" position="-2 -0.43 -0.06" scale="1.7 0.6 0" rotation="0 90 0"></a-image></a-entity>
 
         <a-entity id="Sensores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Virtus_Highline_AT/sensoresDelanteros.png" position="-2 -0.55 0.8" scale="1.6 0.6 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -109,18 +114,18 @@
 
         <a-entity id="Capacidad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Virtus_Highline_AT/CapacidadBaul.png" position="-2 -0.1 -1.9" scale="1.6 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
-        <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Virtus_Highline_AT/Sensores.png" position="-2 -0.47 -0.97" scale="1.4 0.8 0" rotation="0 90 0"></a-image></a-entity>
+        <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Virtus_Highline_AT/Camara.png" position="-2 -0.328 -0.75" scale="1.71 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
 		  </a-entity>
 
       </a-entity>
 
       <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
+      <a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
         <a-image onclick="javaScript:To('../virtus.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
-        <a-image src="../../../img/nombres/Virtus_Highline_AT.png" position="-1.1 -0.68 -1" scale="0.96 0.18 0" rotation="0 0 0"></a-image>
+        <a-image src="../../../img/nombres/Virtus_Highline_AT.png" position="-1.1 -0.68 -1" scale="1 0.12 0" rotation="0 0 0"></a-image>
 
       </a-entity>
 

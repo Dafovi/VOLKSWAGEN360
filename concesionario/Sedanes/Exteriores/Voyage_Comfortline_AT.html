@@ -25,6 +25,7 @@
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cameraLimit.js" charset="utf-8"></script>
   </head>
 
 	<body>
@@ -64,6 +65,10 @@
           <!--Anterior-->
           <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../../img/icons/Flecha.png" scale="0.09 0.07 0" position="-1 -0.54 0.15" rotation="0 90 0">
           </a-image>
+
+          <a-image id="conocemas"
+           onclick="javaScript:To('https://www.volkswagen.co/voyage')"
+           src="../../../img/concesionario/botones/conocemas.png" scale="0.33 0.10 0" position="-1 -0.54 0.48" rotation="0 90 0"></a-image>
 		  	</a-entity>
 
 
@@ -83,13 +88,14 @@
           <a-entity id="btnGarantia" class="0"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 0.03" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
           <a-entity id="btnMotor" class="0"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.4 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
           <a-entity id="btnCabina" class="0"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_cabina" src="#aro" scale="0.06 0.06 0" position="-1.94 0 0.4" rotation="0 90 0" onclick="javaScript:boton('Cabina')"></a-image></a-entity>
-          <a-entity id="btnParrilla" class="0"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_parrilla" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 -0.2" rotation="0 90 0" onclick="javaScript:botonDos('Parrilla','interior')"></a-image></a-entity>
+          <a-entity id="btnParrilla" class="0"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_parrilla" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.78 -0.2" rotation="0 90 0" onclick="javaScript:boton('Parrilla')"></a-image></a-entity>
           <a-entity id="btnRines" class="2" visible="false"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.88 -0.78" rotation="0 90 0" onclick="javaScript:botonDos('Rines','interior')"></a-image></a-entity>
           <a-entity id="btnFrenos" class="2" visible="false"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_frenos" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 0.85" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
           <a-entity id="btnRetrovisores" class="2" visible="false"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_retrovisores" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.28 0.5" rotation="0 90 0" onclick="javaScript:boton('Retrovisores')"></a-image></a-entity>
           <a-entity id="btnVidrios" class="2" visible="false"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_vidrios" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.08 -0.11" rotation="0 90 0" onclick="javaScript:boton('Vidrios')"></a-image></a-entity>
           <a-entity id="btnSensores" class="2" visible="false"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_sensores" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 -1.28" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
           <a-entity id="btnCapacidad" class="2" visible="false"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_capacidad" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 -1.28" rotation="0 90 0" onclick="javaScript:boton('Capacidad')"></a-image></a-entity>
+          <a-entity id="btnApertura" class="2" visible="false"><a-image class="c_sedanes t_voyage m_comfortline_AT ebtn_apertura" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.18 -1.24" rotation="0 90 0" onclick="javaScript:boton('Apertura')"></a-image></a-entity>
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Garantia.png" position="-2 0.31 -0.61" scale="1.4 0.6 0" rotation="0 90 0"></a-image></a-entity>
@@ -98,7 +104,7 @@
 
           <a-entity id="Cabina" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/cabina.png" position="-2 0.31 -0.05" scale="1.5 0.95 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Parrilla" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/parrilla.png" position="-2 -1 -1.1" scale="1.9 0.8 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Parrilla" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/parrilla.png" position="-2 -0.62 -0.95" scale="1.8 0.9 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/Rin.png" position="-2 -1.14 -1.4" scale="1.4 0.7 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -112,12 +118,14 @@
 
           <a-entity id="Capacidad" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/espacio.png" position="-2 -0.14 -1.98" scale="1.4 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
+          <a-entity id="Apertura" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Voyage_Comfort_AT/apertura.png" position="-2 0.18 -0.71" scale="1.52 0.8 0" rotation="0 90 0"></a-image></a-entity>
+
         </a-entity>
 
       </a-entity>
 
       <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
+      <a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
 		    <a-image onclick="javaScript:To('../voyage.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 
