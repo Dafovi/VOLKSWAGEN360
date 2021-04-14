@@ -24,7 +24,8 @@
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-    <script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cameraLimit.js"></script>
   </head>
 
 	<body>
@@ -86,20 +87,21 @@
           <!-- Botones -->
           <a-entity id="btnGarantia" class="0"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 0.02" rotation="0 90 0" onclick="javaScript:botonDos('Garantia','btnSuspension')"></a-image></a-entity>
           <a-entity id="btnMotor" class="0"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 0" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-          <a-entity id="btnSuspension" class="0"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_suspension" src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 0.5" rotation="0 90 0" onclick="javaScript:boton('Suspension')"></a-image></a-entity>
           <a-entity id="btnParachoques" class="0"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_parachoques" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.8 0" rotation="0 90 0" onclick="javaScript:boton('Parachoques')"></a-image></a-entity>
+
+          <a-entity id="btnSuspension" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_suspension" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.64 -1.16" rotation="0 90 0" onclick="javaScript:boton('Suspension')"></a-image></a-entity>
           <a-entity id="btnFrenos" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_frenos" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 1" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
           <a-entity id="btnRines" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 -0.95" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
-          <a-entity id="btnVolumen" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_volumen" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -1.2" rotation="0 90 0" onclick="javaScript:boton('Volumen')"></a-image></a-entity>
-          <a-entity id="btnCarga" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_carga" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -0.7" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
-          <a-entity id="btnSpoiler" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_spoiler" src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 -0.2" rotation="0 90 0" onclick="javaScript:boton('Spoiler')"></a-image></a-entity>
+          <a-entity id="btnVolumen" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_volumen" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.06 -1.2" rotation="0 90 0" onclick="javaScript:boton('Volumen')"></a-image></a-entity>
+          <a-entity id="btnCarga" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_carga" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.06 -0.7" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
+          <!-- <a-entity id="btnSpoiler" class="2" visible="false"><a-image class="c_pickups t_saveiro m_cabinasencilla_MT ebtn_spoiler" src="#aro" scale="0.06 0.06 0" position="-1.94 0.2 -0.2" rotation="0 90 0" onclick="javaScript:boton('Spoiler')"></a-image></a-entity> -->
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Garantia.png" position="-2 -0.13 0.6" scale="1.5 1 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Motor.png" position="-2 -0.4 -0.6" scale="1.8 1.2 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Suspension" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Suspension.png" position="-2 -0.34 -0.05" scale="1.6 1.3 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Suspension" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Suspension.png" position="-2 -1.03 -1.82" scale="1.81 1.3 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Parachoques" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Parachoque.png" position="-2 -0.75 0.31" scale="1.4 1.2 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -107,18 +109,18 @@
 
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Rin.png" position="-2 -0.73 -0.83" scale="1.5 0.9 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Volumen" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/capacidad.png" position="-2 -0.05 -1.68" scale="1.7 0.8 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Volumen" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/capacidad.png" position="-2 -0.230 -1.68" scale="1.7 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Carga" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Carga.png" position="-2 0.3 -1.6" scale="1.9 0.9 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Carga" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Carga.png" position="-2 0.15 -1.6" scale="1.9 0.9 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Spoiler" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Spoiler.png" position="-2 0.42 0.14" scale="1.7 0.9 0" rotation="0 90 0"></a-image></a-entity>
+          <!-- <a-entity id="Spoiler" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Saveiro_CabinaSencilla_MT/Spoiler.png" position="-2 0.42 0.14" scale="1.7 0.9 0" rotation="0 90 0"></a-image></a-entity> -->
 
   		  </a-entity>
 
       </a-entity>
 
       <!-- Camera + cursor. -->
-      <a-entity camera look-controls cursor="rayOrigin: mouse">
+      <a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
 		    <a-image onclick="javaScript:To('../saveiro.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 

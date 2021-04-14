@@ -24,7 +24,8 @@
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-    <script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cameraLimit.js"></script>
   </head>
 
 	<body>
@@ -36,14 +37,14 @@
 
     <a-scene vr-mode-ui="enabled: false">
       	<a-assets>
-			<img id="Amarokhln" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_32.jpg">
-			<img id="Amarokhln1" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_33.jpg">
-			<img id="Amarokhln2" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_34.jpg">
-			<img id="Amarokhln3" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_35.jpg">
-			<img id="Amarokhln4" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_36.jpg">
-			<img id="Amarokhln5" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_37.jpg">
-			<img id="Amarokhln6" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_38.jpg">
-			<img id="Amarokhln7" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_V6_HIGHLINE/PICK_UPS_ZOOM_39.jpg">
+			<img id="Amarokhln" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_64.jpg">
+			<img id="Amarokhln1" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_65.jpg">
+			<img id="Amarokhln2" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_66.jpg">
+			<img id="Amarokhln3" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_67.jpg">
+			<img id="Amarokhln4" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_68.jpg">
+			<img id="Amarokhln5" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_69.jpg">
+			<img id="Amarokhln6" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_70.jpg">
+			<img id="Amarokhln7" src="../../../img/concesionario/CATEGORIAS/PICKUPS/AMAROK_PLUS_HIGHLINE_2.0/PICK_UPS_ZOOM_71.jpg">
 
 			<img id="atras" src="../../../img/icons/atras.png">
 			<img id="aro" src="../../../img/icons/aro.png">
@@ -121,7 +122,7 @@
       	</a-entity>
 
 		<!-- Camera + cursor. -->
-		<a-entity camera look-controls cursor="rayOrigin: mouse">
+		<a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
 			<a-image onclick="javaScript:To('../amarok.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 

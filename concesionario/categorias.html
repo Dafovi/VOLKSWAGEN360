@@ -39,7 +39,7 @@
 
         <a-scene vr-mode-ui="enabled: false">
             <a-assets>
-                <img id="fondo" src="../img/concesionario/CATEGORIAS/Concesionario.png">
+                <img id="fondo" src="../img/concesionario/CATEGORIAS/Concesionario.jpg">
                 <img id="atras" src="../img/icons/atras.png">
 
                 <img id="hatchback" src="../img/menu/hatchback.png">
@@ -58,39 +58,38 @@
                 <img id="virtus" src="../img/menu/virtus.png">
                 <img id="jetta" src="../img/menu/jetta.png">
                 <img id="jettagli" src="../img/menu/jettagli.png">
+
+                <img id="voyage" src="../img/menu/voyage.png">
+                <img id="virtus" src="../img/menu/virtus.png">
+                <img id="jetta" src="../img/menu/jetta.png">
+                <img id="jettagli" src="../img/menu/jettagli.png">
+
+                <img id="tcross" src="../img/menu/tcross.png">
+                <img id="tiguan" src="../img/menu/tiguan.png">
+                <img id="touareg" src="../img/menu/touareg.png">
+
+                <img id="amarok" src="../img/menu/amarok.png">
+                <img id="saveiro" src="../img/menu/saveiro.png">
+
+                <img id="crafter" src="../img/menu/crafter.png">
             </a-assets>
 
 
             <!-- 360-degree image scenes.-->
             <a-entity id="concesionario" rotation="0 -120 0">
                 <a-sky radius="30" src="#fondo" rotation="0 7 0"></a-sky>
-
-                <!-- <a-image onclick="javaScript:To('hatchback.html')" class="category_hatchback" src="../img/nombres/Hatchback.png" scale="0.95 0.27 0" position="-3.6 -1.03 -3" rotation="0 10 0"></a-image>
-                <a-box onclick="javaScript:To('hatchback.html')" class="category_hatchback" scale="1 1 1" position="-4 -0.2 -4" visible="false"></a-box>
-
-                <a-image onclick="javaScript:To('sedanes.html')" class="category_sedanes" src="../img/nombres/Sedane.png" scale="0.93 0.25 0" position="-1.7 -0.97 -3" rotation="0 8 0"></a-image>
-                <a-box onclick="javaScript:To('sedanes.html')"  class="category_sedanes" scale="1 1 1" position="-2 -0.2 -4" visible="false"></a-box>
-
-                <a-image onclick="javaScript:To('suv.html')" class="category_camionetas" src="../img/nombres/Suv.png" scale="0.95 0.23 0" position="0.02 -0.9 -3" rotation="0 5 0"></a-image>
-                <a-box onclick="javaScript:To('suv.html')"  class="category_camionetas" scale="1 0.5 1" position="0 -0.55 -4" visible="false"></a-box>
-
-                <a-image onclick="javaScript:To('pickups.html')" class="category_pickups" src="../img/nombres/Pickup.png" scale="0.95 0.2 0" position="1.8 -0.84 -3" rotation="0 5 0"></a-image>
-                <a-box onclick="javaScript:To('pickups.html')" class="category_pickups" scale="1 1 1" position="1.9 -0.2 -4" visible="false"></a-box>
-
-                <a-image onclick="javaScript:To('Vans/vans.html')" class="category_vans" src="../img/nombres/Van.png" scale="0.9 0.2 0" position="3.8 -0.76 -3" rotation="0 0 0"></a-image>
-                <a-box onclick="javaScript:To('Vans/vans.html')" class="category_vans" scale="1 1 2" position="4.7 -0.1 -4.5" visible="false"></a-box> -->
-
+                
                 <a-entity id="main-container" position="0 0 -3">
                     <a-image position="-2 0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#hatchback" onclick="menuForward('main-container', 'hatchbacks')"></a-image>
                     <a-image position="-1 0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
-                    <a-image position="0 0.5 0"   scale="0.8 0.8 0" class="category_camionetas" src="#suv"></a-image>
+                    <a-image position="0 0.5 0"   scale="0.8 0.8 0" class="category_camionetas" src="#suv"       onclick="menuForward('main-container', 'camionetas')"></a-image>
                     <a-image position="1 0.5 0"   scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
-                    <a-image position="2 0.5 0"   scale="0.8 0.8 0" class="category_vans"       src="#van"></a-image>
+                    <a-image position="2 0.5 0"   scale="0.8 0.8 0" class="category_vans"       src="#van"       onclick="menuForward('main-container','vans')"></a-image>
 
                     <a-image position="-2 -0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
-                    <a-image position="-1 -0.5 0"  scale="0.8 0.8 0" class="category_sedanes"    src="#sedan" onclick="menuForward('main-container', 'sedanes')"></a-image>
+                    <a-image position="-1 -0.5 0"  scale="0.8 0.8 0" class="category_sedanes"    src="#sedan"    onclick="menuForward('main-container', 'sedanes')"></a-image>
                     <a-image position="0 -0.5 0"   scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
-                    <a-image position="1 -0.5 0"   scale="0.8 0.8 0" class="category_pickups"    src="#pickup"></a-image>
+                    <a-image position="1 -0.5 0"   scale="0.8 0.8 0" class="category_pickups"    src="#pickup"   onclick="menuForward('main-container','pickups')"></a-image>
                     <a-image position="2 -0.5 0"   scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
                 </a-entity>
 
@@ -99,9 +98,8 @@
                     <a-image position="0  0 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
                     <a-image position="1  0 0"  scale="0.8 0.8 0" class="category_camionetas" src="#gol" onclick="javaScript:To('Hatchback/gol.html')"></a-image>
 
-                    <!-- <a-image position="0  0.9 0"  scale="0.8 0.4 0" class="category_camionetas" src="#goback" onclick="menuBackward('hatchbacks', 'main-container')')"></a-image> -->
-
-                    <a-box scale ="0.6 0.4 0.1" position="0 0.9 -3" rotation="0 0 0" color="#ffffff" opacity="1" shadow class="back" onclick="menuBackward('hatchbacks', 'main-container')" ></a-box>
+                    <a-image position="-1 0.8 0" scale="0.8 0.4 0" class="category_hatchback" src="#goback" onclick="menuBackward('hatchbacks','main-container')"></a-image>
+                    <!-- <a-box scale ="0.6 0.4 0.1" position="0 0.9 -3" rotation="0 0 0" color="#ffffff" opacity="1" shadow class="back" onclick="menuBackward('hatchbacks', 'main-container')" ></a-box> -->
                 </a-entity>
 
                 <a-entity id="sedanes" scale="0 0 0" position="0 0 -3">
@@ -115,38 +113,36 @@
                     <a-image position="0.5  -0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
                     <a-image position="1.5  -0.5 0"  scale="0.8 0.8 0" class="category_camionetas" src="#jettagli" onclick="javaScript:To('Sedanes/jetta_gli.html')"></a-image>
 
-
-                    <a-box class="back" onclick="menuBackward('sedanes', 'main-container')" scale ="0.6 0.4 0.1" position="0 0.9 -3" rotation="0 0 0" color="#ffffff" opacity="1" shadow></a-box>
+                    <a-image position="-1.5 1.3 0" scale="0.8 0.4 0" class="category_hatchback" src="#goback" onclick="menuBackward('sedanes','main-container')"></a-image>
                 </a-entity>
 
-                <!-- <a-entity id="SUV" scale="0 0 0">
-                    <a-box class="category_vans" onclick="javaScript:To('Hatchback/gol.html')" scale ="0.8 0.8 0.1" position="-1 0.5 -3" rotation="0 0 0" color="#ffffff"  shadow><a-entity text="value: Polo; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="0 0.5 -3" rotation="0 0 0" color="#ffffff" opacity="0.5" shadow></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="1 0.5 -3" rotation="0 0 0" color="#ffffff" shadow><a-entity text="value: Gol; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
+                <a-entity id="camionetas" scale="0 0 0" position="0 0 -3">
+                    <a-image position="-1  0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#tcross" onclick="javaScript:To('Suv/tcross.html')"></a-image>
+                    <a-image position="0   0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
+                    <a-image position="1   0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#touareg" onclick="javaScript:To('Suv/touareg.html')"></a-image>
 
-                    <a-box class="category_vans" onclick="javaScript:To('Hatchback/gol.html')" scale ="0.8 0.8 0.1" position="-1 -0.5 -3" rotation="0 0 0" color="#ffffff"  shadow><a-entity text="value: Polo; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="0 -0.5 -3" rotation="0 0 0" color="#ffffff" opacity="0.5" shadow></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="1 -0.5 -3" rotation="0 0 0" color="#ffffff" shadow><a-entity text="value: Gol; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
+                    <a-image position="-1 -0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
+                    <a-image position="0  -0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#tiguan" onclick="javaScript:To('Suv/tiguan_dsg.html')"></a-image>
+                    <a-image position="1  -0.5 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
 
-                    <a-box class="back" onclick="menuBackward('hatchbacks', 'main-container')" scale ="0.6 0.4 0.1" position="0 0.9 -3" rotation="0 0 0" color="#ffffff" opacity="1" shadow></a-box>
+                    <a-image position="-1 1.3 0" scale="0.8 0.4 0" class="category_hatchback" src="#goback" onclick="menuBackward('camionetas','main-container')"></a-image>
                 </a-entity>
 
-                <a-entity id="sedanes" scale="0 0 0" position="100 100 100">
-                    <a-box class="category_vans" onclick="javaScript:To('Sedanes/voyage.html')" scale ="0.8 0.8 0.1" position="0 0.5 -3" rotation="0 0 0" color="#ffffff"  shadow><a-entity text="value: Voyage; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="1 0.5 -3" rotation="0 0 0" color="#ffffff" opacity="0.5" shadow></a-box>
-                    <a-box class="category_vans" onclick="javaScript:To('Sedanes/jetta_spl.html')" scale ="0.8 0.8 0.1" position="2 0.5 -3" rotation="0 0 0" color="#ffffff" shadow><a-entity text="value: jetta; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="3 0.5 -3" rotation="0 0 0" color="#ffffff" opacity="0.5" shadow></a-box>
+                <a-entity id="pickups" scale="0 0 0" position="0 0 -3">
+                    <a-image position="-1 0 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#amarok" onclick="javaScript:To('PickUps/amarok.html')"></a-image>
+                    <a-image position="0  0 0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image>
+                    <a-image position="1  0 0"  scale="0.8 0.8 0" class="category_camionetas" src="#saveiro" onclick="javaScript:To('PickUps/saveiro.html')"></a-image>
 
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="0 -0.5 -3" rotation="0 0 0" color="#ffffff" opacity="0.5" shadow></a-box>
-                    <a-box class="category_vans" onclick="javaScript:To('Hatchback/virtus.html')" scale ="0.8 0.8 0.1" position="1 -0.5 -3" rotation="0 0 0" color="#ffffff"  shadow><a-entity text="value: Virtus; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="2 -0.5 -3" rotation="0 0 0" color="#ffffff" opacity="0.5" shadow></a-box>
-                    <a-box class="category_vans" scale ="0.8 0.8 0.1" position="3 -0.5 -3" rotation="0 0 0" color="#ffffff" shadow><a-entity text="value: Jetta GLI; align: center; width:3; color:#1f253d;" position="0 0 1"></a-entity></a-box>
-
-                    <a-box class="back" onclick="menuBackward('hatchbacks', 'main-container')" scale ="0.6 0.4 0.1" position="0 0.9 -3" rotation="0 0 0" color="#ffffff" opacity="1" shadow></a-box>
+                    <a-image position="-1 0.8 0" scale="0.8 0.4 0" class="category_hatchback" src="#goback" onclick="menuBackward('pickups','main-container')"></a-image>
                 </a-entity>
- -->
+
+                <a-entity id="vans" scale="0 0 0" position="0 0 -3">
+                    <a-image position="0  0  0"  scale="0.8 0.8 0" class="category_hatchback"  src="#crafter" onclick="javaScript:To('Vans/vans.html')"></a-image>
+                    <!-- <a-image position="0 -0.5  0"  scale="0.8 0.8 0" class="category_hatchback"  src="#middle"></a-image> -->
 
 
+                    <a-image position="0 0.8 0" scale="0.8 0.4 0" class="category_hatchback" src="#goback" onclick="menuBackward('vans','main-container')"></a-image>
+                </a-entity>
 
                 <a-image src="../img/icons/FlechaGris.png" scale=" 1 1 1" position="-7 0 -1.5" rotation="0 90 180"></a-image>
 

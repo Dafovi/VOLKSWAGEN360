@@ -56,16 +56,19 @@
                     <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_cockpit" onclick="javaScript:boton('Cockpit')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.52 0.7" rotation="0 100 0"></a-image>
                 </a-entity>
                 <a-entity id="IluminacionBtn">
-                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_iluminacion" onclick="javaScript:boton('Iluminacion')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.18 0.95" rotation="0 120 0"></a-image>
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_iluminacion" onclick="javaScript:boton('Iluminacion')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.76 -1.38" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="PantallaBtn">
-                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_pantalla" onclick="javaScript:boton('Pantalla')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.1 -0.42" rotation="0 90 0"></a-image>
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_pantalla" onclick="javaScript:botonDos('Pantalla', 'IluminacionBtn')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.1 -0.42" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="MotionBtn">
                     <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_motion" onclick="javaScript:boton('Motion')" src="#aro" scale="0.1 0.1 0" position="-1.9 -3.3 0.2" rotation="-70 90 0"></a-image>
                 </a-entity>
                 <a-entity id="CajaBtn">
-                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_caja" onclick="javaScript:boton('Caja')" src="#aro" scale="0.08 0.08 0" position="-1.9 -1.8 -0.2" rotation="-50 90 0"></a-image>
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_caja" onclick="javaScript:boton('Caja')" src="#aro" scale="0.08 0.08 0" position="-1.9 -1.80 0.19" rotation="-50 90 0"></a-image>
+                </a-entity>
+                <a-entity id="KessyBtn">
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_kessy" onclick="javaScript:boton('Kessy')" src="#aro" scale="0.07 0.07 0" position="-1.40 -1.84 0.24" rotation="-45 90 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -75,7 +78,7 @@
             </a-entity>
 
             <a-entity id="Iluminacion" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Iluminacion.png" scale="1.5 0.55 0" position="-2 -0.3 1.62" rotation="0 140 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Iluminacion.png" scale="1.5 0.55 0" position="-2 -0.88 -0.85" rotation="0 90 0 "></a-image>
             </a-entity>
 
             <a-entity id="Pantalla" visible="false">
@@ -87,10 +90,30 @@
             </a-entity>
 
             <a-entity id="Caja" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Caja.png" scale="1.3 0.5 0" position="-2 -1.95 -0.78" rotation="-20 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Caja.png" scale="1.3 0.5 0" position="-2 -1.98 -0.38" rotation="-20 90 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="Kessy" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Kessy.png" scale="2.13 0.86 0" position="-2.03 -2.77 0.81" rotation="-37.92 90 0 "></a-image>
             </a-entity>
 
         </a-entity>
+
+        <a-entity id="parteTrasera" rotation="0 180 0">
+
+            <!-- Botones -->
+            <a-entity id="BotonesInterior">
+                <a-entity id="SistemaBtn">
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_sistema" onclick="javaScript:boton('Sistema')" src="#aro" scale="0.07 0.07 0" position="0.37 -1.57 -1.9" rotation="0 0 0"></a-image>
+                </a-entity>
+            </a-entity>
+
+            <!-- Informacion -->
+            <a-entity id="Sistema" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Sistema.png" scale="1.8 0.8 0" position="-0.42 -1.38 -2" rotation="0 0 0 "></a-image>
+            </a-entity>
+
+       </a-entity>
 
         <!-- Camera + cursor. -->
         <a-entity camera look-controls rotation-reader  cursor="rayOrigin: mouse">

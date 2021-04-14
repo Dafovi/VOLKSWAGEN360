@@ -25,6 +25,7 @@
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
     <script src="../../../styles/cars.js"></script>
+    <script src="../../../styles/cameraLimit.js" charset="utf-8"></script>
   </head>
 
 	<body>
@@ -102,7 +103,7 @@
 
 			<a-entity id="Consumo" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/Consumo.png" position="-2 -0.28 1.48" scale="1.2 0.4 0" rotation="0 90 0"></a-image></a-entity>
 
-			<a-entity id="Puestos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35panel_MT_TA4x4/3_Puestos.png" position="-2 0.3 -1.02" scale="0.7 0.45 0" rotation="0 90 0"></a-image></a-entity>
+			<a-entity id="Puestos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/6puestos.png" position="-2 0.34 -1.04" scale="1.26 0.81 0" rotation="0 90 0"></a-image></a-entity>
 
 			<a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Crafter_35Doca_MT_4x4/Motor.png" position="-2 -0.45 -0.8" scale="1.6 0.35 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -127,7 +128,7 @@
 	</a-entity>
 
 	<!-- Camera + cursor. -->
-	<a-entity camera look-controls cursor="rayOrigin: mouse">
+	<a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
 		<a-image onclick="javaScript:To('../vans.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 

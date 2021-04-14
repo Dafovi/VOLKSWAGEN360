@@ -66,7 +66,7 @@
         <a-image onclick="javaScript:changeCarById(-1,7)"  src="../../img/icons/Flecha.png" scale="0.09 0.07 0" position="-1 -0.54 0.15" rotation="0 90 0">
         </a-image>
 
-        <a-image class="icon" src="../../img/concesionario/botones/logo.png" scale="0.78 0.17 0" position="-1 -0.43 -0.90" rotation="0 90 0"></a-image>
+        <!-- <a-image class="icon" src="../../img/concesionario/botones/logo.png" scale="0.78 0.17 0" position="-1 -0.43 -0.90" rotation="0 90 0"></a-image> -->
 
 
 		    <a-entity id="JETTA-GLI">
@@ -84,33 +84,41 @@
           <!-- Botones -->
           <a-entity id="btnGarantia" class="0"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 0.03" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
           <a-entity id="btnMotor" class="0"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.4 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
+          <a-entity id="btnEmblema" class="0"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.58 0.38" rotation="0 90 0" onclick="javaScript:botonDos('Emblema', 'btnMotor')"></a-image></a-entity>
           <a-entity id="btnEstilo" class="0"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_estilo" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 0.8" rotation="0 90 0" onclick="javaScript:botonDos('Estilo','btnMotor')"></a-image></a-entity>
           <a-entity id="btnLuces" class="0"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_luces" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.52 -0.65" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
-          <a-entity id="btnSensores" class="0"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_sensores" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.75 -0.65" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
           <a-entity id="btnRines" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 -0.8" rotation="0 90 0" onclick="javaScript:boton('Rines','interior')"></a-image></a-entity>
-          <a-entity id="btnEscape" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_escape" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 -1.45" rotation="0 90 0" onclick="javaScript:boton('Escape')"></a-image></a-entity>
+
+          <a-entity id="btnSensoresDelanteros" class="2" visible="false"><a-image class="c_sedanes t_jetta-spl m_dsg ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 1.48" rotation="0 90 0" onclick="javaScript:boton('SensoresDelanteros')"></a-image></a-entity>
           <a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.6 -1.45" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
           <a-entity id="btnLucesTraseras" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_lucestraseras" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.35 -1.42" rotation="0 90 0" onclick="javaScript:boton('LucesTraseras')"></a-image></a-entity>
           <a-entity id="btnCapacidad" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_capacidad" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.1 -1.4" rotation="0 90 0" onclick="javaScript:boton('Capacidad')"></a-image></a-entity>
           <a-entity id="btnTecho" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_techo" src="#aro" scale="0.06 0.06 0" position="-1.94 0.1 -0.1" rotation="0 90 0" onclick="javaScript:boton('Techo')"></a-image></a-entity>
           <a-entity id="btnSeguridad" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_seguridad" src="#aro" scale="0.06 0.06 0" position="-1.94 0 0.6" rotation="0 90 0" onclick="javaScript:boton('Seguridad')"></a-image></a-entity>
+          <a-entity id="btnKeyless" class="2" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_keyless" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.36 0.03" rotation="0 90 0" onclick="javaScript:botonDos('Keyless', 'btnSeguridad')"></a-image></a-entity>
+
+          <a-entity id="btnEscape" class="4" visible="false"><a-image class="c_sedanes t_jetta-gli m_dsg ebtn_escape" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.72 0.40" rotation="0 90 0" onclick="javaScript:boton('Escape')"></a-image></a-entity>
+
+
 
           <!-- información -->
           <a-entity id="Garantia" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Garantia.png" position="-2 0.35 -0.67" scale="1.4 0.5 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Motor" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Motor.png" position="-2 -0.14 0.9" scale="1.8 0.55 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Motor" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Motor.png" position="-2 -0.17 0.88" scale="1.8 0.64 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="Emblema" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Emblema.png" position="-2 -0.36 -0.36" scale="1.56 0.55 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Estilo" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Lineas.png" position="-2 -0.38 0.1" scale="1.5 0.35 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Luces" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Luces_2.png" position="-2 -0.7 -1.23" scale="1.1 0.3 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Sensores" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Sensores_1.png" position="-2 -0.82 -1.32" scale="1.3 0.3 0" rotation="0 90 0"></a-image></a-entity>
-
           <a-entity id="Rines" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Rin.png" position="-2 -1.1 -1.54" scale="1.4 0.35 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="Escape" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Escape.png" position="-2 -0.68 -0.8" scale="1.4 0.4 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="Escape" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Escape.png" position="-2 -0.56 1.08" scale="1.4 0.4 0" rotation="0 90 0"></a-image></a-entity>
 
-          <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Sensores.png" position="-2 -0.68 -2.2" scale="1.4 0.3 0" rotation="0 90 0"></a-image></a-entity>
+          <a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/CamaraR.png" position="-2 -0.76 -2" scale="1.50 0.75 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="SensoresDelanteros" class="info" visible="false"><a-image  src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Sensores_1.png" position="-2 -0.69 0.83" scale="1.4 0.3 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="LucesTraseras" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/LucesTraseras.png" position="-2 -0.52 -0.92" scale="1.1 0.3 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -119,6 +127,8 @@
           <a-entity id="Techo" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Techo.png" position="-2 0.32 0.6" scale="1.4 0.45 0" rotation="0 90 0"></a-image></a-entity>
 
           <a-entity id="Seguridad" class="info" visible="false"><a-image src="../../img/concesionario/Interiores/Jetta_Gli_DSG/Latin.png" position="-2 0.5 1.22" scale="1.2 1 0" rotation="0 90 0"></a-image></a-entity>
+
+          <a-entity id="Keyless" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/KeylessEntry.png" position="-2 -0.05 0.58" scale="1.89 0.79 0" rotation="0 90 0"></a-image></a-entity>
 
         </a-entity>
 

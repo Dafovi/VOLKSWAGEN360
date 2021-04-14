@@ -59,7 +59,7 @@
                     <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_cockpit" onclick="javaScript:boton('cockpit')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.18 0.34" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="EspacioBtn">
-                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_espacio" onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="-1.9 0 -1.4" rotation="0 80 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-spl m_sportline_AT ibtn_espacio" onclick="javaScript:boton('Espacio')" src="#aro" scale="0.06 0.06 0" position="0.59 -0.74 -1.86" rotation="-45 0 0"></a-image>
                 </a-entity>
                 <a-entity id="AirbagBtn">
                     <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_airbag" onclick="javaScript:boton('Airbag')" src="#aro" scale="0.06 0.06 0" position="-1.9 -0.42 -1.5" rotation="0 80 0"></a-image>
@@ -73,14 +73,25 @@
                 <a-entity id="ModosBtn">
                     <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_modos" onclick="javaScript:boton('Modos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.57 -0.38" rotation="-10 80 0"></a-image>
                 </a-entity>
+                <a-entity id="KeylessBtn">
+                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_keyless" onclick="javaScript:botonDos('Keyless', 'VolanteBtn')" src="#aro" scale="0.06 0.06 0" position="-1.92 -1.46 0.10" rotation="-10 90 0"></a-image>
+                </a-entity>
                 <a-entity id="CajaBtn">
                     <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_caja" onclick="javaScript:botonDos('Caja','AsientosBtn')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.93 -0.15" rotation="-20 90 0"></a-image>
                 </a-entity>
                 <a-entity id="TapiceriaBtn">
-                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_tapiceria" onclick="javaScript:boton('Tapiceria')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.8 -1" rotation="-10 80 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_tapiceria" onclick="javaScript:botonDos('Tapiceria', 'KeylessBtn')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.8 -1" rotation="-10 80 0"></a-image>
                 </a-entity>
                 <a-entity id="AsientosBtn">
-                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_asientos" onclick="javaScript:boton('Asientos')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.7 0.56" rotation="-10 100 0"></a-image>
+                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_asientos" onclick="javaScript:botonDos('Asientos', 'KeylessBtn')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.7 0.56" rotation="-10 100 0"></a-image>
+                </a-entity>
+
+                <a-entity id="AsientoConductorBtn">
+                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_asientos" onclick="javaScript:botonDos('AsientoConductor', 'KeylessBtn')" src="#aro" scale="0.07 0.07 0" position="-1.78 -1.54 1.25" rotation="-10 100 0"></a-image>
+                </a-entity>
+
+                <a-entity id="VolanteBtn">
+                    <a-image class="c_sedanes t_jetta-gli m_dsg ibtn_volante" onclick="javaScript:boton('Volante')" src="#aro" scale="0.06 0.06 0" position="-1.64 -0.82 0.88" rotation="-10 90 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -94,7 +105,7 @@
             </a-entity>
 
             <a-entity id="Espacio" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Amplio.png" scale="1 0.5 0" position="-2 0.24 -2.08" rotation="0 60 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Espacio.png" scale="1.1 0.5 0" position="1.11 -0.49 -1.89" rotation="0 0 0"></a-image>
             </a-entity>
 
             <a-entity id="Airbag" visible="false">
@@ -113,6 +124,10 @@
                 <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Manejo.png" scale="1.3 0.8 0" position="-2 -1.3 -1.05" rotation="-10 80 0 "></a-image>
             </a-entity>
 
+            <a-entity id="Keyless" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Keyless.png" scale="2.19 0.99 0" position="-2.10 -1.32 0.65" rotation="0 90 0 "></a-image>
+            </a-entity>
+
             <a-entity id="Caja" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/DSG.png" scale="2.5 0.8 0" position="-2 -2.02 1" rotation="-10 110 0 "></a-image>
             </a-entity>
@@ -122,7 +137,15 @@
             </a-entity>
 
             <a-entity id="Asientos" visible="false">
-                <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Asientos.png" scale="1.4 0.6 0" position="-2 -1.46 -0.1" rotation="-10 90 0 "></a-image>
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Asientos.png" scale="1.6 0.68 0" position="-2 -1.46 -0.07" rotation="-10 90 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="AsientoConductor" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/AsientoConductor.png" scale="1.79 0.76 0" position="-2 -1.46 0.50" rotation="-10 90 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="Volante" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Jetta_Gli_DSG/Volante.png" scale="1.55 0.96 0" position="-2 -0.72 0.44" rotation="-15 90 0 "></a-image>
             </a-entity>
 
         </a-entity>

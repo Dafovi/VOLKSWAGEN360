@@ -24,7 +24,8 @@
     <!-- <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> -->
     <script src="../../../styles/A-frame.js"></script>
     <link rel="icon" href="../../../img/icons/LogoMarca.png" type="image/png" sizes="16x16">
-    <script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cars.js"></script>
+<script src="../../../styles/cameraLimit.js"></script>
   </head>
 
 	<body>
@@ -85,32 +86,32 @@
 				<!-- Botones -->
 				<a-entity id="btnGarantia" class="0"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_garantia" src="#aro" scale="0.06 0.06 0" position="-1.94 0.22 0.02" rotation="0 90 0" onclick="javaScript:boton('Garantia')"></a-image></a-entity>
 				<a-entity id="btnMotor" class="0"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_motor" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.23 0.01" rotation="0 90 0" onclick="javaScript:boton('Motor')"></a-image></a-entity>
-				<a-entity id="btnFaros" class="0"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_faros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.4 -0.72" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
+				<a-entity id="btnFaros" class="0"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_faros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.33 -0.54" rotation="0 90 0" onclick="javaScript:boton('Faros')"></a-image></a-entity>
 				<a-entity id="btnNormativa" class="0"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_normativa" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.85 0.2" rotation="0 90 0" onclick="javaScript:boton('Normativa')"></a-image></a-entity>
-				<a-entity id="btnSensores" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_sensoresdelanteros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.63 1.6" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
-				<a-entity id="btnAsistente" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_assist" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.9 1.45" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
+				<a-entity id="btnSensores" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_sensoresdelanteros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.58 1.49" rotation="0 90 0" onclick="javaScript:boton('Sensores')"></a-image></a-entity>
+				<a-entity id="btnAsistente" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_assist" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.79 1.27" rotation="0 90 0" onclick="javaScript:boton('Asistente')"></a-image></a-entity>
 				<a-entity id="btnFrenos" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_frenos" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.8 0.9" rotation="0 90 0" onclick="javaScript:boton('Frenos')"></a-image></a-entity>
 				<a-entity id="btnRines" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_rines" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.88 -0.85" rotation="0 90 0" onclick="javaScript:boton('Rines')"></a-image></a-entity>
 				<a-entity id="btnCarga" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_carga" src="#aro" scale="0.06 0.06 0" position="-1.94 0.05 -0.9" rotation="0 90 0" onclick="javaScript:boton('Carga')"></a-image></a-entity>
 				<a-entity id="btnLuces" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_luces" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.25 -1.58" rotation="0 90 0" onclick="javaScript:boton('Luces')"></a-image></a-entity>
-				<a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.5 -1.6" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
-				<a-entity id="btnControl" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_control" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.65 -1.43" rotation="0 90 0" onclick="javaScript:boton('Control')"></a-image></a-entity>
-				<a-entity id="btnSuspension" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_suspension" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.8 -1.3" rotation="0 90 0" onclick="javaScript:boton('Suspension')"></a-image></a-entity>
+				<a-entity id="btnSensoresTraseros" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_sensorestraseros" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.46 -1.48" rotation="0 90 0" onclick="javaScript:boton('SensoresTraseros')"></a-image></a-entity>
+				<a-entity id="btnControl" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_control" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.67 -0.63" rotation="0 90 0" onclick="javaScript:botonDos('Control', 'btnLuces')"></a-image></a-entity>
+				<a-entity id="btnSuspension" class="2" visible="false"><a-image class="c_pickups t_amarok m_V6_extreme_AT ebtn_suspension" src="#aro" scale="0.06 0.06 0" position="-1.94 -0.66 -1.09" rotation="0 90 0" onclick="javaScript:botonDos('Suspension', 'btnLuces')"></a-image></a-entity>
 
 				<!-- información -->
 				<a-entity id="Garantia" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Garantia.png" position="-2 0.48 -0.45" scale="1.5 0.7 0" rotation="0 90 0"></a-image></a-entity>
 
 				<a-entity id="Motor" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Motor.png" position="-2 -0.36 1.4" scale="3 0.32 0" rotation="0 110 0"></a-image></a-entity>
 
-				<a-entity id="Faros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Faros.png" position="-2 -0.2 -0.47" scale="1.7 1 0" rotation="0 90 0"></a-image></a-entity>
+				<a-entity id="Faros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Faros.png" position="-2 -0.13 -0.18" scale="2.37 1 0" rotation="0 90 0"></a-image></a-entity>
 
 				<a-entity id="Normativa" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Normativa.png" position="-2 -1.15 1.6" scale="2.8 0.5 0" rotation="0 100 0"></a-image></a-entity>
 
-				<a-entity id="Sensores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/SensorDelantero.png" position="-2 -0.4 1.04" scale="1.2 0.5 0" rotation="0 90 0"></a-image></a-entity>
+				<a-entity id="Sensores" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/SensorDelantero.png" position="-2 -0.35 0.90" scale="1.2 0.5 0" rotation="0 90 0"></a-image></a-entity>
 
-				<a-entity id="Asistente" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Asistente.png" position="-2 -0.63 2.1" scale="1.2 0.6 0" rotation="0 90 0"></a-image></a-entity>
+				<a-entity id="Asistente" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Asistente.png" position="-2 -0.54 1.88" scale="1.2 0.6 0" rotation="0 90 0"></a-image></a-entity>
 
-				<a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Frenos.png" position="-2 -0.9 0.45" scale="1.8 0.9 0" rotation="0 90 0"></a-image></a-entity>
+				<a-entity id="Frenos" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Frenos.png" position="-2 -0.88 0.52" scale="1.29 0.65 0" rotation="0 90 0"></a-image></a-entity>
 
 				<a-entity id="Rines" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Rines.png" position="-2 -0.6 -0.42" scale="1.8 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
@@ -118,18 +119,18 @@
 
 				<a-entity id="Luces" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Luces.png" position="-2 -0.05 -2.14" scale="1.4 0.8 0" rotation="0 90 0"></a-image></a-entity>
 
-				<a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/SensorTrasero.png" position="-2 -0.25 -2.25" scale="1.15 0.5 0" rotation="0 90 0"></a-image></a-entity>
+				<a-entity id="SensoresTraseros" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/SensorTrasero.png" position="-2 -0.23 -2.06" scale="1.15 0.5 0" rotation="0 90 0"></a-image></a-entity>
 
-				<a-entity id="Control" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/ControlDescenso.png" position="-2 -0.45 -2.38" scale="1.5 0.6 0" rotation="0 70 0"></a-image></a-entity>
+				<a-entity id="Control" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/ControlDescenso.png" position="-2 -0.38 -1.39" scale="1.5 0.6 0" rotation="0 90 0"></a-image></a-entity>
 
-				<a-entity id="Suspension" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/Suspension.png" position="-2 -1.2 -2.5" scale="2 0.5 0" rotation="0 70 0"></a-image></a-entity>
+				<a-entity id="Suspension" class="info" visible="false"><a-image src="../../../img/concesionario/Interiores/AmarokV6_Extreme_AT_CD/suspension.png" position="-2 -0.46 -1.91" scale="2.16 0.93 0" rotation="0 90 0"></a-image></a-entity>
 
 		  	</a-entity>
 
       	</a-entity>
 
 		<!-- Camera + cursor. -->
-		<a-entity camera look-controls cursor="rayOrigin: mouse">
+		<a-entity camera look-controls rotation-reader cursor="rayOrigin: mouse">
 
 			<a-image onclick="javaScript:To('../amarok.html')" src="#atras" scale=" 0.2 0.1 0.2" position="0 -0.78 -1" rotation="0 0 0"></a-image>
 

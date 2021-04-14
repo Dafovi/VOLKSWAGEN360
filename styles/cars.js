@@ -1,4 +1,4 @@
-function To(scene) {   
+function To(scene) {
     var x = location.href = scene;
     document.body.innerHTML = x;
 }
@@ -19,7 +19,7 @@ function boton(conten){
 		press=false;
 		document.getElementById(btnname).setAttribute('visible','false');
 	}
-	
+
 	if(press===false){
 		document.getElementById(conten).setAttribute('visible','true');
 		press=true;
@@ -42,7 +42,7 @@ function botonDos(conten, boton){
 		document.getElementById(btnname).setAttribute('visible','false');
 		document.getElementById(btn2).setAttribute('visible','true');
 	}
-	
+
 	if(press===false){
 		document.getElementById(conten).setAttribute('visible','true');
 		document.getElementById(boton).setAttribute('visible','false');
@@ -57,17 +57,17 @@ function botonDos(conten, boton){
 
 function changeCarById(i,n){
     s+=i;
-	
+
 	if(i===1 && s<=n)
     visible(s,s-1)
 	if(i===-1 && s>=0)
 	visible(s,s+1)
-	
+
 	if(s>n){
 		s=0;
 		visible(0,n)
 	}
-	
+
 	if(s<0){
 		s=n;
 		visible(n,0)
@@ -78,7 +78,7 @@ function changeCarById(i,n){
 	}
 	btn2 = '';
 	botonVisible();
-	
+
 }
 function visible(visible,noVisible){
     	document.getElementById(visible).setAttribute('visible','true');
@@ -96,7 +96,7 @@ function visible(visible,noVisible){
 			btn[i].setAttribute('visible','true');
 		}
 	});
-	
+
 	document.getElementById("ActiveZone").addEventListener("mouseout",funtion(){
 	 	var btn= document.getElementsByClassName("btn");
 		for (i = 0; i < btn.length; i++) {
@@ -107,14 +107,18 @@ function visible(visible,noVisible){
 function botonVisible(){
 	var x= document.getElementsByClassName("0");
 	var y= document.getElementsByClassName("2");
+    var z= document.getElementsByClassName("4");
 	var info= document.getElementsByClassName("info");
-	
+
 	if(s==0){
 		for (i = 0; i < x.length; i++) {
 			x[i].setAttribute('visible','true');
 		}
 		for (i = 0; i < y.length; i++) {
 			y[i].setAttribute('visible','false');
+		}
+        for (i = 0; i < z.length; i++) {
+			z[i].setAttribute('visible','false');
 		}
 	}else if(s==2){
 		for (i = 0; i < x.length; i++) {
@@ -123,14 +127,35 @@ function botonVisible(){
 		for (i = 0; i < y.length; i++) {
 			y[i].setAttribute('visible','true');
 		}
-			 
-		}else{
-			for (i = 0; i < x.length; i++) {
-				x[i].setAttribute('visible','false');
-			}
-			for (i = 0; i < y.length; i++) {
-				y[i].setAttribute('visible','false');
-			}
+        for (i = 0; i < z.length; i++) {
+			z[i].setAttribute('visible','false');
+		}
+
+	}
+    else if(s==4){
+
+        for (i = 0; i < x.length; i++) {
+            x[i].setAttribute('visible','false');
+        }
+        for (i = 0; i < y.length; i++) {
+            y[i].setAttribute('visible','false');
+        }
+        for (i = 0; i < z.length; i++) {
+            z[i].setAttribute('visible','true');
+        }
+
+    }
+
+    else{
+		for (i = 0; i < x.length; i++) {
+			x[i].setAttribute('visible','false');
+		}
+		for (i = 0; i < y.length; i++) {
+			y[i].setAttribute('visible','false');
+		}
+        for (i = 0; i < z.length; i++) {
+			z[i].setAttribute('visible','false');
+		}
 	}
 	for (i = 0; i < info.length; i++) {
 		info[i].setAttribute('visible','false');

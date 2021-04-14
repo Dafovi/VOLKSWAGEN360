@@ -8,6 +8,8 @@ function menuForward (mainMenuId, currentMenuId)
     menu.setAttribute('scale','1 1 1');
     menu.setAttribute('position', '0 0 -3');
 
+    console.log(menu);
+
 }
 
 function menuBackward(currentMenuId, mainMenuId)
