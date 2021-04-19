@@ -62,13 +62,16 @@
                     <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_pantalla" onclick="javaScript:botonDos('Pantalla', 'IluminacionBtn')" src="#aro" scale="0.07 0.07 0" position="-1.9 -1.1 -0.42" rotation="0 90 0"></a-image>
                 </a-entity>
                 <a-entity id="MotionBtn">
-                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_motion" onclick="javaScript:boton('Motion')" src="#aro" scale="0.1 0.1 0" position="-1.9 -3.3 0.2" rotation="-70 90 0"></a-image>
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_motion" onclick="javaScript:boton('Motion')" src="#aro" scale="0.1 0.1 0" position="-1.50 -2.60 0.17" rotation="-70 90 0"></a-image>
                 </a-entity>
                 <a-entity id="CajaBtn">
                     <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_caja" onclick="javaScript:boton('Caja')" src="#aro" scale="0.08 0.08 0" position="-1.9 -1.80 0.19" rotation="-50 90 0"></a-image>
                 </a-entity>
                 <a-entity id="KessyBtn">
-                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_kessy" onclick="javaScript:boton('Kessy')" src="#aro" scale="0.07 0.07 0" position="-1.40 -1.84 0.24" rotation="-45 90 0"></a-image>
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_kessy" onclick="javaScript:botonDos('Kessy', 'SillasBtn')" src="#aro" scale="0.07 0.07 0" position="-1.40 -1.84 0.24" rotation="-45 90 0"></a-image>
+                </a-entity>
+                <a-entity id="SillasBtn">
+                    <a-image class="c_camionetas t_touareg m_luxury_AT ibtn_asientos" onclick="javaScript:botonDos('Sillas', 'KessyBtn')" src="#aro" scale="0.06 0.06 0" position="-1.25 -1.70 0.64" rotation="-45 100 0"></a-image>
                 </a-entity>
             </a-entity>
 
@@ -95,6 +98,10 @@
 
             <a-entity id="Kessy" visible="false">
                 <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Kessy.png" scale="2.13 0.86 0" position="-2.03 -2.77 0.81" rotation="-37.92 90 0 "></a-image>
+            </a-entity>
+
+            <a-entity id="Sillas" visible="false">
+                <a-image src="../../../img/concesionario/Interiores/Touareg_Luxury_AT/Sillas.png" scale="2.13 0.86 0" position="-2.17 -3.17 0.21" rotation="-37 90 0 "></a-image>
             </a-entity>
 
         </a-entity>
