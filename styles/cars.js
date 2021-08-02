@@ -55,6 +55,27 @@ function botonDos(conten, boton){
 	}
 }
 
+function botonTres(conten, conten2){
+	if(conten!=btnname && btnname!=""){
+		press=false;
+		document.getElementById(btnname).setAttribute('visible','false');
+	}
+
+	if(press===false){
+		document.getElementById(conten).setAttribute('visible','true');
+		document.getElementById(conten2).setAttribute('visible','true');
+		press=true;
+		btnname=conten;
+	}else{
+		document.getElementById(conten).setAttribute('visible','false');
+		document.getElementById(conten2).setAttribute('visible','false');
+		press=false;
+	}
+	if(btn2 != "") {
+		document.getElementById(btn2).setAttribute('visible','true');
+	}
+	//console.log(btnname);
+}
 function changeCarById(i,n){
     s+=i;
 
